@@ -33,8 +33,8 @@ class NewsController extends AdminController
             return $value ? '是':'否';
         });
         $grid->column('publish_time','显示日期')->datetime('YYYY-MM-DD');
-        $grid->column('author', __('Author'));
-        $grid->column('created_at', '创建时间');
+        //$grid->column('author', __('Author'));
+        //$grid->column('created_at', '创建时间');
         //$grid->column('updated_at', __('Updated at'));
 
         return $grid;
@@ -51,13 +51,13 @@ class NewsController extends AdminController
         $show = new Show(News::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('title', __('Title'));
-        $show->field('content', __('Content'));
-        $show->field('on_shelf', __('On shelf'));
-        $show->field('publish_time', __('Publish time'));
-        $show->field('author', __('Author'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
+        $show->field('title', '新闻标题');
+        $show->editor('content', __('新闻详情'));
+        $show->switch('on_shelf', __('已发布'));
+        $show->datetime('publish_time', __('时间'));
+        //$show->field('author', __('Author'));
+       // $show->field('created_at', __('Created at'));
+        //$show->field('updated_at', __('Updated at'));
 
         return $show;
     }
@@ -71,11 +71,11 @@ class NewsController extends AdminController
     {
         $form = new Form(new News());
 
-        $form->text('title','新闻标题');
-        $form->editor('content','新闻详情');
-        $form->switch('on_shelf', '已发布');
+        $form->text('title','新闻标题')->rules('required');
+        $form->editor('content','新闻详情')->rules('required|image');
+        $form->switch('on_shelf', '已发布')->default('0');
         $form->datetime('publish_time', '时间')->default(date('Y-m-d H:i:s'));
-        $form->image('author', '作者');
+        //$form->image('author', '作者');
 
         return $form;
     }

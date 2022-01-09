@@ -14,4 +14,8 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
     $router->post('upload', 'ImageUploadController@upload');
     $router->resource('news', NewsController::class);
+    //$router->resource('configs', ConfigsController::class);
+    $router->get('configs', 'ConfigsController@index');
+    $router->post('configs', 'ConfigsController@save');
+
 });
