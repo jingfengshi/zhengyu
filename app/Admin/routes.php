@@ -17,6 +17,10 @@ Route::group([
     //$router->resource('configs', ConfigsController::class);
     $router->get('configs', 'ConfigsController@index');
     $router->post('configs', 'ConfigsController@save');
+    $router->resource('cert', CertController::class);
+    $router->resource('service', ServiceController::class);
+    $router->resource('cases', CasesController::class);
+    $router->resource('banners', BannersController::class);
 
 
     $router->get('products', 'ProductsController@index');
