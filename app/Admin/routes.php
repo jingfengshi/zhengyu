@@ -17,5 +17,6 @@ Route::group([
     //$router->resource('configs', ConfigsController::class);
     $router->get('configs', 'ConfigsController@index');
     $router->post('configs', 'ConfigsController@save');
+    $router->resource('cert', CertController::class);
 
 });
