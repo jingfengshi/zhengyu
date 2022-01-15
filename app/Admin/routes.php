@@ -20,5 +20,6 @@ Route::group([
     $router->resource('cert', CertController::class);
     $router->resource('service', ServiceController::class);
     $router->resource('cases', CasesController::class);
+    $router->resource('banners', BannersController::class);
 
 });
