@@ -72,7 +72,7 @@ class NewsController extends AdminController
         $form = new Form(new News());
 
         $form->text('title','新闻标题')->rules('required');
-        $form->editor('content','新闻详情')->rules('required|image');
+        $form->editor('content','新闻详情')->rules('required');
         $form->switch('on_shelf', '已发布')->default('0');
         $form->datetime('publish_time', '时间')->default(date('Y-m-d H:i:s'));
         //$form->image('author', '作者');
