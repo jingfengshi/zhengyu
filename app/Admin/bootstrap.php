@@ -18,4 +18,22 @@
  *
  */
 
+use Encore\Admin\Form;
+
 Encore\Admin\Form::forget(['map']);
+
+
+//Form::init(function (Form $form) {
+//
+//    $form->disableEditingCheck();
+//
+//    $form->disableCreatingCheck();
+//
+//    $form->disableViewCheck();
+//
+//    $form->tools(function (Form\Tools $tools) {
+//        $tools->disableDelete();
+//        $tools->disableView();
+//        $tools->disableList();
+//    });
+//});

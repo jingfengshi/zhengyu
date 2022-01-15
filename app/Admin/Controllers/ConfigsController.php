@@ -61,11 +61,10 @@ class ConfigsController extends AdminController
                 $config->create($c);
             }
 
-
         }
 
         return $content
-            ->title($this->title())
+            ->title('配置管理')
             ->description($this->description['index'] ?? trans('admin.list'))
             ->body($this->form());//这里调用之后  相当于访问到这个控制器的时候 就直接显示表单页面 而不是列表页面
     }
@@ -125,7 +124,7 @@ class ConfigsController extends AdminController
     protected function form()
     {
         $form = new Form(new Config());
-        $form->setTitle('');
+        $form->setTitle('站点配置');
         $lists = Config::query()->get()->toArray();
         foreach ($lists as $list)
         {

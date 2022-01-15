@@ -17,4 +17,30 @@ class Product extends Model
         'is_authentication' => 'boolean',
         'is_recommend' => 'boolean',
     ];
+
+    public function getSubImageAttribute($value)
+    {
+        return json_decode($value,true);
+    }
+
+
+
+    public function setSubImageAttribute($value)
+    {
+        if(is_array($value)){
+            return $this->attributes['sub_image'] = json_encode($value);
+        }
+    }
+
+    public function properties()
+    {
+        return $this->hasMany(ProductProperty::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+
 }
