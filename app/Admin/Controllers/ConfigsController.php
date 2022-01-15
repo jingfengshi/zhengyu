@@ -28,40 +28,39 @@ class ConfigsController extends AdminController
     {
         $grid = new Grid(new Config());
 
-
         return $grid;
     }
-
 
     public function index(Content $content)
     {
         $lists = Config::query()->get()->toArray();
-        if(empty($lists)){
-            $configs=[
+        if (empty($lists)) {
+            $configs = [
                 [
-                    'name'=>'备案号',
-                    'value'=>'',
+                    'name' => '备案号',
+                    'value' => '',
                 ],
                 [
-                    'name'=>'二维码',
-                    'value'=>'',
+                    'name' => '二维码',
+                    'value' => '',
                 ],
                 [
-                    'name'=>'抖音号',
-                    'value'=>'',
+                    'name' => '抖音号',
+                    'value' => '',
                 ],
                 [
-                    'name'=>'公众号',
-                    'value'=>'',
+                    'name' => '公众号',
+                    'value' => '',
+                ],
+                [
+                    'name' => '关于我们',
+                    'value' => '',
                 ],
             ];
-            $config=new Config();
-            foreach ($configs as $c)
-            {
+            $config = new Config();
+            foreach ($configs as $c) {
                 $config->create($c);
             }
-
-
         }
 
         return $content
@@ -79,8 +78,7 @@ class ConfigsController extends AdminController
         //如果提交过来的参数中没有有照片的数据
         if (!isset($params['二维码'])) {
             $logoName = Config::query()->where('name', '=', '二维码')->value('value');
-        }else {//如果有上传照片 进行处理
-
+        } else {// 如果有上传照片 进行处理
             $logoName = (new Form\Field\Image('二维码', '二维码'))->uniqueName()->prepare($params['二维码']);
         }
         //进行更新数据
@@ -101,7 +99,6 @@ class ConfigsController extends AdminController
     }
 
 
-
     /**
      * Make a show builder.
      *
@@ -111,7 +108,6 @@ class ConfigsController extends AdminController
     protected function detail($id)
     {
         $show = new Show(Config::findOrFail($id));
-
 
 
         return $show;
@@ -127,14 +123,14 @@ class ConfigsController extends AdminController
         $form = new Form(new Config());
         $form->setTitle('');
         $lists = Config::query()->get()->toArray();
-        foreach ($lists as $list)
-        {
-            if($list['name']=='二维码'){
-                $form->image($list['name'],$list['name'])->value($list['value']);
-            }else{
-                $form->text($list['name'],$list['name'])->value($list['value']);
+        foreach ($lists as $list) {
+            if ($list['name'] == '二维码') {
+                $form->image($list['name'], $list['name'])->value($list['value']);
+            } elseif ($list['name'] == '关于我们') {
+                $form->editor('value', '关于我们');
+            } else {
+                $form->text($list['name'], $list['name'])->value($list['value']);
             }
-
         }
         $form->setAction('/admin/configs');
         $form->disableEditingCheck();
