@@ -109,9 +109,17 @@ class AdminTablesSeeder extends Seeder
                 [
                     "parent_id" => 11,
                     "order" => 0,
-                    "title" => "产品类目管理",
+                    "title" => "产品类目",
                     "icon" => "fa-bars",
                     "uri" => "categories",
+                    "permission" => NULL
+                ],
+                [
+                    "parent_id" => 11,
+                    "order" => 0,
+                    "title" => "产品数据",
+                    "icon" => "fa-anchor",
+                    "uri" => "/products",
                     "permission" => NULL
                 ]
             ]
