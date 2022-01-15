@@ -27,9 +27,7 @@ class CertController extends AdminController
         $grid = new Grid(new Cert());
 
         $grid->column('title', '证书名称');
-        $grid->column('file', '证书')->display(function ($value) {
-            return $value ? '<img src="' . $value . '">' : '';
-        });
+        $grid->column('file', '证书');
 
         return $grid;
     }
