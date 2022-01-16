@@ -395,17 +395,17 @@
     margin-top: 1.5rem;
 }
 
-.right-box-more{
+.right-box-more {
     float: right;
     margin-right: 2rem;
     margin-top: 1rem;
 }
 
-.news{
+.news {
     margin-top: 2rem;
 }
 
-.project{
+.project {
     width: 90%;
     height: 20rem;
     margin: 3rem auto;
@@ -413,14 +413,14 @@
     justify-content: space-between;
 }
 
-.project-item{
+.project-item {
     width: 32%;
     height: 20rem;
     border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.project-item-content-box{
+.project-item-content-box {
     height: 8rem;
     position: relative;
     top: 12.1rem;
@@ -428,7 +428,7 @@
     z-index: 999;
 }
 
-.project-item-content-box-mask{
+.project-item-content-box-mask {
     opacity: 0.6;
     background-color: #3E3E3E;
     height: 8rem;
@@ -436,13 +436,40 @@
     top: 3rem;
 }
 
-.project-item-content-box-title{
+.project-item-content-box-title {
     font-size: 1.8rem;
     margin-left: 5rem;
     line-height: 3rem;
 }
 
-.project-item-content-box-desc{
+.project-item-content-box-desc {
     font-size: 1.4rem;
     margin-left: 5rem;
+}
+
+.project-arrow-box {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    bottom: 15rem;
+}
+
+.product-arrow-box {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    bottom: 29rem;
+}
+
+.left-arrow img,.right-arrow img {
+    width: 1.3rem;
+    height: 2.3rem;
+}
+
+.left-arrow{
+    float: left;
+}
+.right-arrow {
+    float: right;
+    transform: rotate(180deg);
 }
