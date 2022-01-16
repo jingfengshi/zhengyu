@@ -11,8 +11,12 @@
 |
 */
 
+
+use Symfony\Component\Routing\Annotation\Route;
+
+Route::get('/productHome', function () {
+    return view('productHome');
+});
+
 Route::get('/', 'SiteController@index');
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
