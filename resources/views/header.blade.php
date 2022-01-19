@@ -47,7 +47,170 @@
         </div>
 
 
-        <div style="width: 100%;height: 500px;">
+
+        //内容
+
+        <div class="mx-auto px-4 mt-[7rem]" style="height: 1600px;font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #484848;">
+            <div class="flex h-100 ml-[12rem] space-x-3" style="padding-top: 2rem">
+                <a href="">伙伴</a>
+                <a href="">共同推动行业前进</a>
+                <a href="">服务的品牌</a>
+                <a href="">案例</a>
+            </div>
+
+
+            <div class="w-full bg-red-100 overflow-y-hidden mt-3" style="height: 400px">
+                <img style="width: 100%;margin-top: -17rem" src="{{URL::asset('images/服务的品牌/u4314.jpg')}}" alt="">
+            </div>
+
+            <div>
+                <div class="text-center text-[32px] mt-[4rem]" style="font-family: 'PingFang ', 'PingFang', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;">
+                    <span>客户案例</span>
+                </div>
+                <div class= "text-center mt-[1rem] text-[24px]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 42px;">
+                    <span>
+                        客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+                    </span>
+                </div>
+                <div class="grid grid-cols-3 gap-8 ml-[12rem] mr-[12rem] mt-[2rem]" style="font-family: 'PingFang ', 'PingFang', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 26px;">
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                    <div style="width: 450px">
+                        <img style="width: 440px;height: 252px;" src="{{URL::asset('images/案例/u4362.png')}}" alt="">
+                        <div class="text-center mt-[2rem]">
+                            <span class="text-[26px] ">浙江头门港港务有限公司</span>
+                        </div>
+                        <div class="mt-[2rem]" style="font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #7F7F7F;
+    line-height: 30px">
+                            <span class="tetx-[18px] ">
+客户案例
+
+客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！
+
+
+浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 

@@ -12,7 +12,6 @@
 */
 
 
-use Symfony\Component\Routing\Annotation\Route;
 
 Route::get('/productHome', function () {
     return view('productHome');
@@ -20,3 +19,6 @@ Route::get('/productHome', function () {
 
 Route::get('/', 'SiteController@index');
 
+Route::get('/header', function(){
+    return view('brand.brand');
+});
