@@ -461,14 +461,15 @@
     bottom: 29rem;
 }
 
-.left-arrow img,.right-arrow img {
+.left-arrow img, .right-arrow img {
     width: 1.3rem;
     height: 2.3rem;
 }
 
-.left-arrow{
+.left-arrow {
     float: left;
 }
+
 .right-arrow {
     float: right;
     transform: rotate(180deg);

@@ -18,6 +18,7 @@ Route::get('/productHome', function () {
 });
 
 Route::get('/', 'SiteController@index');
+Route::get('/product-list', 'SiteController@productList');
 
 Route::get('/header', function(){
     return view('brand.brand');

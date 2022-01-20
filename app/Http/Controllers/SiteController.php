@@ -8,4 +8,9 @@ class SiteController extends Controller
     {
         return view('index');
     }
+
+    public function ProductList()
+    {
+        return view('product_list');
+    }
 }

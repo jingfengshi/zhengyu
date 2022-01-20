@@ -1,41 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 0.95rem;
 }
 
+.main-content {
+    margin-top: 8rem;
+}
 
-
-.font-color-white{
+.font-color-white {
     color: white;
 }
 
-.text-overflow{
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.ml-5{
+.ml-5 {
     margin-left: 0.5rem;
 }
 
 
-
-
-
-
 /* tools */
-.bg-red{
+.bg-red {
     background-color: red;
 }
-.bg-black{
+
+.bg-black {
     background-color: black;
 }
-.bg-pink{
+
+.bg-pink {
     background-color: pink;
 }
-.bg-green{
+
+.bg-green {
     background-color: green;
 }
