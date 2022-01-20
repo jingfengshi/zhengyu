@@ -1,27 +1,27 @@
-.header-box {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    z-index: 9999;
-    box-shadow: 2px 2px 2px #868686;
-}
+/*.header-box {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    background-color: #FFFFFF;*/
+/*    z-index: 9999;*/
+/*    box-shadow: 2px 2px 2px #868686;*/
+/*}*/
 
-.header-top {
-    display: flex;
-    justify-content: flex-end;
-    height: 2.3rem;
-    width: 100%;
-    background-color: #333333;
-}
+/*.header-top {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    height: 2.3rem;*/
+/*    width: 100%;*/
+/*    background-color: #333333;*/
+/*}*/
 
-.header-top .right {
-    width: 18rem;
-    display: flex;
-    padding: 0.5rem;
-    justify-content: space-between;
-    margin-right: 0;
-}
+/*.header-top .right {*/
+/*    width: 18rem;*/
+/*    display: flex;*/
+/*    padding: 0.5rem;*/
+/*    justify-content: space-between;*/
+/*    margin-right: 0;*/
+/*}*/
 
 /* Phone 或 PAD */
 /*.header-body{*/
@@ -39,34 +39,34 @@
 /*}*/
 
 /* PC */
-.header-body {
-    height: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 10rem;
-    display: flex;
-    justify-content: flex-start;
-}
+/*.header-body {*/
+/*    height: 2rem;*/
+/*    padding-top: 2rem;*/
+/*    padding-bottom: 4rem;*/
+/*    padding-left: 10rem;*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*}*/
 
-.header-body .item {
-    margin-left: 6rem;
-    height: 2rem;
-    line-height: 3rem;
-    font-size: 1.15rem;
-}
+/*.header-body .item {*/
+/*    margin-left: 6rem;*/
+/*    height: 2rem;*/
+/*    line-height: 3rem;*/
+/*    font-size: 1.15rem;*/
+/*}*/
 
-.header-body .logo {
-    width: 18rem;
-    height: 2rem;
-    background: url("../images/static/logo.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+/*.header-body .logo {*/
+/*    width: 18rem;*/
+/*    height: 2rem;*/
+/*    background: url("../images/static/logo.png");*/
+/*    background-size: 100% 100%;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
 
-.header-to-banner {
-    height: 0.1rem;
-    margin-top: 8.2rem;
-}
+/*.header-to-banner {*/
+/*    height: 0.1rem;*/
+/*    margin-top: 8.2rem;*/
+/*}*/
 
 .banner-box {
     height: 44rem;
@@ -433,7 +433,7 @@
     background-color: #3E3E3E;
     height: 8rem;
     position: relative;
-    top: 3rem;
+    top: 4rem;
 }
 
 .project-item-content-box-title {

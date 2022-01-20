@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
-<body>
+@extends("main")
 
-<div class="header-box">
-    <div class="header-top">
-        <div class="right">
-            <div class="item font-color-white">服务</div>
-            <div class="item font-color-white">伙伴</div>
-            <div class="item font-color-white">职业</div>
-            <div class="item font-color-white">关于我们</div>
-        </div>
-    </div>
-    <div class="header-body">
-        <div class="item logo"></div>
-        <div class="item text-overflow">保护人们在危险环境安全工作</div>
-        <div class="item text-overflow">智慧工业计量</div>
-    </div>
-</div>
+@section("content")
 
-<div class="header-to-banner"></div>
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
 <div class="banner-box">
     <div class="item bg-green active">
@@ -211,12 +189,11 @@
     <div class="right-arrow"><img src="images/static/left.svg" alt=""></div>
 </div>
 
-</body>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
     $(document).on('click', '.banner-box .item', function () {
         $('.banner-box .item').removeClass('active');
         $(this).addClass('active');
     })
 </script>
-</html>
+
+@endsection
