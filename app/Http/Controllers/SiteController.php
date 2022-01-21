@@ -13,4 +13,9 @@ class SiteController extends Controller
     {
         return view('product_list');
     }
+
+    public function Products()
+    {
+        return view('products');
+    }
 }

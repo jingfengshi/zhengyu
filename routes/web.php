@@ -21,6 +21,8 @@ Route::get('/productHome', function () {
 Route::get('/', 'SiteController@index');
 // 产品列表页
 Route::get('/product-list', 'SiteController@productList');
+// 产品页
+Route::get('/products', 'SiteController@products');
 
 Route::get('/header', function(){
     return view('brand.brand');
