@@ -10,7 +10,7 @@
 }
 
 .font-color-white {
-    color: white;
+    color: white !important;
 }
 
 .text-overflow {
@@ -21,6 +21,10 @@
 
 .ml-5 {
     margin-left: 0.5rem;
+}
+
+.mt-1rem {
+    margin-top: 1rem;
 }
 
 

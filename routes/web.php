@@ -17,7 +17,9 @@ Route::get('/productHome', function () {
     return view('productHome');
 });
 
+// 首页
 Route::get('/', 'SiteController@index');
+// 产品列表页
 Route::get('/product-list', 'SiteController@productList');
 
 Route::get('/header', function(){

@@ -2,6 +2,9 @@
 
 @section("content")
 
+
+    {{--  todo 页面交互特效待完成  --}}
+
     <div class="nav" style="font-size: 1.15rem;line-height: 5rem;padding-left:3rem;color: #484848;">首页 > 保护人们在危险环境安全工作 >
         产品
     </div>
@@ -80,172 +83,347 @@
         </div>
 
         <div class="product-box-right-box" style="width: 82%;float:right;">
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-            <div class="product-box-right-item" style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
-                <div class="product-item-img" style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
+            <div class="product-box-right-item"
+                 style="margin-left:1rem;margin-bottom:1rem;width: 17.5rem;height:26rem;display:inline-block;border: 1px dashed #333333;">
+                <div class="product-item-img"
+                     style='background: url("images/static/pd-item.png");background-size: 100% 100%;background-repeat: no-repeat;height:13rem;border-bottom: 1px dashed #333333;'></div>
                 <div class="tips-box" style="padding-left:1.8rem;height: 3rem;padding-top:0.75rem;">
-                    <div class="new-box font-color-white" style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">NEW</div>
+                    <div class="new-box font-color-white"
+                         style="height:1.5rem;font-size: 0.95rem;width: 3.4rem;background-color: rgba(205, 2, 0, 1);text-align: center;">
+                        NEW
+                    </div>
                 </div>
-                <div class="product-item-title" style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">ABC-2-ABC-3  三相电源指示灯</div>
-                <div class="product-item-color" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：</div>
-                <div class="product-item-power" style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：</div>
+                <div class="product-item-title"
+                     style="padding-left:1.8rem;font-size: 1.3rem;color: #484848;height: 4rem;overflow:hidden;">
+                    ABC-2-ABC-3 三相电源指示灯
+                </div>
+                <div class="product-item-color"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;margin-top: 0.4rem;">颜色：
+                </div>
+                <div class="product-item-power"
+                     style="padding-left:1.8rem;font-size:1rem;color: #333333;line-height: 2rem;">功率：
+                </div>
             </div>
-
-
-
 
 
         </div>
     </div>
 
     <div style="clear: both;"></div>
-
-
-
-
-
-
-
-
-    <script type="text/javascript">
-        $(document).on('click', '.xxx', function () {
-            $('.xxx').removeClass('active');
-            $(this).addClass('active');
-        })
-    </script>
 
 @endsection
