@@ -1,0 +1,142 @@
+.nav {
+    font-size: 1.15rem;
+    line-height: 5rem;
+    padding-left: 3rem;
+    color: #484848;
+}
+
+.top-banner {
+    height: 13rem;
+}
+
+.top-banner-title {
+    font-size: 2.6rem;
+    line-height: 13rem;
+    margin-left: 6rem;
+}
+
+.desc-box {
+    background-color: rgba(242, 242, 242, 1);
+    height: 28rem;
+    width: 95%;
+    margin: 4rem auto;
+    padding-top: 4rem;
+}
+
+.desc-box-top-text {
+    font-size: 1.75rem;
+    color: #333333;
+    width: 80%;
+    margin: 0rem auto;
+}
+
+.desc-box-icon-box {
+    width: 60%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-box-icon-item {
+    height: 13rem;
+    width: 13rem;
+}
+
+.desc-box-icon {
+    height: 7rem;
+    width: 7.5rem;
+    margin: 1rem auto;
+}
+
+.desc-box-icon-desc {
+    font-size: 1.3rem;
+    color: #333333;
+    text-align: center;
+}
+
+.product-box {
+    height: 60rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.product-box-left-box {
+    background-color: rgba(242, 242, 242, 1);
+    height: 60rem;
+    width: 18%;
+    float: left;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.product-box-left-item {
+    margin-bottom: 1.5rem;
+}
+
+.product-box-left-item-nav {
+    font-size: 1.15rem;
+    color: #484848;
+    margin-left: 0.3rem;
+}
+
+.product-box-right-box {
+    width: 82%;
+    float: right;
+}
+
+.product-box-right-item {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 17.5rem;
+    height: 26rem;
+    border: 1px dashed #333333;
+}
+
+.product-item-img {
+    height: 13rem;
+    border-bottom: 1px dashed #333333;
+}
+
+.tips-box {
+    padding-left: 1.8rem;
+    height: 3rem;
+    padding-top: 0.75rem;
+}
+
+.new-box {
+    height: 1.5rem;
+    font-size: 0.95rem;
+    width: 3.4rem;
+    background-color: rgba(205, 2, 0, 1);
+    text-align: center;
+}
+
+.product-item-title {
+    padding-left: 1.8rem;
+    font-size: 1.3rem;
+    color: #484848;
+    height: 4rem;
+    width: 16rem;
+    overflow: hidden;
+}
+
+.product-item-color {
+    padding-left: 1.8rem;
+    font-size: 1rem;
+    color: #333333;
+    line-height: 2rem;
+    margin-top: 0.4rem;
+}
+
+.product-item-power {
+    padding-left: 1.8rem;
+    font-size: 1rem;
+    color: #333333;
+    line-height: 2rem;
+}
+
+.product-box-left-item-child{
+    display: none;
+    padding-top: 0.5rem;
+    padding-left: 2.5rem;
+}

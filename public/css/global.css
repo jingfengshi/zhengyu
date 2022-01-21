@@ -19,6 +19,14 @@
     white-space: nowrap;
 }
 
+.inline-block{
+    display: inline-block;
+}
+
+.show{
+    display: block !important;
+}
+
 .ml-5 {
     margin-left: 0.5rem;
 }
