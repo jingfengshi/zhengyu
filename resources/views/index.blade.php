@@ -245,7 +245,7 @@
     </div>
 
     <script type="text/javascript">
-        $(document).on('click', '.banner-box .item', function () {
+        $(document).on('mouseover', '.banner-box .item', function () {
             $('.banner-box .item').removeClass('active');
             $(this).addClass('active');
         })
