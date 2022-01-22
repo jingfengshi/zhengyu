@@ -63,17 +63,17 @@
 ### 页面
 
 **需要前端协助的**
-1.OK 首页 （dragon）
-2.产品首页 (banner中有选项卡效果的页面)
-3.OK 产品列表页（dragon）
-4.OK 产品页（dragon）
+1.OK 首页 （dragon）路由：/
+2.产品首页 路由：/product
+3.OK 产品列表页（dragon）路由：/product-list
+4.OK 产品页（dragon）路由：/products
 
 **只需提供公用header和footer的**
-5.产品页（具体产品介绍页）
+5.产品页（具体产品介绍页）/product-info
 6.服务页
-7.案例列表页
-8.案例详情页
-9.服务品牌页
+7.案例列表页（jasper）路由：/cases
+8.案例详情页（dragon）路由：/case
+9.服务品牌页（jasper）路由：/brand
 10.关于我们页
 11.新闻列表页
 12.新闻详情

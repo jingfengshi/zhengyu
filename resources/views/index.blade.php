@@ -145,7 +145,7 @@
             <div class="left-box-about-mask"></div>
             <div class="left-box-invite"
                  style='background: url("images/static/invite.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                <div class="title left-box-invite-title" font-color-white>招贤纳士</div>
+                <div class="title left-box-invite-title font-color-white">招贤纳士</div>
                 <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道</div>
                 <div class="more left-box-invite-more font-color-white">了解更多</div>
             </div>

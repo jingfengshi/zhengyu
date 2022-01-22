@@ -9,13 +9,35 @@ class SiteController extends Controller
         return view('index');
     }
 
-    public function ProductList()
+    public function Product()
     {
-        return view('product_list');
+        return view('product');
     }
 
     public function Products()
     {
         return view('products');
+    }
+
+    public function ProductList()
+    {
+        return view('product_list');
+    }
+
+    public function ProductInfo()
+    {
+        return view('product_info');
+    }
+
+    public function Brand(){
+        return view('brand');
+    }
+
+    public function Cases(){
+        return view('cases');
+    }
+
+    public function Case(){
+        return view('case');
     }
 }

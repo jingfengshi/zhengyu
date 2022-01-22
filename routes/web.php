@@ -11,19 +11,19 @@
 |
 */
 
-
-
-Route::get('/productHome', function () {
-    return view('productHome');
-});
-
 // 首页
 Route::get('/', 'SiteController@index');
+// 产品首页
+Route::get('/product', 'SiteController@product');
 // 产品列表页
 Route::get('/product-list', 'SiteController@productList');
 // 产品页
 Route::get('/products', 'SiteController@products');
-
-Route::get('/header', function(){
-    return view('brand.brand');
-});
+// 产品页
+Route::get('/product-info', 'SiteController@product-info');
+// 服务品牌
+Route::get('/brand', 'SiteController@brand');
+// 案例列表
+Route::get('/cases', 'SiteController@cases');
+// 案例详情
+Route::get('/case', 'SiteController@case');
