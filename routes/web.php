@@ -29,3 +29,5 @@ Route::get('/cases', 'SiteController@cases');
 Route::get('/case', 'SiteController@case');
 // 联系我们
 Route::get('/connect', 'SiteController@connect');
+// 证书
+Route::get('/cert', 'SiteController@cert');

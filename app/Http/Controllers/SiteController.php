@@ -44,4 +44,8 @@ class SiteController extends Controller
     public function Connect(){
         return view('connect');
     }
+
+    public function Cert(){
+        return view('cert');
+    }
 }

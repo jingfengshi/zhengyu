@@ -64,7 +64,7 @@
 
 **需要前端协助的**
 1.OK 首页 （dragon）路由：/
-2.产品首页 路由：/product
+2.OK 产品首页（ding）路由：/product
 3.OK 产品列表页（dragon）路由：/product-list
 4.OK 产品页（dragon）路由：/products
 
@@ -77,5 +77,6 @@
 10.关于我们页
 11.新闻列表页
 12.新闻详情
-13.证书页
-14.联系我们页(引入动态地图插件)
+13.OK 证书页（dragon）路由：/cert
+14.OK 联系我们页(dragon) 路由：/connect
+    未引入动态地图插件，需要甲方提供手机号注册百度地图用户

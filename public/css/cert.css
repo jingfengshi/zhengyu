@@ -1,0 +1,58 @@
+.cert-top-title{
+    padding: 2rem 4rem;
+}
+
+.cert-top-title a{
+    color: #484848;
+    margin-right: 1.5rem;
+}
+
+.cert-banner{
+    height: 32rem;
+    overflow: hidden;
+}
+
+.cert-banner img{
+    width: 100%;
+}
+.cert-title{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    padding-top: 5rem;
+}
+.cert-title-2{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.cert-img-box{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cert-img-item{
+    width: 22rem;
+    height: 22rem;
+    overflow: hidden;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.cert-img-item img {
+    height: 18rem;
+    width: 22rem;
+}
+
+.sm-title{
+    width: 22rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    font-size: 1.1rem;
+    color: #333333;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+}
