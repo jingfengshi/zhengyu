@@ -71,9 +71,9 @@
 **只需提供公用header和footer的**
 5.产品页（具体产品介绍页）/product-info
 6.服务页
-7.案例列表页（jasper）路由：/cases
+7.OK 案例列表页（jasper）路由：/cases
 8.案例详情页（dragon）路由：/case
-9.服务品牌页（jasper）路由：/brand
+9.OK 服务品牌页（jasper）路由：/brand
 10.关于我们页
 11.新闻列表页
 12.新闻详情
