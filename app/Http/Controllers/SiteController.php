@@ -40,4 +40,8 @@ class SiteController extends Controller
     public function Case(){
         return view('case');
     }
+
+    public function Connect(){
+        return view('connect');
+    }
 }

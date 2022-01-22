@@ -1,0 +1,62 @@
+.connect-top-title{
+    padding: 2rem 4rem;
+}
+
+.connect-top-title a{
+    color: #484848;
+    margin-right: 1.5rem;
+}
+
+.connect-banner{
+    height: 32rem;
+    overflow: hidden;
+}
+
+.connect-banner img{
+    width: 100%;
+}
+
+.connect-title{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.connect-desc{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #555555;
+}
+
+.connect-list-box{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.connect-desc-box{
+    height: 13rem;
+}
+
+.connect-desc-left{
+    width: 55%;
+    float: left;
+}
+
+.connect-desc-right{
+    width: 45%;
+    float: right;
+}
+
+.connect-addr-box{
+    width: 95%;
+    height: 40rem;
+    margin: 0 auto;
+    cursor: pointer;
+    background: url("../images/static/addr.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

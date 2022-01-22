@@ -27,3 +27,5 @@ Route::get('/brand', 'SiteController@brand');
 Route::get('/cases', 'SiteController@cases');
 // 案例详情
 Route::get('/case', 'SiteController@case');
+// 联系我们
+Route::get('/connect', 'SiteController@connect');
