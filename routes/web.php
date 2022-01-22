@@ -20,7 +20,7 @@ Route::get('/product-list', 'SiteController@productList');
 // 产品页
 Route::get('/products', 'SiteController@products');
 // 产品页
-Route::get('/product-info', 'SiteController@product-info');
+Route::get('/product-info', 'SiteController@productInfo');
 // 服务品牌
 Route::get('/brand', 'SiteController@brand');
 // 案例列表
