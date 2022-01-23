@@ -15,7 +15,7 @@ class BannersController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Banners';
+    protected $title = 'Banners管理';
 
     /**
      * Make a grid builder.
@@ -27,14 +27,16 @@ class BannersController extends AdminController
         $grid = new Grid(new Banners());
 
         $grid->column('id', __('Id'));
-        $grid->column('type', __('Type'))->display(function ($type){
+        $grid->column('type', '类型')->display(function ($type){
             return Banners::getTypeLabel()[$type];
         });
-        $grid->column('file', __('File'));
-        $grid->column('sort', __('Sort'));
-        $grid->column('show', __('Show'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        //$grid->column('file', __('File'));
+        $grid->column('sort', '排序');
+        $grid->column('show','是否展示')->display(function($value){
+            return $value ? '是':'否';
+        });
+        $grid->column('created_at', '创建时间');
+        $grid->column('updated_at', '更新时间');
 
         return $grid;
     }
@@ -70,10 +72,10 @@ class BannersController extends AdminController
         $form = new Form(new Banners());
 
 //        $form->text('type', __('Type'));
-        $form->select('type', __('Type'))->options(Banners::getTypeLabel());
-        $form->file('file', __('File'));
-        $form->number('sort', __('Sort'));
-        $form->switch('show', __('Show'))->default(1);
+        $form->select('type', '类型')->options(Banners::getTypeLabel());
+        $form->image('file', 'banner图片')->rules('required');
+        $form->number('sort', '排序');
+        $form->switch('show','是否显示')->default(1);
 
         return $form;
     }

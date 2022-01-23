@@ -15,7 +15,7 @@ class CasesController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Cases';
+    protected $title = '案例';
 
     /**
      * Make a grid builder.
@@ -27,12 +27,15 @@ class CasesController extends AdminController
         $grid = new Grid(new Cases());
 
         $grid->column('id', __('Id'));
-        $grid->column('covers', __('Covers'));
-        $grid->column('title', __('Title'));
-        $grid->column('content', __('Content'));
-        $grid->column('show', __('Show'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        //$grid->column('covers', '封面图片');
+        $grid->column('title', '标题');
+        //$grid->column('content', '内容');
+
+        $grid->column('show','是否展示')->display(function($value){
+            return $value ? '是':'否';
+        });
+        $grid->column('created_at', '创建时间');
+        $grid->column('updated_at', '更新时间');
 
         return $grid;
     }
@@ -66,11 +69,12 @@ class CasesController extends AdminController
     protected function form()
     {
         $form = new Form(new Cases());
+        $form->text('title', '标题')->rules('required');
+        $form->textarea('desc', '描述');
+        $form->image('covers', '封面图片')->rules('required');
 
-        $form->text('covers', __('Covers'));
-        $form->text('title', __('Title'));
-        $form->editor('content', __('Content'))->rules('required');
-        $form->switch('show', __('Show'))->default(1);
+        $form->editor('content', '内容')->rules('required');
+        $form->switch('show','是否显示')->default(1);
 
         return $form;
     }
