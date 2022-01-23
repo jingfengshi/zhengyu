@@ -14,7 +14,7 @@
     <div class="w-full min-h-[15rem]" style="background-color: rgba(242, 242, 242, 1);">
         <div style="width: 80%;margin: 0 auto;height: 10rem;">
             <div style="padding-left:8rem;padding-top:5rem">
-                <div style=";\font-weight: 700;font-size: 2.5rem;color: #555555">
+                <div style="font-weight: 700;font-size: 2.5rem;color: #555555">
                     {{$news->title}}
                 </div>
                 <div style="font-weight: 200;font-size: 1.2rem;margin-top: 1rem">
@@ -25,7 +25,7 @@
         </div>
 
     </div>
-    <div style="width: 70%;margin: 0 auto;height: 10rem;margin-top: 2rem;min-height: 20rem;">
+    <div style="width: 70%;margin: 0 auto;margin-top: 2rem;min-height: 20rem;">
         <div>
                 {!!$news->content!!}
 
