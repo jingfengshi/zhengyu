@@ -15,7 +15,7 @@ class ServiceController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Service';
+    protected $title = '服务品牌';
 
     /**
      * Make a grid builder.
@@ -27,12 +27,14 @@ class ServiceController extends AdminController
         $grid = new Grid(new Service());
 
         $grid->column('id', __('Id'));
-        $grid->column('file', __('File'));
-        $grid->column('desc', __('Desc'));
-        $grid->column('sort', __('Sort'));
-        $grid->column('show', __('Show'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+       // $grid->column('file', __('File'));
+        $grid->column('desc', '品牌名称');
+        $grid->column('sort', '排序');
+        $grid->column('show','是否展示')->display(function($value){
+            return $value ? '是':'否';
+        });
+        $grid->column('created_at', '创建时间');
+        $grid->column('updated_at', '更新时间');
 
         return $grid;
     }
@@ -66,11 +68,10 @@ class ServiceController extends AdminController
     protected function form()
     {
         $form = new Form(new Service());
-
-        $form->file('file', __('File'));
-        $form->text('desc', __('Desc'));
-        $form->number('sort', __('Sort'));
-        $form->switch('show', __('Show'))->default(1);
+        $form->text('desc', '品牌名');
+        $form->image('file', '品牌图片')->rules('required');
+        $form->number('sort', '排序');
+        $form->switch('show', '显示')->default(1);
 
         return $form;
     }

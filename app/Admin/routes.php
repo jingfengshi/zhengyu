@@ -17,12 +17,18 @@ Route::group([
     //$router->resource('configs', ConfigsController::class);
     $router->get('configs', 'ConfigsController@index');
     $router->post('configs', 'ConfigsController@save');
+
+    //证书
     $router->resource('cert', CertController::class);
+    //品牌
     $router->resource('service', ServiceController::class);
+    //案例
     $router->resource('cases', CasesController::class);
+    //banners
     $router->resource('banners', BannersController::class);
 
 
+    //产品
     $router->get('products', 'ProductsController@index');
     $router->get('products/create', 'ProductsController@create');
     $router->post('products', 'ProductsController@store');
@@ -30,7 +36,7 @@ Route::group([
     $router->put('products/{id}', 'ProductsController@update');
 
 
-
+    //分类
     $router->get('categories', 'CategoriesController@index');
     $router->get('categories/create', 'CategoriesController@create');
     $router->get('categories/{id}/edit', 'CategoriesController@edit');
