@@ -19,6 +19,8 @@ class NewsController extends Controller {
 
     public function show(Request  $request,News $news)
     {
-        return view('newsInfo',['news'=>$news]);
+        $prevId=News::where('id','<',$news->id)->where('on_shelf',1)->max('id');
+        $nextId=News::where('id','>',$news->id)->where('on_shelf',1)->max('id');
+        return view('newsInfo',['news'=>$news,'prevId'=>$prevId??$news->id,'nextId'=>$nextId??$news->id]);
     }
 }

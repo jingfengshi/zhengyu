@@ -33,10 +33,10 @@
         <div class="flex justify-end" >
             <div class="flex mr-[1rem]">
                 <img class="rotate-180" src="{{URL::asset('images/案例详情/u4512.svg')}}">
-                <a href="" style="font-size:1.4rem;font-weight: 200;">上一篇</a>
+                <a href="{{route('news.show',[$prevId])}}" style="font-size:1.4rem;font-weight: 200;">上一篇</a>
             </div>
             <div class="flex">
-                <a href="" style="font-size:1.4rem;font-weight: 200;">下一篇</a>
+                <a href="{{route('news.show',[$nextId])}}" style="font-size:1.4rem;font-weight: 200;">下一篇</a>
                 <img src="{{URL::asset('images/案例详情/u4512.svg')}}">
             </div>
         </div>
