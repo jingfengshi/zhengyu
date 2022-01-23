@@ -10,7 +10,7 @@
     </div>
 
     <div class="service-banner">
-        <img src="{{URL::asset('images/服务的品牌/u4314.jpg')}}">
+        <img src="{{URL::asset('images/static/about-banner.png')}}">
     </div>
 
     <div>
