@@ -36,7 +36,7 @@
 
 .cert-img-item{
     width: 22rem;
-    height: 22rem;
+    height: 26rem;
     overflow: hidden;
     margin: 0.25rem;
     cursor: pointer;
@@ -55,4 +55,5 @@
     color: #333333;
     background-color: rgba(242, 242, 242, 1);
     text-align: center;
+    margin-top: 2rem;
 }
