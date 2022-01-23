@@ -11,7 +11,7 @@ class NewsController extends Controller {
 
     public function index(Request  $request)
     {
-        $newsLists =News::where('on_shelf',1)->orderBy('created_at','desc')->get();
+        $newsLists =News::where('on_shelf',1)->orderBy('id','asc')->get();
 
         return view('newsList',['newsList'=>$newsLists]);
     }
