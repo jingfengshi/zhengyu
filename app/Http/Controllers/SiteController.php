@@ -48,4 +48,8 @@ class SiteController extends Controller
     public function Cert(){
         return view('cert');
     }
+
+    public function Service(){
+        return view('service');
+    }
 }

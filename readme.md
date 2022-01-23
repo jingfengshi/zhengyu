@@ -4,6 +4,7 @@
 
 #### 服务管理
 - 富文本管理
+- 附件上传
 
 #### 联系我们
 - 地址
@@ -70,7 +71,7 @@
 
 **只需提供公用header和footer的**
 5.OK 产品页（dragon）/product-info
-6.服务页
+6.OK 服务页 （dragon）/service
 7.OK 案例列表页（jasper）路由：/cases
 8.OK 案例详情页（dragon）路由：/case
 9.OK 服务品牌页（jasper）路由：/brand

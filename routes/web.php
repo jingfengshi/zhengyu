@@ -31,3 +31,5 @@ Route::get('/case', 'SiteController@case');
 Route::get('/connect', 'SiteController@connect');
 // 证书
 Route::get('/cert', 'SiteController@cert');
+// 服务
+Route::get('/service', 'SiteController@service');
