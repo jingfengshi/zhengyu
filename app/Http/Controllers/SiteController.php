@@ -42,7 +42,7 @@ class SiteController extends Controller
     }
 
     public function Connect(){
-        return view('connect');
+        return view('connect',['ak'=>'1LTwc6gzPPHzhQ1eGdxFN26LsFR0ocDB']);
     }
 
     public function Cert(){
@@ -51,5 +51,9 @@ class SiteController extends Controller
 
     public function Service(){
         return view('service');
+    }
+
+    public function About(){
+        return view('about');
     }
 }

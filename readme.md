@@ -75,9 +75,9 @@
 7.OK 案例列表页（jasper）路由：/cases
 8.OK 案例详情页（dragon）路由：/case
 9.OK 服务品牌页（jasper）路由：/brand
-10.关于我们页
+10.OK 关于我们页（dragon）路由：/about
 11.新闻列表页
 12.新闻详情
 13.OK 证书页（dragon）路由：/cert
 14.OK 联系我们页(dragon) 路由：/connect
-    未引入动态地图插件，需要甲方提供手机号注册百度地图用户
+    需要甲方自行注册百度地图开发者获取秘钥启用百度地图API

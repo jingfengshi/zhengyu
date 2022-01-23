@@ -13,7 +13,7 @@
     </div>
 
     <div class="connect-banner">
-        <img src="{{URL::asset('images/服务的品牌/u4314.jpg')}}">
+        <img src="{{URL::asset('images/static/about-banner.png')}}">
     </div>
 
     <div>
@@ -24,14 +24,17 @@
                 -86-21-37529135<br>E -ZY37529125@163.com
             </div>
         </div>
-        {{--  地图API需要手机号注册账号获取秘钥才能使用  --}}
-        <div class="connect-addr-box"></div>
+        <div class="connect-addr-box" id="container"></div>
     </div>
 
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak={{$ak}}"></script>
     <script>
-        $(document).on('click', '.connect-addr-box', function () {
-            window.open('https://map.baidu.com/search/%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%98%89%E5%AE%9A%E5%8C%BA%E6%B1%87%E8%B4%A4%E8%B7%AF758%E5%8F%B73%E5%8F%B7%E6%A5%BC3%E5%B1%82/@13488876.125,3661721,19z?querytype=s&da_src=shareurl&wd=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%98%89%E5%AE%9A%E5%8C%BA%E6%B1%87%E8%B4%A4%E8%B7%AF758%E5%8F%B73%E5%8F%B7%E6%A5%BC3%E5%B1%82&c=289&src=0&pn=0&sug=0&l=19&b=(13488498.125,3661527.25;13489254.125,3661914.75)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2', '_blank');
-        })
+        var map = new BMapGL.Map("container");
+        var point = new BMapGL.Point(121.171762, 31.394696);
+        var marker = new BMapGL.Marker(point);
+        map.centerAndZoom(point, 18);
+        map.enableScrollWheelZoom(true);
+        map.addOverlay(marker);
     </script>
 
 @endsection

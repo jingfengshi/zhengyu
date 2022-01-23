@@ -54,7 +54,8 @@
 
 <footer class="text-white"
         style="width: 100%;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
-    <div class="to-top" style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
+    <div class="to-top" id="to-top"
+         style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
         <div class="to-top-icon"
              style='background: url("images/static/to_top.svg");background-size: 100% 100%;background-repeat: no-repeat;height: 1rem;width: 1.8rem;margin: 0 auto;'></div>
         <div class="to-top-text" style="font-size:0.8rem;color: #303030;margin-top: 0.3rem;">回到顶部</div>
@@ -199,6 +200,16 @@
         </div>
     </div>
 </footer>
+
+<script>
+    $("#to-top").click(function () {
+        $('body,html').animate({
+                scrollTop: 0
+            },
+            500);
+        return false;
+    });
+</script>
 
 </body>
 </html>
