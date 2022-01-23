@@ -6,7 +6,7 @@
     <title>@yield('title','正域')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/global.css')}}">
 </head>
 <body>
 

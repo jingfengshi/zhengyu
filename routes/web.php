@@ -33,3 +33,9 @@ Route::get('/connect', 'SiteController@connect');
 Route::get('/cert', 'SiteController@cert');
 // 服务
 Route::get('/service', 'SiteController@service');
+
+
+
+// 服务
+Route::get('/news', 'NewsController@index');
+Route::get('/news/{news}', 'NewsController@show')->name('news.show');
