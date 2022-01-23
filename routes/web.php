@@ -33,3 +33,5 @@ Route::get('/connect', 'SiteController@connect');
 Route::get('/cert', 'SiteController@cert');
 // 服务
 Route::get('/service', 'SiteController@service');
+// 关于我们
+Route::get('/about', 'SiteController@about');

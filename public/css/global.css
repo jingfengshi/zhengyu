@@ -23,6 +23,14 @@
     white-space: nowrap;
 }
 
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
 .inline-block{
     display: inline-block;
 }
