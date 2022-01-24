@@ -64,20 +64,20 @@
 ### 页面 已完成 数据待对接
 
 **需要前端协助的**
-1.OK 首页 （dragon）路由：/
+1.对接完成 - OK 首页 （dragon）路由：/
 2.OK 产品首页（ding）路由：/product
 3.OK 产品列表页（dragon）路由：/product-list
 4.OK 产品页（dragon）路由：/products
 
 **只需提供公用header和footer的**
-5.OK 产品页（dragon）/product-info
+5.对接完成 - OK 产品详情页（dragon）/product-info
 6.OK 服务页 （dragon）/service
 7.OK 案例列表页（jasper）路由：/cases
 8.OK 案例详情页（dragon）路由：/case
 9.OK 服务品牌页（jasper）路由：/brand
 10.OK 关于我们页（dragon）路由：/about
-11.OK 新闻列表页（jasper）路由：/news
-12.OK 新闻详情（jasper）路由：/news/{id}
+11.对接完成 - OK 新闻列表页（jasper）路由：/news
+12.对接完成 - OK 新闻详情（jasper）路由：/news/{id}
 13.OK 证书页（dragon）路由：/cert
 14.OK 联系我们页(dragon) 路由：/connect
     需要甲方自行注册百度地图开发者获取秘钥启用百度地图API
