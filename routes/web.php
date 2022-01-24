@@ -12,15 +12,17 @@
 */
 
 // 首页
-Route::get('/', 'SiteController@index');
+Route::get('/', 'IndexController@index');
+
+
 // 产品首页
 Route::get('/product', 'SiteController@product');
 // 产品列表页
 Route::get('/product-list', 'SiteController@productList');
 // 产品页
 Route::get('/products', 'SiteController@products');
-// 产品页
-Route::get('/product-info', 'SiteController@productInfo');
+// 产品详情页
+Route::get('/product-info/{id}', 'ProductController@info');
 // 服务品牌
 Route::get('/brand', 'SiteController@brand');
 // 案例列表

@@ -57,7 +57,7 @@
     <div class="to-top" id="to-top"
          style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
         <div class="to-top-icon"
-             style='background: url("images/static/to_top.svg");background-size: 100% 100%;background-repeat: no-repeat;height: 1rem;width: 1.8rem;margin: 0 auto;'></div>
+             style='background: url("{{URL::asset('images/static/to_top.svg')}}");background-size: 100% 100%;background-repeat: no-repeat;height: 1rem;width: 1.8rem;margin: 0 auto;'></div>
         <div class="to-top-text" style="font-size:0.8rem;color: #303030;margin-top: 0.3rem;">回到顶部</div>
     </div>
     <div style="width: 100%">
@@ -86,12 +86,12 @@
                                 <div class="flex justify-around" style="width:140px">
                                     <img style="width: 30px;height: 30px;"
                                          src="{{URL::asset('/images/首页/u30.png')}}" alt="">
-                                    <a href="" style="width: 80px;height: 22px;"> 客户故事</a>
+                                    <a href="/cases" style="width: 80px;height: 22px;"> 客户故事</a>
                                 </div>
                                 <div class="ml-3 flex justify-around" style="width:140px">
                                     <img style="width: 30px;height: 30px;"
                                          src="{{URL::asset('/images/首页/u31.png')}}" alt="">
-                                    <a href="" style="width: 80px;height: 22px;">新闻活动</a>
+                                    <a href="/news" style="width: 80px;height: 22px;">新闻活动</a>
                                 </div>
                             </div>
                         </div>

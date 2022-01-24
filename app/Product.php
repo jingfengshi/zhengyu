@@ -3,11 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Product extends Model
 {
     protected $fillable = [
-        'title', 'description', 'image', 'on_sale',
+        'title','desc', 'description', 'image', 'on_sale',
         'sub_image', 'is_new', 'is_authentication', 'is_recommend',
         'apply_area','sharp','file','video','install'
     ];
@@ -22,8 +23,6 @@ class Product extends Model
     {
         return json_decode($value,true);
     }
-
-
 
     public function setSubImageAttribute($value)
     {
@@ -42,5 +41,12 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public static function findOne($id)
+    {
+        if (!$model = self::find($id)){
+            throw new NotFoundHttpException('Target Data Not Found');
+        }
 
+       return $model;
+    }
 }

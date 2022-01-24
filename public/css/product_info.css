@@ -14,15 +14,22 @@
 .product-info-box {
     width: 93%;
     margin: 3rem auto;
-    border: 1px solid black;
-    height: 50rem;
+    min-height: 10rem;
 }
 
 .product-info-file-box {
     width: 90%;
     margin: 3rem auto;
-    border: 1px solid black;
+    font-size: 1.4rem;
     height: 5rem;
+    line-height: 5rem;
+    padding-left: 4rem;
+}
+
+.product-info-file-box a{
+    font-size: 1.8rem;
+    line-height: 5rem;
+    color: #3939ff;
 }
 
 .more-product-box {

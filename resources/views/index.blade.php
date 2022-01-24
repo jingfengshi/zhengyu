@@ -8,8 +8,8 @@
 
     {{--  banner  --}}
     <div class="banner-box">
-        <div class="item bg-green active">
-            <img src="images/static/banner-1.png">
+        <div class="item active">
+            <img src="{{URL::asset('uploads').'/'.$banner_left->file}}">
             <div class="mask"></div>
             <div class="text">
                 <div class="font-color-white font-size-title">让安全提高生产力</div>
@@ -34,8 +34,8 @@
                 </div>
             </div>
         </div>
-        <div class="item bg-black ml-5">
-            <img src="images/static/banner-2.png">
+        <div class="item ml-5">
+            <img src="{{URL::asset('uploads').'/'.$banner_right->file}}">
             <div class="mask"></div>
             <div class="text">
                 <div class="font-color-white font-size-title">智慧工业计量</div>
@@ -71,7 +71,9 @@
             <br>
             应对安全的极限挑战，成为全球客户信赖和社会信赖的公司
         </div>
-        <div class="more font-color-white">了解更多</div>
+        <a href="/about">
+            <div class="more font-color-white">了解更多</div>
+        </a>
     </div>
 
     <div class="title">创新产品</div>
@@ -79,54 +81,18 @@
     {{--  product  --}}
     <div class="product-box swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号1</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
+            @foreach($products as $product)
+                <div class="swiper-slide item">
+                    <div class="item-top"><a href="/product-info/{{$product->id}}"><img
+                                src="/uploads/{{$product->image}}" alt=""></a></div>
+                    <div class="item-bottom">
+                        <div class="item-bottom-title"><a href="/product-info/{{$product->id}}">{{$product->title}}</a>
+                        </div>
+                        <div class="item-bottom-desc"><a href="/product-info/{{$product->id}}">{{$product->desc}}</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号2</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
-                </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号3</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
-                </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号4</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
-                </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号5</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
-                </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="item-top"><a href=""><img src="images/static/banner-3.jpg" alt=""></a></div>
-                <div class="item-bottom">
-                    <div class="item-bottom-title"><a href="">视觉信号6</a></div>
-                    <div class="item-bottom-desc"><a
-                            href="">设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号设别信号</a></div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="product-arrow-box">
@@ -140,14 +106,18 @@
                  style='background: url("images/static/banner-3.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
                 <div class="title left-box-about-title font-color-white">关于我们</div>
                 <div class="left-box-about-desc">上海正域自动化设备有限公司于2010年6月成立，2010年8月正式投产，专注于研究声音与光产品的研发与生产……</div>
-                <div class="more left-box-about-more font-color-white">了解更多</div>
+                <a href="/about">
+                    <div class="more left-box-about-more font-color-white">了解更多</div>
+                </a>
             </div>
             <div class="left-box-about-mask"></div>
             <div class="left-box-invite"
                  style='background: url("images/static/invite.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
                 <div class="title left-box-invite-title font-color-white">招贤纳士</div>
                 <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道</div>
-                <div class="more left-box-invite-more font-color-white">了解更多</div>
+                <a href="/connect">
+                    <div class="more left-box-invite-more font-color-white">了解更多</div>
+                </a>
             </div>
             <div class="left-box-invite-mask"></div>
         </div>
@@ -158,44 +128,28 @@
             </div>
             <div class="right-box-top-img-mask"></div>
             <div class="news">
-                <div class="news-item">
-                    <div class="news-item-left">
-                        <a href=""><img src="images/static/newsitem.jpg" alt=""></a>
-                    </div>
-                    <div class="news-item-right">
-                        <div class="news-item-right-title text-overflow">2021年南宁集装箱码头自动化推进与技术交流会</div>
-                        <div class="news-item-right-desc">
-                            信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品
+                @foreach($news as $news_item)
+                    <div class="news-item">
+                        <div class="news-item-left">
+                            <a href="/news/{{$news_item->id}}"><img src="uploads/{{$news_item->cover}}" alt=""></a>
                         </div>
-                        <div class="news-item-right-more"> > 更多信息</div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-item-left">
-                        <img src="images/static/newsitem.jpg" alt="">
-                    </div>
-                    <div class="news-item-right">
-                        <div class="news-item-right-title text-overflow">2021年南宁集装箱码头自动化推进与技术交流会</div>
-                        <div class="news-item-right-desc">
-                            信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品
+                        <div class="news-item-right">
+                            <a href="/news/{{$news_item->id}}">
+                                <div class="news-item-right-title text-overflow">{{$news_item->title}}</div>
+                            </a>
+                            <a href="/news/{{$news_item->id}}">
+                                <div class="news-item-right-desc">{{$news_item->desc}}</div>
+                            </a>
+                            <a href="/news/{{$news_item->id}}">
+                                <div class="news-item-right-more"> > 更多信息</div>
+                            </a>
                         </div>
-                        <div class="news-item-right-more"> > 更多信息</div>
                     </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-item-left">
-                        <img src="images/static/newsitem.jpg" alt="">
-                    </div>
-                    <div class="news-item-right">
-                        <div class="news-item-right-title text-overflow">2021年南宁集装箱码头自动化推进与技术交流会</div>
-                        <div class="news-item-right-desc">
-                            信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品信号设备产品
-                        </div>
-                        <div class="news-item-right-more"> > 更多信息</div>
-                    </div>
-                </div>
+                @endforeach
             </div>
-            <div class="more right-box-more font-color-white">了解更多</div>
+            <a href="/news">
+                <div class="more right-box-more font-color-white">了解更多</div>
+            </a>
         </div>
     </div>
 
@@ -204,44 +158,49 @@
     {{--  project  --}}
     <div class="project swiper-container-project">
         <div class="swiper-wrapper">
-            <div class="project-item swiper-slide"
-                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                <div class="project-item-content-box">
-                    <div class="project-item-content-box-title font-color-white">中铁集团</div>
-                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>
+
+            @foreach($cases as $case)
+                <div class="project-item swiper-slide"
+                     style='background: url("{{URL::asset('uploads').'/'.$case->covers}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                    <div class="project-item-content-box">
+                        <div class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
+                        <div class="project-item-content-box-desc font-color-white text-overflow">{{$case->desc}}</div>
+                    </div>
+                    <div class="project-item-content-box-mask"></div>
                 </div>
-                <div class="project-item-content-box-mask"></div>
-            </div>
-            <div class="project-item swiper-slide"
-                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                <div class="project-item-content-box">
-                    <div class="project-item-content-box-title font-color-white">中铁集团</div>
-                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>
-                </div>
-                <div class="project-item-content-box-mask"></div>
-            </div>
-            <div class="project-item swiper-slide"
-                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                <div class="project-item-content-box">
-                    <div class="project-item-content-box-title font-color-white">中铁集团</div>
-                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>
-                </div>
-                <div class="project-item-content-box-mask"></div>
-            </div>
-            <div class="project-item swiper-slide"
-                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                <div class="project-item-content-box">
-                    <div class="project-item-content-box-title font-color-white">中铁集团</div>
-                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>
-                </div>
-                <div class="project-item-content-box-mask"></div>
-            </div>
+            @endforeach
+
+            {{--            --}}
+            {{--            <div class="project-item swiper-slide"--}}
+            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
+            {{--                <div class="project-item-content-box">--}}
+            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
+            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
+            {{--                </div>--}}
+            {{--                <div class="project-item-content-box-mask"></div>--}}
+            {{--            </div>--}}
+            {{--            <div class="project-item swiper-slide"--}}
+            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
+            {{--                <div class="project-item-content-box">--}}
+            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
+            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
+            {{--                </div>--}}
+            {{--                <div class="project-item-content-box-mask"></div>--}}
+            {{--            </div>--}}
+            {{--            <div class="project-item swiper-slide"--}}
+            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
+            {{--                <div class="project-item-content-box">--}}
+            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
+            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
+            {{--                </div>--}}
+            {{--                <div class="project-item-content-box-mask"></div>--}}
+            {{--            </div>--}}
         </div>
     </div>
     <div class="project-arrow-box">
         <div class="pagination-project"></div>
-{{--        <div class="left-arrow"><img src="images/static/left.svg" alt=""></div>--}}
-{{--        <div class="right-arrow"><img src="images/static/left.svg" alt=""></div>--}}
+        {{--        <div class="left-arrow"><img src="images/static/left.svg" alt=""></div>--}}
+        {{--        <div class="right-arrow"><img src="images/static/left.svg" alt=""></div>--}}
     </div>
 
     <script type="text/javascript">

@@ -75,6 +75,10 @@ class ProductsController extends AdminController
         // 创建一个选择图片的框
         $form->image('image', '封面图片')->rules('required|image');
         $form->multipleImage("sub_image","产品图片");
+
+        // 添加简短描述
+        $form->textarea("desc","简短描述");
+
         // 创建一个富文本编辑器
         $form->editor('description', '优点和特点')->rules('required');
 
