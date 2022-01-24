@@ -97,6 +97,14 @@ class AdminTablesSeeder extends Seeder
                     "permission" => NULL
                 ],
                 [
+                    "parent_id" => 9,
+                    "order" => 0,
+                    "title" => "Banner管理",
+                    "icon" => "fa-photo",
+                    "uri" => "banners",
+                    "permission" => NULL
+                ],
+                [
                     "parent_id" => 0,
                     "order" => 0,
                     "title" => "产品管理",
@@ -119,7 +127,23 @@ class AdminTablesSeeder extends Seeder
                     "icon" => "fa-anchor",
                     "uri" => "/products",
                     "permission" => NULL
-                ]
+                ],
+                [
+                    "parent_id" => 0,
+                    "order" => 0,
+                    "title" => "案例",
+                    "icon" => "fa-briefcase",
+                    "uri" => NULL,
+                    "permission" => NULL
+                ],
+                [
+                    "parent_id" => 15,
+                    "order" => 0,
+                    "title" => "案例列表",
+                    "icon" => "fa-briefcase",
+                    "uri" => "cases",
+                    "permission" => NULL
+                ],
             ]
         );
 

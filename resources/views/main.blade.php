@@ -29,7 +29,7 @@
     font-style: normal;
     font-size: 16px;
     color: #7F7F7F;" class="flex">
-            <img style="width:288px;height:25px" src="{{URL::asset('/images/首页/u125.png')}}" alt="">
+            <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 5rem;margin-top: 8px">
                 <div>
                     <a href="">保护人们在危险环境安全工作</a>
