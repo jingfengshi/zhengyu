@@ -15,4 +15,14 @@ class CasesController extends Controller
 
         return view('cases', compact('banner', 'cases'));
     }
+
+    public function info($id)
+    {
+        $case = Cases::findOne($id);
+
+        $prev = Cases::where('id', '<', $case->id)->where('show', 1)->max('id');
+        $next = Cases::where('id', '>', $case->id)->where('show', 1)->min('id');
+
+        return view('case', compact('case', 'prev', 'next'));
+    }
 }

@@ -75,8 +75,8 @@
 * ~~5.对接完成 - OK 产品详情页（dragon）/product-info~~
 * 6.OK 服务页 （dragon）/service
 * ~~7.对接完成 OK 案例列表页（dragon）路由：/cases~~
-* ~~8.对接中 OK 案例详情页（dragon）路由：/cases/{id}~~
-* 9.OK 服务品牌页（jasper）路由：/brand
+* ~~8.对接完成 OK 案例详情页（dragon）路由：/cases/{id}~~
+* ~~9.对接中 OK 服务品牌页（dragon）路由：/brand~~
 * 10.OK 关于我们页（dragon）路由：/about
 * ~~11.对接完成 - OK 新闻列表页（jasper）路由：/news~~
 * ~~12.对接完成 - OK 新闻详情（jasper）路由：/news/{id}~~

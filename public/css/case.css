@@ -1,25 +1,24 @@
-.case-top-nav{
+.case-top-nav {
     padding: 2rem 4rem;
 }
 
-.case-top-nav a{
+.case-top-nav a {
     color: #484848;
     margin-right: 1.5rem;
 }
 
-.case-top{
+.case-top {
     height: 10.5rem;
     background-color: rgba(242, 242, 242, 1);
 }
 
-.case-content{
+.case-content {
     width: 90%;
     margin: 4rem auto;
-    border: 1px solid black;
-    height: 50rem;
+    min-height: 50rem;
 }
 
-.case-top-title{
+.case-top-title {
     font-size: 2.4rem;
     color: #555555;
     padding-left: 5rem;
@@ -27,8 +26,35 @@
     font-weight: 600;
 }
 
-.case-top-date{
+.case-top-date {
     font-size: 1.3rem;
     padding-left: 5rem;
     font-weight: 300;
+}
+
+.case-btn-box {
+    width: 90%;
+    padding-right: 1rem;
+    margin: 0 auto 10rem auto;
+    text-align: right;
+}
+
+.case-btn-prev-box a, .case-btn-next-box a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-left: 0.5rem;
+}
+
+.case-btn-next-box {
+    margin-left: 0.5rem;
+}
+
+.case-btn-prev-box img {
+    transform: rotate(180deg);
+    margin-top: 0.3rem;
+}
+
+.case-btn-next-box img {
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
 }

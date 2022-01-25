@@ -28,7 +28,7 @@ Route::get('/brand', 'SiteController@brand');
 // 案例列表
 Route::get('/cases', 'CasesController@index');
 // 案例详情
-Route::get('/case', 'SiteController@case');
+Route::get('/cases/{id}', 'CasesController@info');
 // 联系我们
 Route::get('/connect', 'SiteController@connect');
 // 证书

@@ -14,21 +14,8 @@ class SiteController extends Controller
         return view('products');
     }
 
-    public function ProductInfo()
-    {
-        return view('product_info');
-    }
-
     public function Brand(){
         return view('brand');
-    }
-
-    public function Cases(){
-        return view('cases');
-    }
-
-    public function Case(){
-        return view('case');
     }
 
     public function Connect(){
