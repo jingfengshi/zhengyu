@@ -2,18 +2,18 @@
 
 @section("content")
 
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/about.css')}}">
 
     <div class="about-top-title">
-        <a href="">关于正域</a>
-        <a href="">新闻</a>
-        <a href="">企业荣誉</a>
-        <a href="">产品认证</a>
-        <a href="">联系我们</a>
+        <a href="/about">关于正域</a>
+        <a href="/news">新闻</a>
+        <a href="/cases">企业荣誉</a>
+        <a href="/cert">产品认证</a>
+        <a href="/connect">联系我们</a>
     </div>
 
     <div class="about-banner">
-        <img src="{{URL::asset('images/static/about-banner.png')}}">
+        <img src="{{URL::asset('uploads').'/'.$banner->file}}">
         <div class="about-banner-title-box">
             <div class="about-banner-title font-color-white">在希望和可能之间</div>
             <div class="about-banner-title font-color-white">有一座桥梁</div>
@@ -26,13 +26,10 @@
     <div class="about-box">
         <div class="about-box-title">正域自动化简介——我们是谁以及我们做什么</div>
         <div class="about-box-desc">
-            在各种工作和行业领域，包括危险区域、工业和过程控制、消防、安全、海洋、大规模疏散和运输，危险无处不在。已有的安全设施长期存在使用的潜在风险，维修难、运维成本高等问题，作为解决这些挑战的结果，正域ZHENGYU自动化应运而生。
-        </div>
-        <div class="about-box-desc">
-            正域ZHENGYU设计开发和生产听觉和视觉信号产品，包括工业和危险区域发声器、信标和组合装置，是信令、照明、系统和计量的专业服务商。正域ZHENGYU一直专注于解决工业和危险环境下提高生产力的各种挑战，提供满足用户预期和要求的可持续产品和解决方案，帮助提高客户的生产力和竞争力。
+            {!! $content->value !!}
         </div>
         <div class="about-box-img"></div>
-        <div class="about-box-btn font-color-white">了解更多产品</div>
+        <a href="/product"><div class="about-box-btn font-color-white">了解更多产品</div></a>
     </div>
 
     <div class="about-img-box">
@@ -44,7 +41,6 @@
             <div class="about-img-box-desc-title-2 font-color-white">成为客户信赖和社会尊敬的公司。</div>
         </div>
     </div>
-
     <div class="about-img-box">
         <div class="about-img-box-img f-right"
              style='background: url("../images/static/about-deng.png");background-size: 100% 100%;background-repeat: no-repeat;'></div>
@@ -56,7 +52,6 @@
             </div>
         </div>
     </div>
-
     <div class="about-img-box">
         <div class="about-img-box-img f-left"
              style='background: url("../images/static/about-chuan.png");background-size: 100% 100%;background-repeat: no-repeat;'></div>
@@ -74,12 +69,12 @@
         <div class="more-msg-box-news f-left">
             <div class="more-msg-box-item-title">新闻活动</div>
             <div class="more-msg-box-item-desc">了解更多正域新闻活动</div>
-            <div class="more-msg-box-item-btn font-color-white">了解更多</div>
+            <a href="/news"><div class="more-msg-box-item-btn font-color-white">了解更多</div></a>
         </div>
         <div class="more-msg-box-story f-right">
             <div class="more-msg-box-item-title">客户的故事</div>
             <div class="more-msg-box-item-desc">了解更多正域客户故事</div>
-            <div class="more-msg-box-item-btn font-color-white">了解更多</div>
+            <a href="/cases"><div class="more-msg-box-item-btn font-color-white">了解更多</div></a>
         </div>
     </div>
 

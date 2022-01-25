@@ -14,10 +14,10 @@
      style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
     <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white px-4 py-3 flex justify-end">
         <div class="flex items-center space-x-8" style="margin-right: 15rem;margin-top: 7px">
-            <a href="">服务</a>
-            <a href="">伙伴</a>
-            <a href="">职业</a>
-            <a href="">关于我们</a>
+            <a href="/service">服务</a>
+            <a href="/brand">伙伴</a>
+            <a href="/connect">职业</a>
+            <a href="/about">关于我们</a>
         </div>
         <div class="flex" style="margin-right: 2rem">
             <a href="">中文</a>

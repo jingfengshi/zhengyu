@@ -2,14 +2,14 @@
 
 @section("content")
 
-    <link rel="stylesheet" type="text/css" href="css/connect.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/connect.css')}}">
 
     <div class="connect-top-title">
-        <a href="">关于正域</a>
-        <a href="">新闻</a>
-        <a href="">企业荣誉</a>
-        <a href="">产品认证</a>
-        <a href="">联系我们</a>
+        <a href="/about">关于正域</a>
+        <a href="/news">新闻</a>
+        <a href="/cases">企业荣誉</a>
+        <a href="/cert">产品认证</a>
+        <a href="/connect">联系我们</a>
     </div>
 
     <div class="connect-banner">
