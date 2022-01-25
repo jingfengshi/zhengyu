@@ -17,6 +17,7 @@ class Banners extends Model
     const TYPE_INDEX_RIGHT = 'index_right';
     const TYPE_NEWS = 'news';
     const TYPE_NEWS_INFO = 'news_info';
+    const TYPE_PRODUCT_LIST = 'product_list';
     const TYPE_PRODUCT = 'product';
     const TYPE_PRODUCT_INFO = 'product_info';
     const TYPE_SERVICE = 'service';
@@ -33,7 +34,8 @@ class Banners extends Model
             self::TYPE_INDEX_RIGHT => '首页右图(重复上传会覆盖之前的图片)',
             self::TYPE_NEWS => '新闻页',
             self::TYPE_NEWS_INFO => '新闻详情页',
-            self::TYPE_PRODUCT => '产品页',
+            self::TYPE_PRODUCT_LIST => '产品列表页',
+            self::TYPE_PRODUCT => '产品首页',
             self::TYPE_PRODUCT_INFO => '产品详情页',
             self::TYPE_SERVICE => '服务品牌页',
         ];

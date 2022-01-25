@@ -65,9 +65,9 @@
 
 **复杂的**
 
-* ~~1.对接完成 - OK 首页 （dragon）路由：/~~
+* ~~1.对接完成 OK 首页 （dragon）路由：/~~
 * 2.OK 产品首页（ding）路由：/product
-* 3.OK 产品列表页（dragon）路由：/product-list
+* ~~3.对接完成 OK 产品列表页（dragon）路由：/product-list/{cate_id}~~
 * 4.OK 产品页（dragon）路由：/products
 
 **简单的**
@@ -81,4 +81,4 @@
 * ~~11.对接完成 - OK 新闻列表页（jasper）路由：/news~~
 * ~~12.对接完成 - OK 新闻详情（jasper）路由：/news/{id}~~
 * 13.OK 证书页（dragon）路由：/cert
-* 14.OK 联系我们页(dragon) 路由：/connect （后续需要甲方自行注册百度地图开发者获取秘钥启用百度地图API）
+* 14.OK 联系我们页(dragon) 路由：/connect（后续需要甲方自行注册百度地图开发者获取秘钥启用百度地图API）

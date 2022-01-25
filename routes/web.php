@@ -18,7 +18,7 @@ Route::get('/', 'IndexController@index');
 // 产品首页
 Route::get('/product', 'SiteController@product');
 // 产品列表页
-Route::get('/product-list', 'SiteController@productList');
+Route::get('/product-list/{id}', 'ProductController@list');
 // 产品页
 Route::get('/products', 'SiteController@products');
 // 产品详情页
