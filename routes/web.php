@@ -26,7 +26,7 @@ Route::get('/product-info/{id}', 'ProductController@info');
 // 服务品牌
 Route::get('/brand', 'SiteController@brand');
 // 案例列表
-Route::get('/cases', 'SiteController@cases');
+Route::get('/cases', 'CasesController@index');
 // 案例详情
 Route::get('/case', 'SiteController@case');
 // 联系我们

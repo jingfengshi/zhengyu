@@ -12,43 +12,20 @@
     </div>
 
     <div class="cases-banner">
-        <img src="{{URL::asset('images/static/about-banner.png')}}">
+        <img src="{{URL::asset('uploads').'/'.$banner->file}}">
     </div>
 
     <div>
         <div class="cases-title">客户案例</div>
         <div class="cases-desc">客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！客户的认可才是对我们最大的肯定！</div>
         <div class="cases-list-box">
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
-            <div class="cases-item-box inline-block">
-                <img src="{{URL::asset('images/static/casesitem.png')}}" alt="">
-                <div class="cases-item-title text-overflow">浙江头门港港务有限公司</div>
-                <div class="cases-item-desc">浙江头门港港务有限公司隶属省属国有企业浙江省海港集团、宁波舟山港集团,成立于2013年1月,位于临海市境内。</div>
-            </div>
+            @foreach($cases as $case)
+                <div class="cases-item-box inline-block">
+                    <a href="/cases/{{$case->id}}"><img src="{{URL::asset('uploads').'/'.$case->covers}}" alt=""></a>
+                    <a href="/cases/{{$case->id}}"><div class="cases-item-title text-overflow">{{$case->title}}</div></a>
+                    <a href="/cases/{{$case->id}}"><div class="cases-item-desc">{{$case->desc}}</div></a>
+                </div>
+            @endforeach
         </div>
     </div>
 
