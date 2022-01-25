@@ -12,24 +12,17 @@
     </div>
 
     <div class="cert-banner">
-        <img src="{{URL::asset('images/static/about-banner.png')}}">
+        <img src="{{URL::asset('uploads').'/'.$banner->file}}">
     </div>
 
     <div>
         <div class="cert-title">企业荣誉</div>
         <div class="cert-title-2">我们将不懈努力，与您共同发展！</div>
         <div class="cert-img-box">
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
-            <div class="cert-img-item inline-block"><img src="{{URL::asset('images/static/cert.png')}}"><div class="sm-title">企业营业执照</div></div>
+            @foreach($certs as $cert)
+                <div class="cert-img-item inline-block"><img src="{{URL::asset('uploads/'.$cert->file)}}"><div class="sm-title">{{$cert->title}}</div></div>
+            @endforeach
+
         </div>
     </div>
 

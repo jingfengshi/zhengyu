@@ -18,6 +18,12 @@ Route::group([
     $router->get('configs', 'ConfigsController@index');
     $router->post('configs', 'ConfigsController@save');
 
+
+
+    $router->get('fuwu', 'FuwuController@index');
+    $router->post('fuwu', 'FuwuController@save');
+
+
     //证书
     $router->resource('cert', CertController::class);
     //品牌

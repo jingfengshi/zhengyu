@@ -32,14 +32,14 @@ Route::get('/cases/{id}', 'CasesController@info');
 // 联系我们
 Route::get('/connect', 'SiteController@connect');
 // 证书
-Route::get('/cert', 'SiteController@cert');
+Route::get('/cert', 'CertController@index');
 // 服务
-Route::get('/service', 'SiteController@service');
+Route::get('/service', 'FuwuController@index');
 // 关于我们
 Route::get('/about', 'SiteController@about');
 
 
 
-// 服务
+// 新闻
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{news}', 'NewsController@show')->name('news.show');

@@ -21,6 +21,7 @@ class Banners extends Model
     const TYPE_PRODUCT = 'product';
     const TYPE_PRODUCT_INFO = 'product_info';
     const TYPE_SERVICE = 'service';
+    const TYPE_FUWU = 'fuwu';
 
     public static function getTypeLabel()
     {
@@ -37,7 +38,8 @@ class Banners extends Model
             self::TYPE_PRODUCT_LIST => '产品列表页',
             self::TYPE_PRODUCT => '产品首页',
             self::TYPE_PRODUCT_INFO => '产品详情页',
-            self::TYPE_SERVICE => '服务品牌页',
+            self::TYPE_SERVICE => '品牌页',
+            self::TYPE_FUWU => '服务页',
         ];
     }
 
