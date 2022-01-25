@@ -27,8 +27,7 @@
                          style='background: url("{{URL::asset('uploads').'/'.$product->image}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                         <div class="more-product-box-list-box-item-mask"></div>
                         <a href="/product-info/{{$product->id}}">
-                            <div
-                                class="more-product-box-list-box-item-button font-color-white text-overflow">{{$product->title}}</div>
+                            <div class="more-product-box-list-box-item-button font-color-white text-overflow">{{$product->title}}</div>
                         </a>
                     </div>
                 @endforeach

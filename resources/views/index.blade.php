@@ -2,9 +2,9 @@
 
 @section("content")
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="swiper/css/idangerous.swiper.css">
-    <script src="swiper/js/idangerous.swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('swiper/css/idangerous.swiper.css')}}">
+    <script src="{{URL::asset('swiper/js/idangerous.swiper.min.js')}}"></script>
 
     {{--  banner  --}}
     <div class="banner-box">
@@ -83,12 +83,17 @@
         <div class="swiper-wrapper">
             @foreach($products as $product)
                 <div class="swiper-slide item">
-                    <div class="item-top"><a href="/product-info/{{$product->id}}"><img
-                                src="/uploads/{{$product->image}}" alt=""></a></div>
+                    <div class="item-top">
+                        <a href="/product-info/{{$product->id}}">
+                            <img src="{{URL::asset('/uploads').'/'.$product->image}}">
+                        </a>
+                    </div>
                     <div class="item-bottom">
-                        <div class="item-bottom-title"><a href="/product-info/{{$product->id}}">{{$product->title}}</a>
+                        <div class="item-bottom-title">
+                            <a href="/product-info/{{$product->id}}">{{$product->title}}</a>
                         </div>
-                        <div class="item-bottom-desc"><a href="/product-info/{{$product->id}}">{{$product->desc}}</a>
+                        <div class="item-bottom-desc">
+                            <a href="/product-info/{{$product->id}}">{{$product->desc}}</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +108,7 @@
     <div class="news-box">
         <div class="left-box">
             <div class="left-box-about"
-                 style='background: url("images/static/banner-3.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                 style='background: url("{{URL::asset('images/static/banner-3.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                 <div class="title left-box-about-title font-color-white">关于我们</div>
                 <div class="left-box-about-desc">上海正域自动化设备有限公司于2010年6月成立，2010年8月正式投产，专注于研究声音与光产品的研发与生产……</div>
                 <a href="/about">
@@ -112,7 +117,7 @@
             </div>
             <div class="left-box-about-mask"></div>
             <div class="left-box-invite"
-                 style='background: url("images/static/invite.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                 style='background: url("{{URL::asset('images/static/invite.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                 <div class="title left-box-invite-title font-color-white">招贤纳士</div>
                 <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道</div>
                 <a href="/connect">
@@ -123,7 +128,7 @@
         </div>
         <div class="right-box">
             <div class="right-box-top-img"
-                 style='background: url("images/static/news.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                 style='background: url("{{URL::asset('images/static/news.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                 <div class="title right-box-top-img-title">新闻活动</div>
             </div>
             <div class="right-box-top-img-mask"></div>
@@ -131,7 +136,7 @@
                 @foreach($news as $news_item)
                     <div class="news-item">
                         <div class="news-item-left">
-                            <a href="/news/{{$news_item->id}}"><img src="uploads/{{$news_item->cover}}" alt=""></a>
+                            <a href="/news/{{$news_item->id}}"><img src="{{URL::asset('uploads').'/'.$news_item->cover}}"></a>
                         </div>
                         <div class="news-item-right">
                             <a href="/news/{{$news_item->id}}">
@@ -158,49 +163,21 @@
     {{--  project  --}}
     <div class="project swiper-container-project">
         <div class="swiper-wrapper">
-
             @foreach($cases as $case)
                 <div class="project-item swiper-slide"
                      style='background: url("{{URL::asset('uploads').'/'.$case->covers}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                     <div class="project-item-content-box">
-                        <div class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
+                        <div
+                            class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
                         <div class="project-item-content-box-desc font-color-white text-overflow">{{$case->desc}}</div>
                     </div>
                     <div class="project-item-content-box-mask"></div>
                 </div>
             @endforeach
-
-            {{--            --}}
-            {{--            <div class="project-item swiper-slide"--}}
-            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
-            {{--                <div class="project-item-content-box">--}}
-            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
-            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
-            {{--                </div>--}}
-            {{--                <div class="project-item-content-box-mask"></div>--}}
-            {{--            </div>--}}
-            {{--            <div class="project-item swiper-slide"--}}
-            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
-            {{--                <div class="project-item-content-box">--}}
-            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
-            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
-            {{--                </div>--}}
-            {{--                <div class="project-item-content-box-mask"></div>--}}
-            {{--            </div>--}}
-            {{--            <div class="project-item swiper-slide"--}}
-            {{--                 style='background: url("images/static/project.jpg"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
-            {{--                <div class="project-item-content-box">--}}
-            {{--                    <div class="project-item-content-box-title font-color-white">中铁集团</div>--}}
-            {{--                    <div class="project-item-content-box-desc font-color-white">数字无线通讯系统</div>--}}
-            {{--                </div>--}}
-            {{--                <div class="project-item-content-box-mask"></div>--}}
-            {{--            </div>--}}
         </div>
     </div>
     <div class="project-arrow-box">
         <div class="pagination-project"></div>
-        {{--        <div class="left-arrow"><img src="images/static/left.svg" alt=""></div>--}}
-        {{--        <div class="right-arrow"><img src="images/static/left.svg" alt=""></div>--}}
     </div>
 
     <script type="text/javascript">
@@ -210,7 +187,6 @@
         })
 
         var _swiper = new Swiper('.swiper-container', {
-            // loop: true,
             autoplay: 3000,
             slidesPerView: 3,
             slidesPerGroup: 1,
@@ -219,14 +195,12 @@
         });
 
         var _swiper_project = new Swiper('.swiper-container-project', {
-            // loop: true,
             autoplay: 3000,
             slidesPerView: 3,
             slidesPerGroup: 1,
             pagination: '.pagination-project',
             paginationClickable: true,
         });
-
     </script>
 
 @endsection

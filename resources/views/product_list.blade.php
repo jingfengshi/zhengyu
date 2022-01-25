@@ -47,8 +47,11 @@
                         <div class="product-box-left-item-child @if(in_array($id,$cate['childs'])) show @endif">
                             @foreach($cates as $_cate)
                                 @if($_cate['parent_id'] == $cate['id'])
-                                    <div><a href="/product-list/{{$_cate['id']}}"
-                                            @if($id == $_cate['id']) class="active" @endif>{{$_cate['name']}}</a></div>
+                                    <div>
+                                        <a href="/product-list/{{$_cate['id']}}" @if($id == $_cate['id']) class="active" @endif>
+                                            {{$_cate['name']}}
+                                        </a>
+                                    </div>
                                 @endif
                             @endforeach
                         </div>
@@ -69,7 +72,9 @@
                             <div class="new-box font-color-white">NEW</div>
                         @endif
                     </div>
-                    <a href="/product-info/{{$product->id}}"><div class="product-item-title">{{$product->title}}</div></a>
+                    <a href="/product-info/{{$product->id}}">
+                        <div class="product-item-title">{{$product->title}}</div>
+                    </a>
                     <div class="product-item-color">颜色：</div>
                     <div class="product-item-power">功率：</div>
                 </div>

@@ -14,10 +14,6 @@ class SiteController extends Controller
         return view('products');
     }
 
-    public function Brand(){
-        return view('brand');
-    }
-
     public function Connect(){
         return view('connect',['ak'=>'1LTwc6gzPPHzhQ1eGdxFN26LsFR0ocDB']);
     }
