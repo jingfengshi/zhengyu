@@ -40,6 +40,10 @@ Route::get('/about', 'SiteController@about');
 
 
 
+//产品列表页
+Route::get('/product', 'ProductController@list');
+Route::get('/products/{product}', 'ProductController@show');
+
 // 新闻
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{news}', 'NewsController@show')->name('news.show');

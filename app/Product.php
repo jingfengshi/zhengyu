@@ -17,6 +17,7 @@ class Product extends Model
         'is_new' => 'boolean',
         'is_authentication' => 'boolean',
         'is_recommend' => 'boolean',
+        'install' => 'array',
     ];
 
     public function getSubImageAttribute($value)
@@ -38,7 +39,7 @@ class Product extends Model
 
     public function category()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category2::class);
     }
 
     public static function findOne($id)

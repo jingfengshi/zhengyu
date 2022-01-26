@@ -2,72 +2,49 @@
 
 @section("content")
 
-    <link rel="stylesheet" type="text/css" href="css/products.css">
+
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/products.css')}}">
 
     <div class="nav">首页 > 保护人们在危险环境安全工作 > 产品</div>
 
-    <div class="top-banner" style='background: url("images/static/pd1.png");background-size: 100% 100%;background-repeat: no-repeat;'>
+    <div class="top-banner" style='background: url({{URL::asset('uploads/images/static/pd1.png')}});background-size: 100% 100%;background-repeat: no-repeat;'>
         <div class="top-banner-title font-color-white">声光报警</div>
     </div>
 
     <div class="product-box">
-        <div class="product-box-left-box">
-            <div class="product-box-left-item">
-                <div class="inline-block"><img src="images/static/checked.svg" alt=""></div>
-                <div class="inline-block product-box-left-item-nav">广播通讯</div>
-                <div class="product-box-left-item-child show">
-                    <div>111</div>
-                    <div>222</div>
-                    <div>333</div>
+        @if(isset($categories))
+            <div class="product-box-left-box">
+            @foreach($categories as $category)
+
+                <div class="product-box-left-item">
+                    <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
+                    <div class="inline-block product-box-left-item-nav">{{$category->name}}</div>
+                    <div class="product-box-left-item-child show">
+                        @foreach($category->products as $pr)
+                        @if($pr->id == $product->id)
+                        <div style="color:red;">{{$pr->title}}</div>
+                        @else
+                        <div>{{$pr->title}}</div>
+                        @endif
+                        @endforeach
+                    </div>
                 </div>
+
+            @endforeach
             </div>
-            <div class="product-box-left-item">
-                <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
-                <div class="inline-block product-box-left-item-nav">广播通讯</div>
-                <div class="product-box-left-item-child">
-                    <div>111</div>
-                    <div>222</div>
-                    <div>333</div>
-                </div>
-            </div>
-            <div class="product-box-left-item">
-                <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
-                <div class="inline-block product-box-left-item-nav">广播通讯</div>
-                <div class="product-box-left-item-child">
-                    <div>111</div>
-                    <div>222</div>
-                    <div>333</div>
-                </div>
-            </div>
-            <div class="product-box-left-item">
-                <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
-                <div class="inline-block product-box-left-item-nav">广播通讯</div>
-                <div class="product-box-left-item-child">
-                    <div>111</div>
-                    <div>222</div>
-                    <div>333</div>
-                </div>
-            </div>
-            <div class="product-box-left-item">
-                <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
-                <div class="inline-block product-box-left-item-nav">广播通讯</div>
-                <div class="product-box-left-item-child">
-                    <div>111</div>
-                    <div>222</div>
-                    <div>333</div>
-                </div>
-            </div>
-        </div>
+        @endif
+
+
 
         <div class="product-box-right-box">
             <div class="product-box-right-box-nav">产品 / 声光报警 / AL203  声光多层报警灯</div>
             <div class="product-box-right-box-title">AL203  声光多层报警灯</div>
             <div class="product-box-right-box-banner-box">
-                <div class="product-box-right-box-banner-preview inline-block"><img src="images/static/white.png" alt=""></div>
+                <div class="product-box-right-box-banner-preview inline-block"><img src="{{URL::asset('uploads/'.$product->image)}}" alt=""></div>
                 <div class="product-box-right-box-banner-list inline-block">
-                    <div class="product-box-right-box-banner-item"><img src="images/static/product-sgd.png" alt=""></div>
-                    <div class="product-box-right-box-banner-item"><img src="images/static/product-aqm.png" alt=""></div>
-                    <div class="product-box-right-box-banner-item"><img src="images/static/product-gl.png" alt=""></div>
+                    @foreach($product->sub_image as $img)
+                    <div class="product-box-right-box-banner-item"><img src="{{URL::asset('uploads/'.$img)}}" alt=""></div>
+                    @endforeach
                 </div>
                 <div class="product-box-right-box-rightmost-box inline-block">
                     <div class="product-box-right-box-rightmost-cert"></div>
@@ -85,13 +62,17 @@
                     <div class="product-box-right-box-tab-item inline-block">现场安装</div>
                 </div>
                 <div class="product-box-right-box-tab-box">
-                    <div class="product-box-right-box-tab-box-item">111111</div>
-                    <div class="product-box-right-box-tab-box-item">222222</div>
+                    <div class="product-box-right-box-tab-box-item">{!! $product->description !!}</div>
+                    <div class="product-box-right-box-tab-box-item">{{$product->apply_area}}</div>
                     <div class="product-box-right-box-tab-box-item">333333</div>
                     <div class="product-box-right-box-tab-box-item">444444</div>
                     <div class="product-box-right-box-tab-box-item">555555</div>
                     <div class="product-box-right-box-tab-box-item">666666</div>
-                    <div class="product-box-right-box-tab-box-item">777777</div>
+                    <div class="product-box-right-box-tab-box-item">
+                        @foreach($product->install as $install)
+                            <img src="{{URL::asset('uploads/'.$install)}}" alt="">
+                        @endforeach
+                    </div>
                 </div>
             </div>
             <div class="product-box-right-box-recommend-box">

@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Banners;
 use App\Category;
+use App\Category2;
 use App\Product;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -34,12 +36,13 @@ class ProductController extends Controller
         return view('product_list', compact('banner', 'cates', 'id', 'products'));
     }
 
-    public function info($id)
+    public function show(Request  $request,Product  $product)
     {
-        $product = Product::findOne($id);
-
-        $products = Product::where('on_sale', 1)->where('id', '!=', $id)->orderBy('id', 'desc')->limit(12)->get();
-
-        return view('product_info', compact('product', 'products'));
+        // 将类目树传递给模板文件
+        $categories =Category2::with('products')->get();
+        return view('products', compact('product','categories'));
     }
+
+
+
 }
