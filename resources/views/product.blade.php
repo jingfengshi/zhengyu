@@ -28,7 +28,8 @@
             }
             .banner{
                 width:65rem;
-                height:38rem;
+                height:36rem;
+                padding-top: 1rem;
             }
             #floatUl li{
                 float: left;
@@ -74,10 +75,10 @@
             }
 
             .modelThreeOnePartDiv{
-                width: 40rem;height: 12rem;background-color: green;border-radius: 1rem; overflow:hidden;
+                width: 41.5rem;height: 12rem;background-color: green;border-radius: 1rem; overflow:hidden;
             }
             .modelThreeOnePartDiv img{
-                width: 40rem;height: 12rem;
+                width: 41.5rem;height: 12rem;
             }
 
             .modelThree ul {
@@ -117,7 +118,7 @@
             }
 
             .modelThreeTwoPartDiv{
-                width: 25rem;
+                width: 27rem;
                 height: 12rem;
                 border-radius: 1rem;
                 overflow: hidden;
@@ -151,40 +152,80 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="banner" src="./images/保护人们在危险环境安全工作/u214.jpg">
+                    <img id="changeBanner" class="banner" src="./images/保护人们在危险环境安全工作/u214.jpg">
                     <div style="float:right;height:38rem;padding-right: 33rem;width:7rem">
-                        <ul>
+                        <ul style="padding-left: 0rem">
                             <li class="classLi">
-                                <div style="background-color:darkgreen">
+                                <div id="flny1" style="background-color:#81D3F8;color:#FFF;padding-left: 2rem;">
                                     风电能源
                                 </div>
+                                <div id="flny2" title="./images/保护人们在危险环境安全工作/u214.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">风电能源</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能风电能源
+                                    </div>
+                                </div>
                             </li>
                             <li class="classLi">
-                                <div style="background-color:firebrick">
+                                <div id="gkmt1" style="background-color:#58AFDC;color:#FFF;padding-left: 2rem;">
                                     港口码头
                                 </div>
+                                <div id="gkmt2" title="./images/保护人们在危险环境安全工作/u216.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">港口码头</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能智慧港口
+                                    </div>
+                                </div>
                             </li>
                             <li class="classLi">
-                                <div style="background-color:fuchsia">
+                                <div id="hkxh1" style="background-color:#0392CC;color:#FFF;padding-left: 2rem;">
                                     航空信号
                                 </div>
-
+                                <div id="hkxh2" title="./images/保护人们在危险环境安全工作/u218.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">航空信号</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能航空信号
+                                    </div>
+                                </div>
                             </li>
                             <li class="classLi">
-                                <div style="background-color:palegreen">
+                                <div id="gcjx1" style="background-color:#017DC5;color:#FFF;padding-left: 2rem;">
                                     工程机械
                                 </div>
-
-                            </li>
-                            <li class="classLi">
-                                <div style="background-color:burlywood">
-                                    石油化工
+                                <div id="gcjx2" title="./images/保护人们在危险环境安全工作/u221.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">工程机械</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能工程机械
+                                    </div>
                                 </div>
 
                             </li>
                             <li class="classLi">
-                                <div style="background-color:lightblue">
+                                <div id="syhg1" style="background-color:#0072C1;color:#FFF;padding-left: 2rem;">
+                                    石油化工
+                                </div>
+                                <div id="syhg2" title="./images/保护人们在危险环境安全工作/u224.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">石油化工</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能石油化工
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="classLi">
+                                <div id="tljg1" src="./images/保护人们在危险环境安全工作/u221.jpg" style="background-color:#095C99;color:#FFF;padding-left: 2rem;">
                                     铁路交轨
+                                </div>
+                                <div id="tljg2" title="./images/保护人们在危险环境安全工作/u226.jpg" hidden style="background-color: white;color: #000;padding-left: 2rem;position: relative;right: 5rem;">
+                                    <img style="width: 5.95rem;position: relative;right: 2rem;" src="./images/保护人们在危险环境安全工作/1642921002016.jpg">
+                                    <div style="position: relative;bottom: 9rem;left: 5rem;">铁路交轨</div>
+                                    <div style="position: relative;bottom: 13rem;left: 5rem;color: grey;">
+                                        赋能铁路交轨
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -358,3 +399,74 @@
     </div>
     </body>
 </html>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#flny1").mouseenter(function(){
+            $("#flny1").hide();
+            $("#flny2").show();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+        $("#flny1").mouseleave(function(){
+            $("#flny1").show();
+            $("#flny2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+
+        $("#gkmt1").mouseenter(function(){
+            $("#gkmt1").hide();
+            $("#gkmt2").show();
+            $("#changeBanner").attr("src", $("#gkmt2")[0].getAttribute("title"));
+        });
+        $("#gkmt1").mouseleave(function(){
+            $("#gkmt1").show();
+            $("#gkmt2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+
+        $("#hkxh1").mouseenter(function(){
+            $("#hkxh1").hide();
+            $("#hkxh2").show();
+            $("#changeBanner").attr("src", $("#hkxh2")[0].getAttribute("title"));
+        });
+        $("#hkxh1").mouseleave(function(){
+            $("#hkxh1").show();
+            $("#hkxh2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+
+        $("#gcjx1").mouseenter(function(){
+            $("#gcjx1").hide();
+            $("#gcjx2").show();
+            $("#changeBanner").attr("src", $("#gcjx2")[0].getAttribute("title"));
+        });
+        $("#gcjx1").mouseleave(function(){
+            $("#gcjx1").show();
+            $("#gcjx2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+
+
+        $("#syhg1").mouseenter(function(){
+            $("#syhg1").hide();
+            $("#syhg2").show();
+            $("#changeBanner").attr("src", $("#syhg2")[0].getAttribute("title"));
+        });
+        $("#syhg1").mouseleave(function(){
+            $("#syhg1").show();
+            $("#syhg2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+
+        $("#tljg1").mouseenter(function(){
+            $("#tljg1").hide();
+            $("#tljg2").show();
+            $("#changeBanner").attr("src", $("#tljg2")[0].getAttribute("title"));
+        });
+        $("#tljg1").mouseleave(function(){
+            $("#tljg1").show();
+            $("#tljg2").hide();
+            $("#changeBanner").attr("src", $("#flny2")[0].getAttribute("title"));
+        });
+    });
+</script>
