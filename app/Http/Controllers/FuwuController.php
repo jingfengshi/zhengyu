@@ -13,8 +13,8 @@ class FuwuController extends Controller
     {
         $banner = Banners::where('type', Banners::TYPE_FUWU)->orderBy('id', 'desc')->first();
 
-        $config =Config::query()->where('type',Config::TYPE_FUWU)->get()->keyBy('name')->toArray();
+        $config = Config::query()->where('type', Config::TYPE_FUWU)->get()->keyBy('name')->toArray();
 
-        return view('service',compact('banner','config'));
+        return view('service', compact('banner', 'config'));
     }
 }

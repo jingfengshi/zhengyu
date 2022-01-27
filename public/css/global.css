@@ -13,7 +13,7 @@
     color: white !important;
 }
 
-.font-color-black{
+.font-color-black {
     color: #333333 !important;
 }
 
@@ -23,19 +23,23 @@
     white-space: nowrap;
 }
 
-.f-left{
+.f-left {
     float: left;
 }
 
-.f-right{
+.f-right {
     float: right;
 }
 
-.inline-block{
+.inline-block {
     display: inline-block;
 }
 
-.show{
+.hidden {
+    display: none !important;
+}
+
+.show {
     display: block !important;
 }
 

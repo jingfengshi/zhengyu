@@ -66,7 +66,7 @@
 **复杂的**
 
 * ~~1.对接完成 OK 首页 （dragon）路由：/~~
-* 2.OK 产品首页（ding）路由：/product
+* 2.OK 产品首页（ding）路由：/product-index
 * ~~3.对接完成 OK 产品列表页（dragon）路由：/product-list/{cate_id}~~
 * 4.OK 产品页（dragon）路由：/products
 

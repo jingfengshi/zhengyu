@@ -25,7 +25,7 @@ class SiteController extends Controller
 
 
 
-    public function Product()
+    public function ProductIndex()
     {
         return view('product');
     }

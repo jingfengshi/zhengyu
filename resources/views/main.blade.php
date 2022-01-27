@@ -209,6 +209,13 @@
             500);
         return false;
     });
+
+    const allow_get_cookie = localStorage.getItem("allow_get_cookie");
+    if (allow_get_cookie == null) {
+        var confirm_res = window.confirm('是否允许我们使用 cookie 来增强用户体验。您可以选择将网络浏览器设置为拒绝 cookie，或在发送 cookie 时提醒您。');
+        localStorage.setItem("allow_get_cookie",confirm_res)
+    }
+
 </script>
 
 </body>
