@@ -12,7 +12,7 @@
     </div>
 
     <div class="cert-banner">
-        <img src="{{URL::asset('uploads').'/'.empty($banner->file)?'default.png':$banner->file}}">
+        <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads').'/'.$banner->file}}">
     </div>
 
     <div>

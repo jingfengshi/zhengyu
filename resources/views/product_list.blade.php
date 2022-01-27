@@ -7,7 +7,7 @@
     <div class="nav">首页 > 保护人们在危险环境安全工作 > 产品</div>
 
     <div class="top-banner"
-         style='background: url("{{URL::asset('uploads').'/'.empty($banner->file)?'default.png':$banner->file}}");background-size: 100% 100%;background-repeat: no-repeat;'>
+         style='background: url("{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads').'/'.$banner->file}}");background-size: 100% 100%;background-repeat: no-repeat;'>
         <div class="top-banner-title font-color-white">视觉信号</div>
     </div>
 

@@ -10,7 +10,7 @@
     </div>
 
     <div class="service-banner">
-        <img src="{{URL::asset('uploads/'.$banner->file)}}">
+        <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads/'.$banner->file)}}">
     </div>
 
     <div>
