@@ -30,12 +30,7 @@ class FuwuController extends AdminController {
         if (empty($lists)) {
             $configs = [
                 [
-                    'name' => '定制服务',
-                    'value' => '',
-                    'type'=>Config::TYPE_FUWU
-                ],
-                [
-                    'name' => '零风险使用',
+                    'name' => '定制与试用',
                     'value' => '',
                     'type'=>Config::TYPE_FUWU
                 ],
@@ -46,6 +41,11 @@ class FuwuController extends AdminController {
                 ],
                 [
                     'name' => '产品下载附件',
+                    'value' => '',
+                    'type'=>Config::TYPE_FUWU
+                ],
+                [
+                    'name' => '金牌服务',
                     'value' => '',
                     'type'=>Config::TYPE_FUWU
                 ],
@@ -105,7 +105,7 @@ class FuwuController extends AdminController {
         $form->setTitle('');
         $lists = Config::query()->where('type','fuwu')->get()->toArray();
         foreach ($lists as $list) {
-            if ($list['name'] == '定制服务' || $list['name']=='零风险使用') {
+            if ($list['name']=='定制与试用' || $list['name']=='金牌服务') {
                 $form->editor($list['name'], $list['name'])->value($list['value']);
             } elseif ($list['name'] == '产品下载附件') {
                 $form->file($list['name'],$list['name'])->value($list['value'])->rules('mimes:doc,docx');
