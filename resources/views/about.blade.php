@@ -13,7 +13,7 @@
     </div>
 
     <div class="about-banner">
-        <img src="{{URL::asset('uploads').'/'.$banner->file}}">
+        <img src="{{URL::asset('uploads').'/'.empty($banner->file)?'default.png':$banner->file}}">
         <div class="about-banner-title-box">
             <div class="about-banner-title font-color-white">在希望和可能之间</div>
             <div class="about-banner-title font-color-white">有一座桥梁</div>
