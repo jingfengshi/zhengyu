@@ -31,14 +31,18 @@ Route::get('/cases', 'CasesController@index');
 Route::get('/cases/{id}', 'CasesController@info');
 // 联系我们
 Route::get('/connect', 'SiteController@connect');
-// 证书
-Route::get('/cert', 'CertController@index');
+
 // 服务
 Route::get('/service', 'FuwuController@index');
 // 关于我们
 Route::get('/about', 'SiteController@about');
 
 
+
+
+
+// 证书
+Route::get('/cert', 'CertController@index');
 
 //产品列表页
 Route::get('/product', 'ProductController@list');

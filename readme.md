@@ -80,5 +80,5 @@
 * ~~10.对接完成 OK 关于我们页（dragon）路由：/about~~
 * ~~11.对接完成 OK 新闻列表页（jasper）路由：/news~~
 * ~~12.对接完成 OK 新闻详情（jasper）路由：/news/{id}~~
-* 13.OK 证书页（dragon）路由：/cert
+* ~~13.对接完成 证书页（jasper）路由：/cert~~
 * ~~14.对接完成 OK 联系我们页(dragon) 路由：/connect（后续需要甲方自行注册百度地图开发者获取秘钥启用百度地图API）~~
