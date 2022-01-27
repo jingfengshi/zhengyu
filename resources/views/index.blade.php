@@ -9,7 +9,7 @@
     {{--  banner  --}}
     <div class="banner-box">
         <div class="item active">
-            <img src="{{URL::asset('uploads').'/'.$banner_left->file}}">
+            <img src="{{URL::asset('uploads').'/'.empty($banner_left->file)?'default.png':$banner_left->file}}">
             <div class="mask"></div>
             <div class="text">
                 <div class="font-color-white font-size-title">让安全提高生产力</div>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="item ml-5">
-            <img src="{{URL::asset('uploads').'/'.$banner_right->file}}">
+            <img src="{{URL::asset('uploads').'/'.empty($banner_right->file)?'default.png':$banner_right->file}}">
             <div class="mask"></div>
             <div class="text">
                 <div class="font-color-white font-size-title">智慧工业计量</div>
@@ -136,7 +136,8 @@
                 @foreach($news as $news_item)
                     <div class="news-item">
                         <div class="news-item-left">
-                            <a href="/news/{{$news_item->id}}"><img src="{{URL::asset('uploads').'/'.$news_item->cover}}"></a>
+                            <a href="/news/{{$news_item->id}}"><img
+                                    src="{{URL::asset('uploads').'/'.$news_item->cover}}"></a>
                         </div>
                         <div class="news-item-right">
                             <a href="/news/{{$news_item->id}}">
