@@ -66,7 +66,7 @@
                 @foreach($cates as $cate)
                     <div class="product-box-left-item">
                         <div class="inline-block"><img
-                                @if($cate['id'] == $id)
+                                @if($cate['id'] == $products[0]->category_id)
                                 src="{{URL::asset('images/static/checked.svg')}}"
                                 @else
                                 src="{{URL::asset('images/static/check.svg')}}"
