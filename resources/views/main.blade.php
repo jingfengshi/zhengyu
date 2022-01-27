@@ -41,12 +41,21 @@
 
         </div>
         <div style="margin-left:13rem;margin-top: 1rem;" class="flex items-center space-x-3  mr-8">
-            <input class="border-black-600 border-2" type="text">
+            <input class="border-black-600 border-2" id="search_product_input" type="text">
             <div>
-                <img src="{{URL::asset('/images/首页/u115.svg')}}" alt="">
+                <img id="search_product_btn" src="{{URL::asset('/images/首页/u115.svg')}}" style="cursor: pointer;">
             </div>
         </div>
 
+        <script>
+            $(document).on('click', '#search_product_btn', function () {
+                if (!$('#search_product_input').val() || $('#search_product_input').val() == null){
+                    alert('请输入产品名称');
+                }else{
+                    window.location.href = '{{URL::route('search','')}}'+'/'+$('#search_product_input').val();
+                }
+            })
+        </script>
     </div>
 </div>
 
@@ -213,7 +222,7 @@
     const allow_get_cookie = localStorage.getItem("allow_get_cookie");
     if (allow_get_cookie == null) {
         var confirm_res = window.confirm('是否允许我们使用 cookie 来增强用户体验。您可以选择将网络浏览器设置为拒绝 cookie，或在发送 cookie 时提醒您。');
-        localStorage.setItem("allow_get_cookie",confirm_res)
+        localStorage.setItem("allow_get_cookie", confirm_res)
     }
 
 </script>

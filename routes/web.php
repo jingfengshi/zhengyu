@@ -11,6 +11,7 @@ Route::get('/cert', 'CertController@index');// 证书
 // 产品
 Route::get('/products', 'ProductController@product');// 产品首页
 Route::get('/products/{id}', 'ProductController@list');// 产品列表页
+Route::get('/products-search/{title}', 'ProductController@search')->name('search');// 产品搜索结果页 和产品列表页基本一致
 Route::get('/product/{id}', 'ProductController@show');// 产品详情页 - 普通版 - 带左侧分类栏的产品详情页面
 Route::get('/product-info/{id}', 'ProductController@info');// 产品详情页 - 创新版 - 仅有图文和手册下载的产品详情页面
 

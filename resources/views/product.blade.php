@@ -88,46 +88,15 @@
     <div class="product-box">
         <div class="product-box-title">更强安全性 更高生产力</div>
         <div class="product-item-box">
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
-            <div class="product-item inline-block shadow-xl">
-                <img src="{{URL::asset('images/static/banner-tielu.jpeg')}}">
-                <div class="product-item-title">广播通讯</div>
-                <div class="product-item-btn font-color-white">查看更多产品</div>
-            </div>
+            @foreach($products as $product)
+                <div class="product-item inline-block shadow-xl">
+                    <img src="{{URL::asset('uploads').'/'.$product->image}}">
+                    <div class="product-item-title">{{$product->title}}</div>
+                    <a href="/product-info/{{$product->id}}">
+                        <div class="product-item-btn font-color-white">查看更多产品</div>
+                    </a>
+                </div>
+            @endforeach
         </div>
     </div>
 
@@ -149,30 +118,18 @@
     <div class="product-block-title">我们的解决方案</div>
 
     <div class="product-plan-box">
-        <div class="product-plan-item"
-             style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
-            <div class="product-plan-item-mask"></div>
-            <div class="product-plan-item-mini-title font-color-white">项目</div>
-            <div class="product-plan-item-title font-color-white">中铁集团</div>
-            <div class="product-plan-item-desc font-color-white">数字无线通讯系统</div>
-        </div>
-        <div class="product-plan-item"
-             style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
-            <div class="product-plan-item-mask"></div>
-            <div class="product-plan-item-mini-title font-color-white">项目</div>
-            <div class="product-plan-item-title font-color-white">中铁集团</div>
-            <div class="product-plan-item-desc font-color-white">数字无线通讯系统</div>
-        </div>
-        <div class="product-plan-item"
-             style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
-            <div class="product-plan-item-mask"></div>
-            <div class="product-plan-item-mini-title font-color-white">项目</div>
-            <div class="product-plan-item-title font-color-white">中铁集团</div>
-            <div class="product-plan-item-desc font-color-white">数字无线通讯系统</div>
-        </div>
+        @foreach($cases as $case)
+            <div class="product-plan-item"
+                 style="background: url('{{URL::asset('uploads').'/'.$case->covers}}'); background-size: 100% 100%; background-repeat: no-repeat;">
+                <div class="product-plan-item-mask"></div>
+                <div class="product-plan-item-mini-title font-color-white">项目</div>
+                <div class="product-plan-item-title font-color-white">{{$case->title}}</div>
+                <div class="product-plan-item-desc font-color-white">{{$case->desc}}</div>
+            </div>
+        @endforeach
     </div>
 
-    <div class="product-connect-btn font-color-white">联系我们</div>
+    <a href="/connect"><div class="product-connect-btn font-color-white">联系我们</div></a>
 
     <script>
         $(document).on('mousemove', '.banner-box-tab-item', function () {
