@@ -7,44 +7,46 @@
 
     <div class="nav">首页 > 保护人们在危险环境安全工作 > 产品</div>
 
-    <div class="top-banner" style='background: url({{URL::asset('uploads/images/static/pd1.png')}});background-size: 100% 100%;background-repeat: no-repeat;'>
+    <div class="top-banner"
+         style='background: url({{URL::asset('images/static/pd1.png')}});background-size: 100% 100%;background-repeat: no-repeat;'>
         <div class="top-banner-title font-color-white">声光报警</div>
     </div>
 
     <div class="product-box">
-        @if(isset($categories))
+        @if(!empty($categories))
             <div class="product-box-left-box">
-            @foreach($categories as $category)
-
-                <div class="product-box-left-item">
-                    <div class="inline-block"><img src="images/static/check.svg" alt=""></div>
-                    <div class="inline-block product-box-left-item-nav">{{$category->name}}</div>
-                    <div class="product-box-left-item-child show">
-                        @foreach($category->products as $pr)
-                        @if($pr->id == $product->id)
-                        <div style="color:red;">{{$pr->title}}</div>
-                        @else
-                        <div>{{$pr->title}}</div>
-                        @endif
-                        @endforeach
+                @foreach($categories as $category)
+                    <div class="product-box-left-item">
+                        <div class="inline-block"><img src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
+                        <div class="inline-block product-box-left-item-nav">{{$category->name}}</div>
+                        {{--                        如果需要子分类--}}
+                        {{--                    <div class="product-box-left-item-child show">--}}
+                        {{--                        @foreach($category->products as $pr)--}}
+                        {{--                        @if($pr->id == $product->id)--}}
+                        {{--                        <div style="color:red;">{{$pr->title}}</div>--}}
+                        {{--                        @else--}}
+                        {{--                        <div>{{$pr->title}}</div>--}}
+                        {{--                        @endif--}}
+                        {{--                        @endforeach--}}
+                        {{--                    </div>--}}
                     </div>
-                </div>
-
-            @endforeach
+                @endforeach
             </div>
         @endif
 
 
-
         <div class="product-box-right-box">
-            <div class="product-box-right-box-nav">产品 / 声光报警 / AL203  声光多层报警灯</div>
-            <div class="product-box-right-box-title">AL203  声光多层报警灯</div>
+            <div class="product-box-right-box-nav">产品 / 声光报警 / AL203 声光多层报警灯</div>
+            <div class="product-box-right-box-title">AL203 声光多层报警灯</div>
             <div class="product-box-right-box-banner-box">
-                <div class="product-box-right-box-banner-preview inline-block"><img src="{{URL::asset('uploads/'.$product->image)}}" alt=""></div>
+                <div class="product-box-right-box-banner-preview inline-block"><img
+                        src="{{URL::asset('uploads/'.$product->image)}}" alt=""></div>
                 <div class="product-box-right-box-banner-list inline-block">
-                    @foreach($product->sub_image as $img)
-                    <div class="product-box-right-box-banner-item"><img src="{{URL::asset('uploads/'.$img)}}" alt=""></div>
-                    @endforeach
+                    @if($product && $product->sub_image)
+                        @foreach($product->sub_image as $img)
+                            <div class="product-box-right-box-banner-item"><img src="{{URL::asset('uploads/'.$img)}}"></div>
+                        @endforeach
+                    @endif
                 </div>
                 <div class="product-box-right-box-rightmost-box inline-block">
                     <div class="product-box-right-box-rightmost-cert"></div>
@@ -69,9 +71,11 @@
                     <div class="product-box-right-box-tab-box-item">555555</div>
                     <div class="product-box-right-box-tab-box-item">666666</div>
                     <div class="product-box-right-box-tab-box-item">
-                        @foreach($product->install as $install)
-                            <img src="{{URL::asset('uploads/'.$install)}}" alt="">
-                        @endforeach
+                        @if($product && $product->install)
+                            @foreach($product->install as $install)
+                                <img src="{{URL::asset('uploads/'.$install)}}" alt="">
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>
@@ -101,9 +105,9 @@
 
     <script type="text/javascript">
 
-        $(function (){
+        $(function () {
             // default show first product img
-            $('.product-box-right-box-banner-preview').find('img').attr('src',$('.product-box-right-box-banner-item').first().find('img').attr('src'));
+            $('.product-box-right-box-banner-preview').find('img').attr('src', $('.product-box-right-box-banner-item').first().find('img').attr('src'));
             // default show first tab
             $('.product-box-right-box-tab-item').removeClass('tab-item-active');
             $('.product-box-right-box-tab-item').first().addClass('tab-item-active');
@@ -112,14 +116,14 @@
         })
 
         $(document).on('mouseover', '.product-box-left-item', function () {
-            $('.product-box-left-item').find('img').attr('src', 'images/static/check.svg');
+            $('.product-box-left-item').find('img').attr('src', '{{URL::asset('images/static/check.svg')}}');
             $('.product-box-left-item-child').removeClass('show');
-            $(this).find('img').attr('src', 'images/static/checked.svg');
+            $(this).find('img').attr('src', '{{URL::asset('images/static/checked.svg')}}');
             $(this).find('.product-box-left-item-child').addClass('show');
         })
 
         $(document).on('mouseover', '.product-box-right-box-banner-item', function () {
-            $('.product-box-right-box-banner-preview').find('img').attr('src',$(this).find('img').attr('src'));
+            $('.product-box-right-box-banner-preview').find('img').attr('src', $(this).find('img').attr('src'));
         })
 
         $(document).on('mouseover', '.product-box-right-box-tab-item', function () {

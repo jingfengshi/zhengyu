@@ -21,20 +21,6 @@ class SiteController extends Controller
         return view('connect', ['ak' => '1LTwc6gzPPHzhQ1eGdxFN26LsFR0ocDB']);
     }
 
-
-
-
-
-    public function ProductIndex()
-    {
-        return view('product');
-    }
-
-    public function Products()
-    {
-        return view('products');
-    }
-
     public function Cert()
     {
         return view('cert');

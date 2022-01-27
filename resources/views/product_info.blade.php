@@ -22,15 +22,15 @@
         <div class="more-product-box-title">想知道我们更多产品消息？</div>
         <div class="more-product-box-list-box swiper-container">
             <div class="swiper-wrapper">
-{{--                @foreach($products as $product)--}}
-{{--                    <div class="more-product-box-list-box-item swiper-slide"--}}
-{{--                         style='background: url("{{URL::asset('uploads').'/'.$product->image}}"); background-size: 100% 100%; background-repeat: no-repeat;'>--}}
-{{--                        <div class="more-product-box-list-box-item-mask"></div>--}}
-{{--                        <a href="/product-info/{{$product->id}}">--}}
-{{--                            <div class="more-product-box-list-box-item-button font-color-white text-overflow">{{$product->title}}</div>--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
-{{--                @endforeach--}}
+                @foreach($products as $product)
+                    <div class="more-product-box-list-box-item swiper-slide"
+                         style='background: url("{{URL::asset('uploads').'/'.$product->image}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                        <div class="more-product-box-list-box-item-mask"></div>
+                        <a href="/product-info/{{$product->id}}">
+                            <div class="more-product-box-list-box-item-button font-color-white text-overflow">{{$product->title}}</div>
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
         <div class="arrow-box">
