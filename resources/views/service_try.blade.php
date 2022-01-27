@@ -15,7 +15,7 @@
 
     <div>
         <div class="content">
-            {!! $config['定制与试用']['value'] !!}
+            {!! empty($config['定制与试用']['value'])?'':$config['定制与试用']['value'] !!}
 
 
         </div>
