@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title','正域')</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{URL::asset('js/tailwind.js')}}"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/global.css')}}">
 </head>
