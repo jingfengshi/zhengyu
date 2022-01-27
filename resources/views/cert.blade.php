@@ -12,16 +12,24 @@
     </div>
 
     <div class="cert-banner">
+        @if(!empty($banner->file))
         <img src="{{URL::asset('uploads').'/'.$banner->file}}">
+        @else
+            请配置 证书页 banner 图
+        @endif
     </div>
 
     <div>
         <div class="cert-title">企业荣誉</div>
         <div class="cert-title-2">我们将不懈努力，与您共同发展！</div>
         <div class="cert-img-box">
-            @foreach($certs as $cert)
-                <div class="cert-img-item inline-block"><img src="{{URL::asset('uploads/'.$cert->file)}}"><div class="sm-title">{{$cert->title}}</div></div>
-            @endforeach
+            @if($certs->count()>0)
+                @foreach($certs as $cert)
+                    <div class="cert-img-item inline-block"><img src="{{URL::asset('uploads/'.$cert->file)}}"><div class="sm-title">{{$cert->title}}</div></div>
+                @endforeach
+            @else
+            @endif
+
 
         </div>
     </div>
