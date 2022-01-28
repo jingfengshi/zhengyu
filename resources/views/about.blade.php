@@ -29,7 +29,9 @@
             {!! $content->value !!}
         </div>
         <div class="about-box-img"></div>
-        <a href="/product"><div class="about-box-btn font-color-white">了解更多产品</div></a>
+        <a href="/product">
+            <div class="about-box-btn font-color-white">了解更多产品</div>
+        </a>
     </div>
 
     <div class="about-img-box">
@@ -69,15 +71,25 @@
         <div class="more-msg-box-news f-left">
             <div class="more-msg-box-item-title">新闻活动</div>
             <div class="more-msg-box-item-desc">了解更多正域新闻活动</div>
-            <a href="/news"><div class="more-msg-box-item-btn font-color-white">了解更多</div></a>
+            <a href="/news">
+                <div class="more-msg-box-item-btn font-color-white">了解更多</div>
+            </a>
         </div>
         <div class="more-msg-box-story f-right">
             <div class="more-msg-box-item-title">客户的故事</div>
             <div class="more-msg-box-item-desc">了解更多正域客户故事</div>
-            <a href="/cases"><div class="more-msg-box-item-btn font-color-white">了解更多</div></a>
+            <a href="/cases">
+                <div class="more-msg-box-item-btn font-color-white">了解更多</div>
+            </a>
         </div>
     </div>
 
     <div style="clear:both;"></div>
+
+    <script>
+        $(".about-box-desc font").forEach(function (i) {
+            i.style = "font-size: " + i.size + "rem"
+        })
+    </script>
 
 @endsection
