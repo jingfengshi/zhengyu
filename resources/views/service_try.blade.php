@@ -16,18 +16,29 @@
     <div>
         <div class="content">
             {!! empty($config['定制与试用']['value'])?'':$config['定制与试用']['value'] !!}
-
-
         </div>
+
         <div class="apply-box">
             <div class="apply-box-left"></div>
             <div class="apply-box-right">
                 <div class="apply-box-right-title">立即申请</div>
                 <div class="apply-box-right-desc">在这里，您可以根据您的需要申请免费试用产品。</div>
                 <div class="apply-box-right-email">产品试用申请表请发送至：<span class="font-color-black">{{empty($config['产品使用邮件']['value'])?'':$config['产品使用邮件']['value']}}</span></div>
-                <div class="apply-box-right-btn font-color-white">点击下载附件</div>
+                @if(!empty($config['产品下载附件']['value']))
+                    <a href="/uploads/{{$config['产品下载附件']['value']}}"><div class="apply-box-right-btn font-color-white">点击下载附件</div></a>
+                @else
+                    <div class="apply-box-right-btn font-color-white">点击下载附件</div>
+                @endif
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".content font").each(function () {
+                $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
+            })
+        })
+    </script>
 
 @endsection

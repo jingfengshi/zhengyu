@@ -49,6 +49,12 @@
             pagination: '.pagination',
             paginationClickable: true,
         });
+
+        $(document).ready(function () {
+            $(".product-info-box font").each(function () {
+                $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
+            })
+        })
     </script>
 
 @endsection

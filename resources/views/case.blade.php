@@ -29,4 +29,12 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function () {
+            $(".case-content font").each(function () {
+                $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
+            })
+        })
+    </script>
+
 @endsection
