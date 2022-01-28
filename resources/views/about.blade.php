@@ -87,13 +87,13 @@
     <div style="clear:both;"></div>
 
     <script>
-        $(function (){
-            $(document).onload(
-                $(".about-box-desc font").each(function (i) {
-                    i.style = "font-size: " + i.size + "rem"
-                })
-            )
+
+        $(document).ready(function () {
+            $(".about-box-desc font").each(function () {
+                $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
+            })
         })
+
     </script>
 
 @endsection
