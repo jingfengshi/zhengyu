@@ -88,7 +88,7 @@
 
     <script>
         $(function (){
-            $(".about-box-desc font").forEach(function (i) {
+            $(".about-box-desc font").each(function (i) {
                 i.style = "font-size: " + i.size + "rem"
             })
         })
