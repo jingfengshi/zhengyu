@@ -88,9 +88,11 @@
 
     <script>
         $(function (){
-            $(".about-box-desc font").each(function (i) {
-                i.style = "font-size: " + i.size + "rem"
-            })
+            $(document).onload(
+                $(".about-box-desc font").each(function (i) {
+                    i.style = "font-size: " + i.size + "rem"
+                })
+            )
         })
     </script>
 
