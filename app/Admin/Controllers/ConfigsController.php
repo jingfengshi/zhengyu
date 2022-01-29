@@ -33,36 +33,6 @@ class ConfigsController extends AdminController
 
     public function index(Content $content)
     {
-        $lists = Config::query()->where('type','web')->get()->toArray();
-        if (empty($lists)) {
-            $configs = [
-                [
-                    'name' => '备案号',
-                    'value' => '',
-                ],
-                [
-                    'name' => '二维码',
-                    'value' => '',
-                ],
-                [
-                    'name' => '抖音号',
-                    'value' => '',
-                ],
-                [
-                    'name' => '公众号',
-                    'value' => '',
-                ],
-                [
-                    'name' => '关于我们',
-                    'value' => '',
-                ],
-            ];
-            $config = new Config();
-            foreach ($configs as $c) {
-                $config->create($c);
-            }
-        }
-
         return $content
             ->title($this->title())
             ->description($this->description['index'] ?? trans('admin.list'))

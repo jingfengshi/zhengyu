@@ -26,38 +26,6 @@ class FuwuController extends AdminController {
     public function index(Content $content)
     {
 
-        $lists = Config::query()->where('type','fuwu')->get()->toArray();
-        if (empty($lists)) {
-            $configs = [
-                [
-                    'name' => '定制与试用',
-                    'value' => '',
-                    'type'=>Config::TYPE_FUWU
-                ],
-                [
-                    'name' => '产品使用邮件',
-                    'value' => '',
-                    'type'=>Config::TYPE_FUWU
-                ],
-                [
-                    'name' => '产品下载附件',
-                    'value' => '',
-                    'type'=>Config::TYPE_FUWU
-                ],
-                [
-                    'name' => '金牌服务',
-                    'value' => '',
-                    'type'=>Config::TYPE_FUWU
-                ],
-            ];
-            $config = new Config();
-            foreach ($configs as $c) {
-                $config->create($c);
-            }
-
-
-        }
-
         return $content
             ->title($this->title())
             ->description($this->description['index'] ?? trans('admin.list'))
