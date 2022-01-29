@@ -17,7 +17,9 @@ class ProductController extends Controller
 
         $cases = Cases::where('show', 1)->orderBy('id', 'desc')->limit(3)->get();
 
-        return view('product', compact('products', 'cases'));
+        $cates = Category2::get();
+
+        return view('product', compact('products', 'cases', 'cates'));
     }
 
     // 产品列表页
@@ -38,7 +40,7 @@ class ProductController extends Controller
 
         $cates = Category2::get();
 
-        $products = Product::where('on_sale', 1)->where('title','like', '%'.$title.'%')->orderBy('id', 'desc')->get();
+        $products = Product::where('on_sale', 1)->where('title', 'like', '%' . $title . '%')->orderBy('id', 'desc')->get();
 
         return view('product_search', compact('banner', 'cates', 'products'));
     }

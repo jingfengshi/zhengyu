@@ -4,9 +4,26 @@
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product.css')}}">
 
+    <div class="product-menu-box hidden">
+        <div class="product-menu-box-mask"></div>
+        <div class="close-mask">关闭</div>
+        <div class="product-menu-item-warp">
+            @foreach($cates as $cate)
+                <div class="product-menu-item f-left">
+                    <div class="product-menu-cate">{{$cate->name}}</div>
+                    @foreach($cate->products as $product)
+                        <a href="/product/{{$product->id}}">
+                            <div class="product-menu-cate-child-product">{{$product->title}}</div>
+                        </a>
+                    @endforeach
+                </div>
+            @endforeach
+        </div>
+    </div>
+
     <div class="product-top-title">
         <a href="/about">行业</a>
-        <a href="/news">产品</a>
+        <a id="nav_btn" href="javascript:;">产品</a>
         <a href="/cases">企业荣誉</a>
         <a href="/cert">产品认证</a>
         <a href="/connect">联系我们</a>
@@ -129,7 +146,9 @@
         @endforeach
     </div>
 
-    <a href="/connect"><div class="product-connect-btn font-color-white">联系我们</div></a>
+    <a href="/connect">
+        <div class="product-connect-btn font-color-white">联系我们</div>
+    </a>
 
     <script>
         $(document).on('mousemove', '.banner-box-tab-item', function () {
@@ -143,6 +162,15 @@
         $(document).on('mouseout', '.banner-box-tab-item-mask', function () {
             $('.banner-box-tab-item').removeClass('hidden');
             $('.banner-box-tab-item-mask').removeClass('show');
+        })
+
+        $(document).on('click', '#nav_btn', function () {
+            $('.product-menu-box').removeClass('hidden');
+            return false;
+        })
+
+        $(document).on('click', '.close-mask', function () {
+            $('.product-menu-box').addClass('hidden');
         })
     </script>
 
