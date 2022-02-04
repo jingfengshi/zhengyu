@@ -89,6 +89,16 @@ class AppServiceProvider extends ServiceProvider
                 'value' => '',
                 'type'=>Config::TYPE_WEB
             ],
+            [
+                'name' => '隐私声明',
+                'value' => '',
+                'type'=>Config::TYPE_WEB
+            ],
+            [
+                'name' => '企业信息',
+                'value' => '',
+                'type'=>Config::TYPE_WEB
+            ],
         ];
         foreach ($configs as $config){
             Config::firstOrCreate([

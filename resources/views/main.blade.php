@@ -204,8 +204,8 @@
             </div>
             <div class="flex w-1/4 space-x-2">
                 <a href="">Cookies</a>
-                <a href="">隐私声明</a>
-                <a href="">企业信息</a>
+                <a href="{{route('private')}}">隐私声明</a>
+                <a href="{{route('coInfo')}}">企业信息</a>
             </div>
         </div>
     </div>

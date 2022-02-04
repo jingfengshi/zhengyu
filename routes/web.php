@@ -28,3 +28,9 @@ Route::get('/cases/{id}', 'CasesController@info');
 // 新闻
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{news}', 'NewsController@show')->name('news.show');
+
+//隐私
+Route::get('/private', 'PrivateController@yinsi')->name('private');
+
+//企业信息
+Route::get('/coInfo', 'PrivateController@qiye')->name('coInfo');

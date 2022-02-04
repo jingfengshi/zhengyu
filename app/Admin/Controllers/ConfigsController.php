@@ -96,8 +96,8 @@ class ConfigsController extends AdminController
         foreach ($lists as $list) {
             if ($list['name'] == '二维码') {
                 $form->image($list['name'], $list['name'])->value($list['value']);
-            } elseif ($list['name'] == '关于我们') {
-                $form->editor('关于我们')->value($list['value']);
+            } elseif ($list['name'] == '关于我们' || $list['name']== '隐私声明' || $list['name']=='企业信息') {
+                $form->editor($list['name'])->value($list['value']);
             } else {
                 $form->text($list['name'], $list['name'])->value($list['value']);
             }
