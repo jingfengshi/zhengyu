@@ -41,7 +41,7 @@
 
         </div>
         <div style="margin-left:13rem;margin-top: 1rem;" class="flex items-center space-x-3  mr-8">
-            <input class="border-black-600 border-2" id="search_product_input" type="text">
+            <input class="border-black-100 border-2" id="search_product_input" type="text">
             <div>
                 <img id="search_product_btn" src="{{URL::asset('/images/首页/u115.svg')}}" style="cursor: pointer;">
             </div>
@@ -73,9 +73,9 @@
         <div class="w-full" style="height: 400px;background-color: rgba(72, 72, 72, 1);">
             <div class="flex">
                 <div class=" w-3/4 " style="height: 300px;">
-                    <div class="flex">
-                        <div class="w-2/3 " style="background-color: rgba(72, 72, 72, 1);">
-                            <div class="flex" style="width: 400px;height: 26px;margin-top: 3rem;margin-left: 13rem">
+                    <div class="flex justify-around  pl-[7rem]">
+                        <div  style="background-color: rgba(72, 72, 72, 1);" class="w-[23rem]">
+                            <div class="flex" style="height: 26px;margin-top: 3rem">
                                 <img src="{{URL::asset('/images/首页/u38.svg')}}" alt="">
                                 <img src="{{URL::asset('/images/首页/u34.svg')}}" alt="">
                                 <img src="{{URL::asset('/images/首页/u35.svg')}}"
@@ -89,25 +89,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3">
-                            <div class="flex text-white space-x-28 justify-around"
-                                 style="margin-top: 3rem;width:400px;font-size: 20px">
-                                <div class="flex justify-around" style="width:140px">
-                                    <img style="width: 30px;height: 30px;"
-                                         src="{{URL::asset('/images/首页/u30.png')}}" alt="">
-                                    <a href="/cases" style="width: 80px;height: 22px;"> 客户故事</a>
-                                </div>
-                                <div class="ml-3 flex justify-around" style="width:140px">
-                                    <img style="width: 30px;height: 30px;"
-                                         src="{{URL::asset('/images/首页/u31.png')}}" alt="">
-                                    <a href="/news" style="width: 80px;height: 22px;">新闻活动</a>
-                                </div>
-                            </div>
+                        <div class="w-[23rem]">
+
+                        </div>
+                        <div class="flex w-[23rem] " style="margin-top: 3rem">
+                            <img style="height: 30px;margin-left: -3.2rem;"
+                                 src="{{URL::asset('/images/首页/u30.png')}}" alt="">
+                            <a href="/cases" style="height: 22px;font-size: 20px;padding-left: 1rem"> 客户故事</a>
+
+                        </div>
+                        <div class="ml-3 flex w-[23rem] " style="margin-top: 3rem">
+                            <img style="height: 30px;margin-left: -3.2rem;"
+                                 src="{{URL::asset('/images/首页/u31.png')}}" alt="">
+                            <a href="/news" style="height: 22px;font-size: 20px;padding-left: 1rem">新闻活动</a>
                         </div>
                     </div>
-                    <div class="flex h-[300px] justify-around mt-[5rem] ml-[9rem]">
-                        <div class="flex flex-col space-y-3">
-                            <div>
+                    <div class="flex h-[300px] justify-around mt-[5rem] pl-[7rem]" style="font-size: 14px">
+                        <div class="flex flex-col space-y-3 w-[23rem]">
+                            <div >
                                 <a href="">业务</a>
                             </div>
                             <div>
@@ -118,7 +117,7 @@
                             </div>
 
                         </div>
-                        <div class="flex flex-col space-y-3">
+                        <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
                                 <a href="">服务</a>
                             </div>
@@ -132,7 +131,7 @@
                                 <a href="">案例</a>
                             </div>
                         </div>
-                        <div class="flex flex-col space-y-3">
+                        <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
                                 <a href="">职业</a>
                             </div>
@@ -142,11 +141,8 @@
                             <div>
                                 <a href="">职业描述</a>
                             </div>
-                            <div>
-                                <a href="">智慧工业计量</a>
-                            </div>
                         </div>
-                        <div class="flex flex-col space-y-3">
+                        <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
                                 <a href="">关于我们</a>
                             </div>
@@ -176,13 +172,18 @@
                         <div style="width: 31px;height: 25px;">
                             <img src="{{URL::asset('/images/首页/u14.svg')}}" alt="">
                         </div>
-                        <div style="width: 31px;height: 25px;">
+                        <div style="width: 31px;height: 25px;margin-left: 1rem">
                             <img src="{{URL::asset('/images/首页/u15.svg')}}" alt="">
                         </div>
                     </div>
                     <div>
-                        <span>咨询服务</span>
-                        <span>400-0000-000</span>
+                        <div>
+                            <span>咨询服务</span>
+                        </div>
+                        <div>
+                            <span>400-0000-000</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -191,13 +192,13 @@
              style="height:50px;background-color: rgba(48, 48, 48, 1);font-size: 16px;">
             <div class="flex w-3/4  space-x-3 ml-[12rem] space-y-2">
                 <div style="line-height: 2.45rem;">
-                    <a class="space-y-2" href="">@2022 上海正域自动化设备有限公司</a>
+                    <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
                 <div>
-                    <a href=""> 沪ICP备17032420号 </a>
+                    <a href="http://shcainfo.miitbeian.gov.cn"> 沪ICP备17032420号 </a>
                 </div>
                 <div>
-                    <a href="">沪公网安备 31010402018099号</a>
+                    <a href="http://shcainfo.miitbeian.gov.cn">沪公网安备 31010402018099号</a>
                 </div>
 
             </div>
