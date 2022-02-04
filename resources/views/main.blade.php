@@ -133,13 +133,13 @@
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a href="">职业</a>
+                                <a href="{{route('occupation')}}">职业</a>
                             </div>
                             <div>
-                                <a href="">价值观</a>
+                                <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
                             </div>
                             <div>
-                                <a href="">职业描述</a>
+                                <a href="{{route('occupation',['q'=>'info'])}}">职业描述</a>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">

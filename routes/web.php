@@ -2,7 +2,7 @@
 
 // 单页
 Route::get('/', 'IndexController@index');// 首页
-Route::get('/about', 'SiteController@about');// 关于我们
+Route::get('/about', 'SiteController@about')->name('about');// 关于我们
 Route::get('/connect', 'SiteController@connect');// 联系我们
 
 Route::get('/brand', 'BrandController@index');// 服务品牌
@@ -34,3 +34,6 @@ Route::get('/private', 'PrivateController@yinsi')->name('private');
 
 //企业信息
 Route::get('/coInfo', 'PrivateController@qiye')->name('coInfo');
+
+//职业
+Route::get('/occupation', 'OccupationController@index')->name('occupation');
