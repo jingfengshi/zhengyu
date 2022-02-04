@@ -137,6 +137,22 @@ class AdminTablesSeeder extends Seeder
                     "icon" => "fa-bars",
                     "uri" => "/banners",
                     "permission" => NULL
+                ],
+                [
+                    "parent_id" => 0,
+                    "order" => 16,
+                    "title" => "证书管理",
+                    "icon" => "fa-bars",
+                    "uri" => "/cert",
+                    "permission" => NULL
+                ],
+                [
+                    "parent_id" => 0,
+                    "order" => 17,
+                    "title" => "服务管理",
+                    "icon" => "fa-bars",
+                    "uri" => "/fuwu",
+                    "permission" => NULL
                 ]
             ]
         );
