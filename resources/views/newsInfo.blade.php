@@ -23,13 +23,13 @@
             <a href="">联系我们</a>
         </div>
 
-        <div class="w-full min-h-[15rem]" style="background-color: rgba(242, 242, 242, 1);">
-            <div style="width: 80%;margin: 0 auto;height: 10rem;">
-                <div style="padding-left:8rem;padding-top:5rem">
-                    <div style="font-weight: 700;font-size: 2.5rem;color: #555555">
+        <div class="w-full" style="background-color: rgba(242, 242, 242, 1);height: 166px;">
+            <div style="width: 80%;margin: 0 auto;">
+                <div style="padding-left:8rem;padding-top:4rem">
+                    <div style="font-weight: 700;font-size: 36px;color: #555555">
                         {{$news->title}}
                     </div>
-                    <div style="font-weight: 200;font-size: 1.2rem;margin-top: 1rem">
+                    <div style="font-weight: 200;font-size:20px;margin-top: 1rem">
                         {{$news->created_at?$news->created_at->format("Y-m-d"):''}}
                     </div>
                 </div>

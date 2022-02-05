@@ -12,26 +12,29 @@
 <body>
 
 <div class="text-gray-900 text-sm fixed top-0 right-0 left-0 shadow-xl"
-     style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto">
-    <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white px-4 py-3 flex justify-end">
-        <div class="flex items-center space-x-8" style="margin-right: 15rem;margin-top: 7px">
-            <a href="/service">服务</a>
-            <a href="/brand">伙伴</a>
-            <a href="/connect">职业</a>
-            <a href="/about">关于我们</a>
+     style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto;height: 130px;">
+    <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white  py-3 flex">
+        <div style="width: 1235px;">
+
+        </div>
+        <div class="flex items-center space-x-8" style="width:255px;margin-right:162px;margin-top: 7px">
+            <a style="font-size: 14px" href="/service">服务</a>
+            <a style="font-size: 14px"  href="/brand">伙伴</a>
+            <a style="font-size: 14px"  href="/connect">职业</a>
+            <a style="font-size: 14px"  href="/about">关于我们</a>
         </div>
         <div class="flex" style="margin-right: 2rem">
             <a href="">中文</a>
         </div>
     </nav>
-    <div class="bg-white text-black flex justify-between py-6 pr-8 ">
-        <div style="margin-left:13rem;margin-top: 1rem;font-family: 'Arial Normal', 'Arial', sans-serif;
+    <div class="bg-white text-black flex justify-between pr-8 " style="height: 95px;">
+        <div style="margin-left:240px;margin-top: 40px;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     color: #7F7F7F;" class="flex">
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
-            <div class="flex space-x-8" style="margin-left: 5rem;margin-top: 8px">
+            <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
                     <a class="header-a"  href="">保护人们在危险环境安全工作</a>
                 </div>
@@ -41,7 +44,7 @@
             </div>
 
         </div>
-        <div style="margin-left:13rem;margin-top: 1rem;" class="flex items-center space-x-3  mr-8">
+        <div style="margin-left:13rem;margin-top: 1rem;margin-right: 205px;" class="flex items-center space-x-3  ">
             <input class="border-black-100 border-2" id="search_product_input" type="text">
             <div>
                 <img id="search_product_btn" src="{{URL::asset('/images/首页/u115.svg')}}" style="cursor: pointer;">
@@ -72,9 +75,9 @@
     </div>
     <div style="width: 100%">
         <div class="w-full" style="height: 400px;background-color: rgba(72, 72, 72, 1);">
-            <div class="flex">
+            <div class="flex" style="margin-left: 240px;">
                 <div class=" w-3/4 " style="height: 300px;">
-                    <div class="flex justify-around  pl-[7rem]">
+                    <div class="flex justify-around  ">
                         <div  style="background-color: rgba(72, 72, 72, 1);" class="w-[23rem]">
                             <div class="flex" style="height: 26px;margin-top: 3rem">
                                 <img src="{{URL::asset('/images/首页/u38.svg')}}" alt="">
@@ -105,7 +108,7 @@
                             <a href="/news" style="height: 22px;font-size: 20px;padding-left: 1rem">新闻活动</a>
                         </div>
                     </div>
-                    <div class="flex h-[300px] justify-around mt-[5rem] pl-[7rem]" >
+                    <div class="flex h-[300px] justify-around mt-[5rem]" >
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div >
                                 <a style="font-size: 20px" href="">业务</a>
@@ -191,7 +194,7 @@
         </div>
         <div class="flex text-white space-y-2"
              style="height:50px;background-color: rgba(48, 48, 48, 1);font-size: 16px;">
-            <div class="flex w-3/4   ml-[6rem] space-y-2">
+            <div class="flex w-3/4   space-y-2" style="margin-left: 240px;">
                 <div style="line-height: 2.45rem;">
                     <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
