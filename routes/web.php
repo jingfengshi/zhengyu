@@ -26,7 +26,7 @@ Route::get('/cases', 'CasesController@index');
 Route::get('/cases/{id}', 'CasesController@info');
 
 // 新闻
-Route::get('/news', 'NewsController@index');
+Route::get('/news', 'NewsController@index')->name('news');
 Route::get('/news/{news}', 'NewsController@show')->name('news.show');
 
 //隐私
