@@ -45,7 +45,18 @@
 
         </div>
         <div style="margin-left:13rem;margin-top: 1rem;margin-right: 205px;" class="flex items-center space-x-3  ">
-            <input class="border-black-100 border-2" id="search_product_input" type="text">
+            <input style="    width: 182px;
+    height: 25px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(159, 156, 156, 1);
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;" id="search_product_input" type="text">
             <div>
                 <img id="search_product_btn" src="{{URL::asset('/images/首页/u115.svg')}}" style="cursor: pointer;">
             </div>
