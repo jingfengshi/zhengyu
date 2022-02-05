@@ -2,17 +2,17 @@
 
 @section("content")
 
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/brand.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/occupation.css')}}">
 
-    <div class="brand-top-title" style="margin-left:9rem">
-        <a href="{{route('occupation')}}">职业</a>
-        <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
-        <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
-    </div>
+
 
 
     <div style="width: 1920px;margin: auto;">
-
+        <div class="brand-top-title">
+            <a href="{{route('occupation')}}">职业</a>
+            <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
+            <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
+        </div>
 
         <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;" >
             <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
@@ -62,81 +62,81 @@
                     </div>
                 </div>
                 <div style="width: 440px;height: 370px">
-                    <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/anquanyuzhiliang.jpeg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
     font-size: 26px;margin-top: 2rem;margin-bottom: 2rem">
-                        诚实守信
+                        安全与质量
                     </div>
                     <div style="width: 378px;height: 85px;font-weight: 200;
     font-style: normal;
     font-size: 18px;
     color: #7F7F7F;
     line-height: 30px;">
-                        我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
+                        我们坚定不移地为我们自己和客户提供最高标准的安全和质量。
                     </div>
                 </div>
                 <div style="width: 440px;height: 370px">
-                    <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/kehuzhishang.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
     font-size: 26px;margin-top: 2rem;margin-bottom: 2rem">
-                        诚实守信
+                        客户至上
                     </div>
                     <div style="width: 378px;height: 85px;font-weight: 200;
     font-style: normal;
     font-size: 18px;
     color: #7F7F7F;
     line-height: 30px;">
-                        我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
+                        我们主动聆听客户的意见，深入了解他们的需要，并提供可确保他们成功的独特解决方案。
                     </div>
                 </div>
             </div>
 
             <div style="display:flex;margin-top: 4rem;">
                 <div style="width: 440px;height: 370px">
-                    <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/buduanjinbu.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
     font-size: 26px;margin-top: 2rem;margin-bottom: 2rem">
-                        诚实守信
+                       不断进步
                     </div>
                     <div style="width: 378px;height: 85px;font-weight: 200;
     font-style: normal;
     font-size: 18px;
     color: #7F7F7F;
     line-height: 30px;">
-                        我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
+                        我们不懈地改进业务的所有方面，利用标准、反馈和纪律严明的管理流程因势利导。
                     </div>
                 </div>
                 <div style="width: 440px;height: 370px">
-                    <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/hezuo.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
     font-size: 26px;margin-top: 2rem;margin-bottom: 2rem">
-                        诚实守信
+                      合作
                     </div>
                     <div style="width: 378px;height: 85px;font-weight: 200;
     font-style: normal;
     font-size: 18px;
     color: #7F7F7F;
     line-height: 30px;">
-                        我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
+                        我们在不同地域、平台、业务单位和职能部门之间密切无间地合作，充分发挥我们无比深厚的实力和专长。
                     </div>
                 </div>
                 <div style="width: 440px;height: 370px">
-                    <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/jijichuangxin.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
     font-size: 26px;margin-top: 2rem;margin-bottom: 2rem">
-                        诚实守信
+                        积极创新
                     </div>
                     <div style="width: 378px;height: 85px;font-weight: 200;
     font-style: normal;
     font-size: 18px;
     color: #7F7F7F;
     line-height: 30px;">
-                        我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
+                        我们充满激情地追寻新技术、能力和方法，目的是为客户创造切实的价值
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 16px;text-align: center;padding-top: 0.5rem;float: right ;margin-right: 2rem;margin-top: 4rem">
-                        <a href="" style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
+                        <a href="{{route('occupation',['q'=>'info'])}}" style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
                     </div>
 
 
