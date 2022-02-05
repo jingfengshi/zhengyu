@@ -1,0 +1,22 @@
+.private-title{
+    background-color: rgba(242, 242, 242, 1);
+    height: 166px;
+    width: 1920px;
+    margin: auto;
+}
+
+.private-title-big{
+    margin-top: 1rem;
+    padding-top: 4rem;
+    padding-left: 19rem;
+}
+.private-title-big-font{
+    width: 144px;height: 50px; font-size: 36px;font-weight: 700;color: #555555;font-style: normal;
+}
+
+.private-title-small-font{
+    width: 300px;height: 25px;margin-top:1rem;font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #AAAAAA;
+}
