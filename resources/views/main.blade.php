@@ -11,7 +11,7 @@
 <body>
 
 <div class="text-gray-900 text-sm fixed top-0 right-0 left-0 shadow-xl"
-     style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+     style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto">
     <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white px-4 py-3 flex justify-end">
         <div class="flex items-center space-x-8" style="margin-right: 15rem;margin-top: 7px">
             <a href="/service">服务</a>
@@ -62,7 +62,7 @@
 <div class="main-content">@yield("content")</div>
 
 <footer class="text-white"
-        style="width: 100%;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
+        style="width: 1920px;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
     <div class="to-top" id="to-top"
          style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
         <div class="to-top-icon"
@@ -104,59 +104,59 @@
                             <a href="/news" style="height: 22px;font-size: 20px;padding-left: 1rem">新闻活动</a>
                         </div>
                     </div>
-                    <div class="flex h-[300px] justify-around mt-[5rem] pl-[7rem]" style="font-size: 14px">
+                    <div class="flex h-[300px] justify-around mt-[5rem] pl-[7rem]" >
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div >
-                                <a href="">业务</a>
+                                <a style="font-size: 20px" href="">业务</a>
                             </div>
                             <div>
-                                <a href="">保护人们在危险环境中安全工作</a>
+                                <a style="font-size: 20px" href="">保护人们在危险环境中安全工作</a>
                             </div>
                             <div>
-                                <a href="">智慧工业计量</a>
+                                <a style="font-size: 20px" href="">智慧工业计量</a>
                             </div>
 
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a href="">服务</a>
+                                <a style="font-size: 20px" href="">服务</a>
                             </div>
                             <div>
-                                <a href="">共同推进行业前进</a>
+                                <a style="font-size: 20px" href="">共同推进行业前进</a>
                             </div>
                             <div>
-                                <a href="">服务的品牌</a>
+                                <a style="font-size: 20px" href="">服务的品牌</a>
                             </div>
                             <div>
-                                <a href="">案例</a>
-                            </div>
-                        </div>
-                        <div class="flex flex-col space-y-3 w-[23rem]">
-                            <div>
-                                <a href="{{route('occupation')}}">职业</a>
-                            </div>
-                            <div>
-                                <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
-                            </div>
-                            <div>
-                                <a href="{{route('occupation',['q'=>'info'])}}">职业描述</a>
+                                <a style="font-size: 20px" href="">案例</a>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a href="">关于我们</a>
+                                <a style="font-size: 20px" href="{{route('occupation')}}">职业</a>
                             </div>
                             <div>
-                                <a href="">我们是正域</a>
+                                <a style="font-size: 20px" href="{{route('occupation')}}#jiazhiguan">价值观</a>
                             </div>
                             <div>
-                                <a href="">企业文化</a>
+                                <a style="font-size: 20px" href="{{route('occupation',['q'=>'info'])}}">职业描述</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col space-y-3 w-[23rem]">
+                            <div>
+                                <a style="font-size: 20px" href="">关于我们</a>
                             </div>
                             <div>
-                                <a href="">企业荣誉</a>
+                                <a style="font-size: 20px" href="">我们是正域</a>
                             </div>
                             <div>
-                                <a href="">联系我们</a>
+                                <a style="font-size: 20px" href="">企业文化</a>
+                            </div>
+                            <div>
+                                <a style="font-size: 20px" href="">企业荣誉</a>
+                            </div>
+                            <div>
+                                <a style="font-size: 20px" href="">联系我们</a>
                             </div>
                         </div>
                     </div>
@@ -178,10 +178,10 @@
                     </div>
                     <div>
                         <div>
-                            <span>咨询服务</span>
+                            <span style="font-size: 20px">咨询服务</span>
                         </div>
                         <div>
-                            <span>400-0000-000</span>
+                            <span style="font-size: 20px">400-0000-000</span>
                         </div>
 
                     </div>
