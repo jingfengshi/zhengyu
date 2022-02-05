@@ -61,7 +61,26 @@ font-weight: 200;
 
 
 
+
         </div>
+        <div style="margin:auto;margin-top: 4rem;width: 1300px;height: 25px;">
+            <div class="flex" style="float: right">
+                <div  style="margin-right: 3rem">
+                    <a href="{{$newsList->previousPageUrl()}}">
+                        <img src="{{URL::asset('images/案例/u4449.svg')}}" alt="">
+                    </a>
+
+                </div>
+                <div>
+                    <a href="{{$newsList->nextPageUrl()}}">
+                        <img class="rotate-180"  src="{{URL::asset('images/案例/u4449.svg')}}" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div >
+
+
     </div>
 
 
