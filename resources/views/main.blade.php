@@ -7,6 +7,7 @@
     <script src="{{URL::asset('js/tailwind.js')}}"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/global.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/header.css')}}">
 </head>
 <body>
 
@@ -32,10 +33,10 @@
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 5rem;margin-top: 8px">
                 <div>
-                    <a href="">保护人们在危险环境安全工作</a>
+                    <a class="header-a"  href="">保护人们在危险环境安全工作</a>
                 </div>
                 <div>
-                    <a href="">智慧计量工具</a>
+                    <a class="header-a" href="">智慧计量工具</a>
                 </div>
             </div>
 
@@ -190,7 +191,7 @@
         </div>
         <div class="flex text-white space-y-2"
              style="height:50px;background-color: rgba(48, 48, 48, 1);font-size: 16px;">
-            <div class="flex w-3/4  space-x-3 ml-[12rem] space-y-2">
+            <div class="flex w-3/4   ml-[6rem] space-y-2">
                 <div style="line-height: 2.45rem;">
                     <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
