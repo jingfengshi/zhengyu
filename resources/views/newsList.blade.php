@@ -8,14 +8,7 @@
 
 
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="cases-top-title">
-            <a href="{{route('about')}}">关于正域</a>
-            <a href="{{route('news')}}">新闻</a>
-            <a href="">企业荣誉</a>
-            <a href="">产品认证</a>
-            <a href="">联系我们</a>
-        </div>
-
+        @include('_bread_news')
         <div class="cases-banner">
             <img src="{{URL::asset('images/xinwen.jpg')}}">
         </div>
