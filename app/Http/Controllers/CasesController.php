@@ -11,7 +11,7 @@ class CasesController extends Controller
     {
         $banner = Banners::where('type', Banners::TYPE_CASES)->orderBy('id', 'desc')->first();
 
-        $cases = Cases::where('show', 1)->orderBy('id', 'desc')->get();
+        $cases = Cases::where('show', 1)->orderBy('id', 'desc')->paginate(6);
 
         return view('cases', compact('banner', 'cases'));
     }

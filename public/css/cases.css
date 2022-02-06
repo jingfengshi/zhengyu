@@ -18,25 +18,30 @@
 
 .cases-title{
     text-align: center;
-    font-size: 2.1rem;
-    font-weight: 300;
     padding-top: 5rem;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+
 }
 
 .cases-desc{
+    margin-left: 240px;
     padding: 2rem 5rem;
     font-size: 1.5rem;
     font-weight: 300;
+    width: 65%;
 }
 
 .cases-list-box{
     width: 95%;
     margin: 0 auto;
+    margin-left: 240px;
 }
 
 .cases-item-box{
-    width: 28.5rem;
-    height: 28rem;
+    width: 440px;
+    height: 459px;
     overflow: hidden;
     margin: 1.2rem;
 }
@@ -48,7 +53,7 @@
 .cases-item-title{
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 1.8rem;
+    font-size: 26px;
     font-weight: 300;
     line-height: 4rem;
     color: #333333;
@@ -57,10 +62,12 @@
 .cases-item-desc{
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 1.2rem;
-    font-weight: 300;
-    /*line-height: 4rem;*/
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
     color: #7F7F7F;
+    line-height: 30px;
+    /*line-height: 4rem;*/
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
