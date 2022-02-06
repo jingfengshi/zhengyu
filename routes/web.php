@@ -5,7 +5,7 @@ Route::get('/', 'IndexController@index');// 首页
 Route::get('/about', 'SiteController@about')->name('about');// 关于我们
 Route::get('/connect', 'SiteController@connect')->name('connect');// 联系我们
 
-Route::get('/brand', 'BrandController@index');// 服务品牌
+Route::get('/brand', 'BrandController@index')->name('brand');// 服务品牌
 Route::get('/cert', 'CertController@index')->name('cert');// 证书
 Route::get('/ccCert', 'CertController@ccCert')->name('ccCert');// 证书
 // 产品
@@ -22,7 +22,7 @@ Route::get('/product-info/{id}', 'ProductController@info');// 产品详情页 - 
 Route::get('/service', 'FuwuController@index')->name('service');// 服务
 
 // 案例
-Route::get('/cases', 'CasesController@index');
+Route::get('/cases', 'CasesController@index')->name('cases');
 Route::get('/cases/{id}', 'CasesController@info');
 
 // 新闻
@@ -37,3 +37,6 @@ Route::get('/coInfo', 'PrivateController@qiye')->name('coInfo');
 
 //职业
 Route::get('/occupation', 'OccupationController@index')->name('occupation');
+
+//供应商
+Route::get('/supply', 'gongyingshangController@index')->name('supply');

@@ -13,8 +13,8 @@
     }
 </style>
 <div class="cases-top-title">
-    <a href="">伙伴</a>
-    <a href="">共同推动行业前进</a>
-    <a href="">服务的品牌</a>
-    <a href="">案例</a>
+    <a href="{{route('supply')}}">伙伴</a>
+    <a href="{{route('supply')}}#foward">共同推动行业前进</a>
+    <a href="{{route('brand')}}">服务的品牌</a>
+    <a href="{{route('cases')}}">案例</a>
 </div>

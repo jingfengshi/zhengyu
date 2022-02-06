@@ -17,14 +17,16 @@
 }
 .brand-title{
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 32px;
     font-weight: 300;
     padding-top: 5rem;
 }
 .brand-desc{
     padding: 2rem 10rem;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 42px;
 }
 
 .brand-img-box{
@@ -34,8 +36,8 @@
 
 .brand-img-item{
     border: 1px dashed #b3b3b3;
-    width: 18rem;
-    height: 8.5rem;
+    width: 279px;
+    height: 125px;
     overflow: hidden;
     margin: 0.2rem;
     cursor: pointer;

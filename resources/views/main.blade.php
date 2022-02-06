@@ -137,13 +137,13 @@
                                 <a style="font-size: 20px" href="">服务</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">共同推进行业前进</a>
+                                <a style="font-size: 20px" href="{{route('supply')}}#foward">共同推进行业前进</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">服务的品牌</a>
+                                <a style="font-size: 20px" href="{{route('brand')}}">服务的品牌</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">案例</a>
+                                <a style="font-size: 20px" href="{{route('cases')}}">案例</a>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">

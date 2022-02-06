@@ -3,26 +3,25 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/brand.css')}}">
+    <div style="width: 1920px;height: auto;margin: auto">
+        @include('_bread_case')
 
-    <div class="brand-top-title">
-        <a href="">伙伴</a>
-        <a href="">共同推动行业前进</a>
-        <a href="">服务的品牌</a>
-        <a href="">案例</a>
-    </div>
+        <div class="brand-banner">
+            <img src="{{URL::asset('images/static/about-banner.png')}}">
+        </div>
 
-    <div class="brand-banner">
-        <img src="{{URL::asset('images/static/about-banner.png')}}">
-    </div>
-
-    <div>
-        <div class="brand-title">服务的品牌</div>
-        <div class="brand-desc">我们诚挚的为您提供高效高质的服务，期待您由衷的称赞与信赖，携手面向未来。</div>
-        <div class="brand-img-box">
-            @foreach($brands as $brand)
-                <div class="brand-img-item inline-block"><img src="{{URL::asset('uploads').'/'.$brand->file}}"></div>
-            @endforeach
+        <div style="width: 76%;margin:auto">
+            <div class="brand-title">服务的品牌</div>
+            <div class="brand-desc">我们诚挚的为您提供高效高质的服务，期待您由衷的称赞与信赖，携手面向未来。</div>
+            <div class="brand-img-box">
+                @foreach($brands as $brand)
+                    <div class="brand-img-item inline-block"><img src="{{URL::asset('uploads').'/'.$brand->file}}"></div>
+                @endforeach
+            </div>
         </div>
     </div>
+
+
+
 
 @endsection
