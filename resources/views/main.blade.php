@@ -134,7 +134,7 @@
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a style="font-size: 20px" href="">服务</a>
+                                <a style="font-size: 20px" href="{{route('service')}}">服务</a>
                             </div>
                             <div>
                                 <a style="font-size: 20px" href="{{route('supply')}}#foward">共同推进行业前进</a>

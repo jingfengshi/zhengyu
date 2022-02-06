@@ -8,12 +8,7 @@
 
 
     <div style="width: 1920px;margin: auto;">
-        <div class="brand-top-title">
-            <a href="{{route('occupation')}}">职业</a>
-            <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
-            <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
-        </div>
-
+       @include('_bread_occupation')
         <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;" >
             <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
         </div>
