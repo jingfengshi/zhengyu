@@ -16,6 +16,6 @@
     <a href="{{route('about')}}">关于正域</a>
     <a href="{{route('news')}}">新闻</a>
     <a href="{{route('cert')}}">企业荣誉</a>
-    <a href="">产品认证</a>
-    <a href="">联系我们</a>
+    <a href="{{route('ccCert')}}">产品认证</a>
+    <a href="{{route('connect')}}">联系我们</a>
 </div>

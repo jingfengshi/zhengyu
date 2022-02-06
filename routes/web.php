@@ -3,11 +3,11 @@
 // 单页
 Route::get('/', 'IndexController@index');// 首页
 Route::get('/about', 'SiteController@about')->name('about');// 关于我们
-Route::get('/connect', 'SiteController@connect');// 联系我们
+Route::get('/connect', 'SiteController@connect')->name('connect');// 联系我们
 
 Route::get('/brand', 'BrandController@index');// 服务品牌
 Route::get('/cert', 'CertController@index')->name('cert');// 证书
-
+Route::get('/ccCert', 'CertController@ccCert')->name('ccCert');// 证书
 // 产品
 Route::get('/products', 'ProductController@product');// 产品首页
 Route::get('/products/{id}', 'ProductController@list');// 产品列表页

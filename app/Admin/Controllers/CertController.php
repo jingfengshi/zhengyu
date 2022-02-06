@@ -27,6 +27,9 @@ class CertController extends AdminController
         $grid = new Grid(new Cert());
 
         $grid->column('title', '证书名称');
+        $grid->column('type', '类型')->display(function ($type){
+            return Cert::getTypeLabel()[$type];
+        });
         //$grid->column('file', '证书');
         $grid->column('show','是否展示')->display(function($value){
             return $value ? '是':'否';
@@ -60,7 +63,9 @@ class CertController extends AdminController
         $form = new Form(new Cert());
 
         $form->text('title', '证书名称')->rules('required');
+        $form->select('type', '类型')->options(Cert::getTypeLabel());
         $form->image('file', '证书');
+
         $form->switch('show','是否显示')->default(1);
         return $form;
     }

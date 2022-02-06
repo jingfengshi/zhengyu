@@ -14,11 +14,24 @@ class CertController  extends Controller
         $banner = Banners::where('type', Banners::TYPE_CERT)->orderBy('id', 'desc')->first();
 
 
-        $certs = Cert::orderBy('id', 'desc')->get();
+        $certs = Cert::where('type','honor')->orderBy('id', 'desc')->get();
 
 
 
         return view('cert', compact('banner', 'certs'));
+    }
+
+
+    public function ccCert()
+    {
+        $banner = Banners::where('type', Banners::TYPE_CERT)->orderBy('id', 'desc')->first();
+
+
+        $certs = Cert::where('type','certificate')->orderBy('id', 'desc')->get();
+
+
+
+        return view('ccCert', compact('banner', 'certs'));
     }
 
 
