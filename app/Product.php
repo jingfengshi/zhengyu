@@ -18,6 +18,7 @@ class Product extends Model
         'is_authentication' => 'boolean',
         'is_recommend' => 'boolean',
         'install' => 'array',
+        'sub_image'=>'array'
     ];
 
     public function getSubImageAttribute($value)

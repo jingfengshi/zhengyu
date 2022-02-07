@@ -13,11 +13,27 @@
             <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads/'.$banner->file)}}">
         </div>
 
-        <div>
-            <div class="content">
-                {!! empty($config['定制与试用']['value'])?'':$config['定制与试用']['value'] !!}
+        <div style="width: 91%;margin:auto;padding-right: 160px;">
+            <div class="brand-title">定制服务</div>
+            <div class="brand-desc"><pre>
+我们的设计生产团队提供专业的定制服务为您的业务提高效率。
+在“为安全而生”的宗旨上，我们深知：产品越容易使用，您越容易受益。
+同时，降低成本并提高效率是一个挑战，我们为此在不断努力。
+例如，在保持原有电压不变，保持原有设备完好的情况下做出符合您要求的产品。
+这就需要我们为您提供灵活的、个性的解决方案。
+无论是定制小型机柜、定制安装配件，还是录制专属语音、更改控制方式......
+提供高质量的定制服务，是上海正域自动化对您的郑重承诺。
+                </pre>
+                <p style="font-size: 14px;">*根据定制内容收取费用。</p></div>
+            <div class="brand-title">零风险试用</div>
+            <div class="brand-desc"><pre>
+我们有信心提供让您感到满意的产品。
+在申请免费试用的30天内，您可以自己安装安全可靠的灯具。
+如果您有任何不满意，请在30天内与我们联系并退回产品。
+我们将视情况为您选择更合适您的产品。
+上海正域自动化的销售工程师将以高度的要求来确保正确的产品配置
+                </pre>
             </div>
-
             <div class="apply-box">
                 <div class="apply-box-left"></div>
                 <div class="apply-box-right">
