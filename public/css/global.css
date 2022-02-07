@@ -5,6 +5,11 @@
     font-size: 0.95rem;
 }
 
+img {
+    max-width: none !important;
+    max-height: none !important;
+}
+
 .main-content {
     margin-top: 8rem;
 }

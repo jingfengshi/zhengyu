@@ -1,112 +1,51 @@
-/*.header-box {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    background-color: #FFFFFF;*/
-/*    z-index: 9999;*/
-/*    box-shadow: 2px 2px 2px #868686;*/
-/*}*/
-
-/*.header-top {*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*    height: 2.3rem;*/
-/*    width: 100%;*/
-/*    background-color: #333333;*/
-/*}*/
-
-/*.header-top .right {*/
-/*    width: 18rem;*/
-/*    display: flex;*/
-/*    padding: 0.5rem;*/
-/*    justify-content: space-between;*/
-/*    margin-right: 0;*/
-/*}*/
-
-/* Phone 或 PAD */
-/*.header-body{*/
-/*	height: 2rem;*/
-/*	padding-top: 2rem;*/
-/*	padding-bottom: 2rem;*/
-/*	display: flex;*/
-/*	justify-content: flex-start;*/
-/*}*/
-/*.header-body .item{*/
-/*	margin-left: 2rem;*/
-/*	height: 2rem;*/
-/*	line-height: 3rem;*/
-/*	font-size: 1.15rem;*/
-/*}*/
-
-/* PC */
-/*.header-body {*/
-/*    height: 2rem;*/
-/*    padding-top: 2rem;*/
-/*    padding-bottom: 4rem;*/
-/*    padding-left: 10rem;*/
-/*    display: flex;*/
-/*    justify-content: flex-start;*/
-/*}*/
-
-/*.header-body .item {*/
-/*    margin-left: 6rem;*/
-/*    height: 2rem;*/
-/*    line-height: 3rem;*/
-/*    font-size: 1.15rem;*/
-/*}*/
-
-/*.header-body .logo {*/
-/*    width: 18rem;*/
-/*    height: 2rem;*/
-/*    background: url("../images/static/logo.png");*/
-/*    background-size: 100% 100%;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
-/*.header-to-banner {*/
-/*    height: 0.1rem;*/
-/*    margin-top: 8.2rem;*/
-/*}*/
-
 .banner-box {
-    height: 44rem;
+    height: 670px;
     width: 100%;
     display: flex;
 }
 
 .banner-box .item {
-    width: 30%;
+    width: 449px;
     overflow: hidden;
 }
 
 .banner-box .item .mask {
     opacity: 0.6;
     background-color: #3E3E3E;
-    height: 45rem;
-    width: 100%;
+    height: 670px;
+    width: 449px;
     position: relative;
-    bottom: 45rem;
+    bottom: 670px;
+}
+
+.banner-box .active .mask {
+    opacity: 0.6;
+    background-color: #3E3E3E;
+    height: 670px;
+    width: 1479px !important;
+    position: relative;
+    bottom: 670px;
 }
 
 .banner-box .active {
-    width: 70%;
+    width: 1479px !important;
 }
 
 .banner-box .item img {
-    height: 44rem;
+    height: 670px;
 }
 
 .banner-box .active img {
-    width: 100%;
-    height: 44rem;
+    width: 1479px !important;
+    /*height: 670px;*/
 }
 
 .banner-box .item .text {
-    height: 29rem;
+    height: 300px;
     width: 70%;
     margin: 0 auto;
     position: relative;
-    bottom: 75rem;
+    bottom: 1150px;
 }
 
 .banner-box .item .text .hidden-box, .banner-box .item .text .hidden-box .links {
@@ -117,78 +56,109 @@
     display: block;
 }
 
+.banner-box .item .text, .banner-box .item .text div {
+    text-align: center;
+}
+
+.banner-box .item .text {
+    width: 400px;
+    text-align: center;
+    margin-left: 0 !important;
+    margin-top: 100px !important;
+}
+
+.banner-box .active .text, .banner-box .active .text div {
+    text-align: inherit;
+}
+
+.banner-box .active .text {
+    width: 70%;
+    text-align: inherit;
+    margin-left: 420px !important;
+    margin-top: 15px !important;
+}
+
 .banner-box .active .text .hidden-box .links {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
-}
-
-/*.banner-box .item .more{*/
-/*	font-size: 1rem;*/
-/*	height: 2.7rem;*/
-/*	line-height: 2.7rem;*/
-/*	width: 12rem;*/
-/*	background-color: rgba(3, 100, 210, 1);*/
-/*	border-radius: 3rem;*/
-/*	text-align: center;*/
-/*	margin-top: 2rem;*/
-/*}*/
-
-.more {
-    font-size: 1rem;
-    height: 2.7rem;
-    line-height: 2.7rem;
-    width: 12rem;
-    background-color: rgba(3, 100, 210, 1);
-    border-radius: 3rem;
-    text-align: center;
-    margin-top: 2rem;
-    cursor: pointer;
+    margin-top: 190px;
 }
 
 .header-bottom {
     background-color: rgba(13, 38, 77, 1);
-    height: 8rem;
-    line-height: 8rem;
+    height: 150px;
+    line-height: 150px;
     text-align: center;
-    font-size: 2.4rem;
     color: white;
+    font-size: 36px;
 }
 
+.header-bottom span {
+    font-size: 36px
+}
+
+
+/*.more {*/
+/*    font-size: 1rem;*/
+/*    height: 2.7rem;*/
+/*    line-height: 2.7rem;*/
+/*    width: 12rem;*/
+/*    background-color: rgba(3, 100, 210, 1);*/
+/*    border-radius: 3rem;*/
+/*    text-align: center;*/
+/*    margin-top: 2rem;*/
+/*    cursor: pointer;*/
+/*}*/
+
 .about-box {
-    width: 90%;
-    height: 22rem;
-    margin: 5rem auto;
-    border-radius: 2rem;
+    width: 1440px;
+    height: 320px;
+    margin: 50px auto;
+    border-radius: 20px;
     background: url("../images/static/banner-3.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .about-box .mask {
-    border-radius: 2rem;
+    border-radius: 20px;
     opacity: 0.6;
     background-color: #3E3E3E;
-    height: 22rem;
-    width: 100%;
+    height: 320px;
+    width: 1440px;
     position: relative;
 }
 
 .about-box .text-top {
     /*padding-top: 5rem;*/
-    margin-top: -15rem;
-    margin-left: 8rem;
-    font-size: 2.6rem;
-    line-height: 4rem;
+    margin-top: -235px;
+    margin-left: 230px;
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 70px;
+    color: rgba(255, 255, 255, 0.996078431372549);
     position: relative;
     /*z-index: 999;*/
 }
 
 .about-box .more {
     float: right;
-    margin-right: 13rem;
-    margin-top: 0.8rem;
+    margin-right: 160px;
+    margin-top: 12px;
     position: relative;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: rgba(3, 100, 210, 1);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20rem;
 }
 
 .title {
@@ -500,19 +470,19 @@
     background: #fff;
 }
 
-.pagination ,.pagination-project {
+.pagination, .pagination-project {
     z-index: 999;
     text-align: center;
 }
 
-.font-size-title{
+.font-size-title {
     font-size: 2.6rem;
 }
 
-.font-size-s-title{
+.font-size-s-title {
     font-size: 1.6rem;
 }
 
-.line-height-s-title{
+.line-height-s-title {
     line-height: 3rem;
 }
