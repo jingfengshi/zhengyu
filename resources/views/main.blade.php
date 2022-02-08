@@ -36,10 +36,10 @@
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
-                    <a class="header-a" href="">保护人们在危险环境安全工作</a>
+                    <a class="header-a" href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a>
                 </div>
                 <div>
-                    <a class="header-a" href="">智慧计量工具</a>
+                    <a class="header-a" href="{{route('cate',['type'=>'cal'])}}">智慧计量工具</a>
                 </div>
             </div>
 

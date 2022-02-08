@@ -112,7 +112,7 @@
                     <div class="product-item inline-block shadow-xl">
                         <img src="{{URL::asset('uploads').'/'.$category->image}}">
                         <div class="product-item-title">{{$category->name}}</div>
-                        <a href="/category-info/{{$category->id}}">
+                        <a href="/cate/{{$category->id}}">
                             <div class="product-item-btn font-color-white">查看更多产品</div>
                         </a>
                     </div>

@@ -44,3 +44,6 @@ Route::get('/supply', 'gongyingshangController@index')->name('supply');
 
 //分类
 Route::get('/cate', 'CategoriesController@index')->name('cate');
+
+
+Route::get('/cate/{cate}', 'CategoriesController@showCategory');

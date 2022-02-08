@@ -19,8 +19,10 @@ class CategoriesController extends Controller
 
 
 
-    public function showCategory(Request  $request)
+    public function showCategory(Request  $request,Category2 $cate)
     {
-
+        $type = $cate->type;
+        $allCategories = Category2::where('type',$type)->get();
+        return view('product_list',compact('cate','allCategories'));
     }
 }
