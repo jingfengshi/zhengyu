@@ -2,7 +2,6 @@
 
 namespace App\Admin\Controllers;
 
-use App\Category;
 use App\Category2;
 use App\Product;
 use Encore\Admin\Controllers\AdminController;
@@ -75,11 +74,11 @@ class ProductsController extends AdminController
 
         $form->select('category_id', '类目')->options($options);
         // 创建一个选择图片的框
-        $form->image('image', '封面图片')->rules('required|image');
-        $form->multipleImage("sub_image","产品图片");
+        $form->image('image', '封面图片')->removable();
+        $form->multipleImage("sub_image","产品图片")->removable()->sortable();
 
         // 添加简短描述
-        $form->textarea("desc","简短描述");
+        $form->editor("desc","简短描述");
 
         // 创建一个富文本编辑器
         $form->editor('description', '优点和特点')->rules('required');
@@ -91,14 +90,14 @@ class ProductsController extends AdminController
         $form->radio('is_recommend', '推荐')->options(['1' => '是', '0'=> '否'])->default('0');
 
         $form->textarea("apply_area","应用范围")->required("required");
-        $form->image("sharp","外形尺寸");
+        $form->image("sharp","外形尺寸")->removable();
         $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {
             $form->text('name', '属性名')->rules('required');
             $form->text('value', '属性值')->rules('required');
         });
-        $form->file("file","资料下载");
-        $form->file("video","视频");
-        $form->multipleImage("install","现场安装");
+        $form->file("file","资料下载")->removable();
+        $form->file("video","视频")->removable();
+        $form->multipleImage("install","现场安装")->removable()->sortable();;
 
 
         return $form;
