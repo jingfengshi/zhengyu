@@ -26,3 +26,17 @@
 * 金牌服务
 * 定制与试用
 * 首页
+
+
+待完成
+
+* /about
+* /connect
+* /brand
+* /products
+* /products/{id}
+* /products-search/{title}
+* /product/{id} 数据没对接
+* /product-info/{id}
+* /cases
+* /cases/{id}

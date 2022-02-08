@@ -17,7 +17,7 @@
         <div class="case-top">
             <div style="margin-left: 240px;">
                 <div class="case-top-title">{{$case->title}}</div>
-                <div class="case-top-date">{{$case->updated_at->format('Y-m-d')}}</div>
+                <div class="case-top-date">{{$case->updated_at?$case->updated_at->format('Y-m-d'):''}}</div>
             </div>
 
         </div>
