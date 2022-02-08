@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item ml-2">
+            <div class="item" style="margin-left: 8px;">
                 <img
                     src="{{empty($banner_right->file)?URL::asset('uploads').'/default.png':URL::asset('uploads').'/'.$banner_right->file}}">
                 <div class="mask"></div>
