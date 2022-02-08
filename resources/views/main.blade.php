@@ -19,9 +19,9 @@
         </div>
         <div class="flex items-center space-x-8" style="width:255px;margin-right:162px;margin-top: 7px">
             <a style="font-size: 14px" href="/service">服务</a>
-            <a style="font-size: 14px"  href="/brand">伙伴</a>
-            <a style="font-size: 14px"  href="{{route('occupation')}}">职业</a>
-            <a style="font-size: 14px"  href="/about">关于我们</a>
+            <a style="font-size: 14px" href="/brand">伙伴</a>
+            <a style="font-size: 14px" href="{{route('occupation')}}">职业</a>
+            <a style="font-size: 14px" href="/about">关于我们</a>
         </div>
         <div class="flex" style="margin-right: 2rem">
             <a href="">中文</a>
@@ -36,7 +36,7 @@
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
-                    <a class="header-a"  href="">保护人们在危险环境安全工作</a>
+                    <a class="header-a" href="">保护人们在危险环境安全工作</a>
                 </div>
                 <div>
                     <a class="header-a" href="">智慧计量工具</a>
@@ -64,17 +64,53 @@
 
         <script>
             $(document).on('click', '#search_product_btn', function () {
-                if (!$('#search_product_input').val() || $('#search_product_input').val() == null){
+                if (!$('#search_product_input').val() || $('#search_product_input').val() == null) {
                     alert('请输入产品名称');
-                }else{
-                    window.location.href = '{{URL::route('search','')}}'+'/'+$('#search_product_input').val();
+                } else {
+                    window.location.href = '{{URL::route('search','')}}' + '/' + $('#search_product_input').val();
                 }
             })
         </script>
     </div>
 </div>
 
-<div class="main-content">@yield("content")</div>
+<div class="main-content">
+    @yield("content")
+    <div id="cookie_box" style="display: none;">
+        <div
+            style="width: 1920px;height: 1000px;background-color: #CCCCCC;opacity: 0.6;position: fixed;z-index: 999;top:0;"></div>
+        <div
+            style="width: 700px;height: 200px;position: fixed;top: 50%;left:27%;background-color: #FFFFFF; z-index: 1000;">
+            <div style="font-size: 16px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 30px;">我们尊重您的隐私
+            </div>
+            <div style="color: #646464;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-left: 30px;">点击"接受全部 Cookie"即表示您同意将 Cookie 存储在您的设备上，以增强网站导航、分析网站使用情况并协助我们开展营销和性能改进活动。
+            </div>
+            <div style="width: 158px;
+    height: 36px;
+    font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    background: inherit;
+    background-color: rgba(3, 100, 210, 1);
+    border: none;
+    border-radius: 20px;
+    margin-top: 29px;
+    margin-left: 500px;
+cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer class="text-white"
         style="width: 1920px;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
@@ -89,7 +125,7 @@
             <div class="flex" style="margin-left: 240px;">
                 <div class=" w-3/4 " style="height: 300px;">
                     <div class="flex justify-around  ">
-                        <div  style="background-color: rgba(72, 72, 72, 1);" class="w-[23rem]">
+                        <div style="background-color: rgba(72, 72, 72, 1);" class="w-[23rem]">
                             <div class="flex" style="height: 26px;margin-top: 3rem">
                                 <img src="{{URL::asset('/images/首页/u38.svg')}}" alt="">
                                 <img src="{{URL::asset('/images/首页/u34.svg')}}" alt="">
@@ -119,9 +155,9 @@
                             <a href="/news" style="height: 22px;font-size: 20px;padding-left: 1rem">新闻活动</a>
                         </div>
                     </div>
-                    <div class="flex h-[300px] justify-around mt-[5rem]" >
+                    <div class="flex h-[300px] justify-around mt-[5rem]">
                         <div class="flex flex-col space-y-3 w-[23rem]">
-                            <div >
+                            <div>
                                 <a style="font-size: 20px" href="">业务</a>
                             </div>
                             <div>
@@ -237,10 +273,13 @@
 
     const allow_get_cookie = localStorage.getItem("allow_get_cookie");
     if (allow_get_cookie == null) {
-        var confirm_res = window.confirm('是否允许我们使用 cookie 来增强用户体验。您可以选择将网络浏览器设置为拒绝 cookie，或在发送 cookie 时提醒您。');
-        localStorage.setItem("allow_get_cookie", confirm_res)
+        $('#cookie_box').show();
     }
 
+    function allow_cookie() {
+        localStorage.setItem("allow_get_cookie", true)
+        $('#cookie_box').hide();
+    }
 </script>
 
 </body>
