@@ -1,14 +1,12 @@
-### TODO 包括但不限于数据没对接的问题
+待完成
 
-* 其他甲方需要调整的样式等细节问题
-* 产品首页添加 banner 6大图+6小图+6主标题+6副标题+6描述 的后台管理功能
-
-
-
-
-
+* /products/{id}
+* /products-search/{title}
+* /product/{id} 数据没对接
+* /product-info/{id}
 
 已完成
+
 * 隐私声明
 * 企业信息
 * 职业
@@ -30,12 +28,4 @@
 * 联系我们
 * 服务品牌
 * 案例
-
-
-待完成
-
-* /products
-* /products/{id}
-* /products-search/{title}
-* /product/{id} 数据没对接
-* /product-info/{id}
+* 产品 - /products
