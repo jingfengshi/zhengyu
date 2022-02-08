@@ -158,21 +158,61 @@
         </div>
 
         {{--  news  --}}
-        <div class="news-box">
+        <div style="width: 1440px;
+    height: 890px;
+    margin: 100px auto;">
             <div class="left-box">
                 <div class="left-box-about"
                      style='background: url("{{URL::asset('images/static/banner-3.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                    <div class="title left-box-about-title font-color-white">关于我们</div>
-                    <div class="left-box-about-desc">上海正域自动化设备有限公司于2010年6月成立，2010年8月正式投产，专注于研究声音与光产品的研发与生产……</div>
+                    <div style="
+                    position: relative;
+                    z-index: 999;
+                    font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 40px;
+                    color: #FFFFFF;
+                    top: 65px;
+left: 70px;">关于我们
+                    </div>
+                    <div style="position: relative;
+    top: 110px;
+    z-index: 999;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 40px;
+    font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+left: 70px;
+width: 595px;">上海正域自动化设备有限公司于2010年6月成立，2010年8月正式投产，专注于研究声音与光产品的研发与生产……
+                    </div>
                     <a href="/about">
-                        <div class="more left-box-about-more font-color-white">了解更多</div>
+                        <div style="float: right;
+    position: relative;
+    right: 100px;
+    top: 100px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: rgba(3, 100, 210, 1);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20px;color: #FFFFFF;z-index: 999;">了解更多
+                        </div>
                     </a>
                 </div>
                 <div class="left-box-about-mask"></div>
                 <div class="left-box-invite"
                      style='background: url("{{URL::asset('images/static/invite.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                    <div class="title left-box-invite-title font-color-white">招贤纳士</div>
-                    <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道</div>
+                    <div class="left-box-invite-title font-color-white">招贤纳士</div>
+                    <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道。</div>
                     <a href="/connect">
                         <div class="more left-box-invite-more font-color-white">了解更多</div>
                     </a>
@@ -182,7 +222,7 @@
             <div class="right-box">
                 <div class="right-box-top-img"
                      style='background: url("{{URL::asset('images/static/news.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
-                    <div class="title right-box-top-img-title">新闻活动</div>
+                    <div class="right-box-top-img-title">新闻活动</div>
                 </div>
                 <div class="right-box-top-img-mask"></div>
                 <div class="news">
@@ -194,7 +234,7 @@
                             </div>
                             <div class="news-item-right">
                                 <a href="/news/{{$news_item->id}}">
-                                    <div class="news-item-right-title text-overflow">{{$news_item->title}}</div>
+                                    <div class="news-item-right-title">{{$news_item->title}}</div>
                                 </a>
                                 <a href="/news/{{$news_item->id}}">
                                     <div class="news-item-right-desc">{{$news_item->desc}}</div>
@@ -207,12 +247,36 @@
                     @endforeach
                 </div>
                 <a href="/news">
-                    <div class="more right-box-more font-color-white">了解更多</div>
+                    <div style="
+position: relative;
+    z-index: 999;
+    float: right;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: rgba(3, 100, 210, 1);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20px;
+    color: #FFFFFF;
+        right: 46px;
+top: 35px;
+">了解更多
+                    </div>
                 </a>
             </div>
         </div>
 
-        <div class="title" style="margin-top: -4rem">主要项目</div>
+        <div style="font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;letter-spacing: normal;
+    color: #333333;width: 1440px;
+    margin: -40px auto 50px auto;">主要项目</div>
 
         {{--  project  --}}
         <div class="project swiper-container-project">
