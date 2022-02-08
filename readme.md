@@ -29,6 +29,7 @@
 * 关于我们
 * 联系我们
 * 服务品牌
+* 案例
 
 
 待完成
@@ -38,5 +39,3 @@
 * /products-search/{title}
 * /product/{id} 数据没对接
 * /product-info/{id}
-* /cases
-* /cases/{id}

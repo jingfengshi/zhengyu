@@ -1,10 +1,10 @@
 <style>
     .cases-top-title{
-        padding: 2rem 240px;
+        padding: 2.8rem 240px 1.45rem 240px;
     }
 
     .cases-top-title a{
-        margin-right: 1.5rem;
+        margin-right: 2.4rem;
         font-family: 'Arial Normal', 'Arial', sans-serif;
         font-weight: 400;
         font-style: normal;
