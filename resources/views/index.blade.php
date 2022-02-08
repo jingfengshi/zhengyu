@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{URL::asset('swiper/css/idangerous.swiper.css')}}">
     <script src="{{URL::asset('swiper/js/idangerous.swiper.min.js')}}"></script>
 
-    <div style="width: 1920px;">
+    <div style="width: 1920px;margin: auto" >
         {{--  banner  --}}
         <div class="banner-box">
             <div class="item active">
@@ -29,33 +29,19 @@
                         </div>
                         <div
                             style="width: 180px;height: 40px;font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;font-weight: 400;font-style: normal;font-size: 16px;line-height: 40px;text-align: center;color: #FFFFFF;background: inherit;background-color: rgba(3, 100, 210, 1);border: none;border-radius: 20px;margin-top: 20px">
-                            了解更多
+                            <a href="{{route('cate',['type'=>'protected'])}}">了解更多</a>
                         </div>
                         <div class="links font-color-white">
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">广播通讯</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">通讯显示</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">照明</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">风速仪</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">障碍物标记</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">声光报警</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">声音信号</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">视觉信号</a>
-                            </div>
+                            @if(!empty($cates) && isset($cates['protected']))
+
+                                @foreach($cates['protected'] as  $cate)
+                                    <div><a href="/cate/{{$cate->id}}"
+                                            style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">{{$cate->name}}</a>
+                                    </div>
+                                @endforeach
+                            @endif
+
+
                         </div>
                     </div>
                 </div>
@@ -80,27 +66,18 @@
                         </div>
                         <div
                             style="width: 180px;height: 40px;font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif;font-weight: 400;font-style: normal;font-size: 16px;line-height: 40px;text-align: center;color: #FFFFFF;background: inherit;background-color: rgba(3, 100, 210, 1);border: none;border-radius: 20px;margin-top: 20px">
-                            了解更多
+                            <a href="{{route('cate',['type'=>'cal'])}}">了解更多</a>
                         </div>
                         <div class="links font-color-white">
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">工业通讯</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">温度测量</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">物位测量</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">压力测量</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">液体、气体和蒸汽流量测量</a>
-                            </div>
-                            <div><a href=""
-                                    style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">应用中液体、气体分析</a>
-                            </div>
+
+                            @if(!empty($cates) && isset($cates['cal']))
+
+                                @foreach($cates['protected'] as  $cate)
+                                    <div><a href="/cate/{{$cate->id}}"
+                                            style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">{{$cate->name}}</a>
+                                    </div>
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>

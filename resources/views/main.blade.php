@@ -161,10 +161,10 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                                 <a style="font-size: 20px" href="{{route('cate')}}">业务</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">保护人们在危险环境中安全工作</a>
+                                <a style="font-size: 20px" href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境中安全工作</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">智慧工业计量</a>
+                                <a style="font-size: 20px" href="{{route('cate',['type'=>'cal'])}}">智慧工业计量</a>
                             </div>
 
                         </div>
