@@ -158,7 +158,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                     <div class="flex h-[300px] justify-around mt-[5rem]">
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a style="font-size: 20px" href="">业务</a>
+                                <a style="font-size: 20px" href="{{route('cate')}}">业务</a>
                             </div>
                             <div>
                                 <a style="font-size: 20px" href="">保护人们在危险环境中安全工作</a>
@@ -216,12 +216,12 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                 <div class="w-1/4 flex flex-col justify-center space-y-6 mt-[10rem]">
                     <div>
                         <div style="width: 68px;height: 68px;">
-                            <img src="{{URL::asset('/images/首页/u28.png')}}" alt="">
+                            <img style="width: 68px;height: 68px;" src="{{URL::asset('/images/首页/u28.png')}}" alt="">
                         </div>
                     </div>
                     <div class="flex space-x-2">
                         <div style="width: 31px;height: 25px;">
-                            <img src="{{URL::asset('/images/首页/u14.svg')}}" alt="">
+                            <img style="width: 31px;height: 25px;" src="{{URL::asset('/images/首页/u14.svg')}}" alt="">
                         </div>
                         <div style="width: 31px;height: 25px;margin-left: 1rem">
                             <img src="{{URL::asset('/images/首页/u15.svg')}}" alt="">

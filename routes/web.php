@@ -40,3 +40,7 @@ Route::get('/occupation', 'OccupationController@index')->name('occupation');
 
 //供应商
 Route::get('/supply', 'gongyingshangController@index')->name('supply');
+
+
+//分类
+Route::get('/cate', 'CategoriesController@index')->name('cate');
