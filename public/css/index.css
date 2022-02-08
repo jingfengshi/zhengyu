@@ -248,7 +248,7 @@
 
 .left-box-invite-mask {
     border-radius: 15px;
-    opacity: 0.6;
+    opacity: 0;
     background-color: #3E3E3E;
     height: 265px;
     width: 767px;
@@ -309,7 +309,7 @@
 }
 
 .right-box-top-img-mask {
-    opacity: 0.6;
+    opacity: 0;
     background-color: #3E3E3E;
     height: 178px;
     width: 640px;
