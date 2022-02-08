@@ -19,8 +19,8 @@
     <div>
         <div class="connect-title">找到我们</div>
         <div class="connect-desc-box">
-            <div class="connect-desc-left connect-desc">地址：<br>上海市嘉定区汇贤路758号3号楼3层（外冈高新技术产业园）</div>
-            <div class="connect-desc-right connect-desc">联系：<br>T -86-21-37529125 / 86-21-37529312<br>F
+            <div class="connect-desc-left connect-desc">地址 <br> / <br>上海市嘉定区汇贤路758号3号楼3层（外冈高新技术产业园）</div>
+            <div class="connect-desc-right connect-desc">联系 <br> / <br>T -86-21-37529125 / 86-21-37529312<br>F
                 -86-21-37529135<br>E -ZY37529125@163.com
             </div>
         </div>

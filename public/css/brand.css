@@ -1,19 +1,24 @@
 .brand-top-title{
-    padding: 2rem 240px;
+    padding: 2.8rem 240px 1.45rem 240px;
 }
 
 .brand-top-title a{
+    margin-right: 2.4rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
     color: #484848;
-    margin-right: 1.5rem;
 }
 
 .brand-banner{
-    height: 32rem;
+    height: 33rem;
+    width: 1920px;
     overflow: hidden;
 }
 
 .brand-banner img{
-    width: 100%;
+    width: 1920px;
 }
 .brand-title{
     text-align: center;

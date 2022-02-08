@@ -27,12 +27,12 @@
 * 定制与试用
 * 首页
 * 关于我们
+* 联系我们
+* 服务品牌
 
 
 待完成
 
-* /connect
-* /brand
 * /products
 * /products/{id}
 * /products-search/{title}
