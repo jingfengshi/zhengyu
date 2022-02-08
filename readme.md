@@ -1,6 +1,5 @@
 待完成
 
-* /products/{id}
 * /products-search/{title}
 * /product/{id} 数据没对接
 * /product-info/{id}
@@ -29,3 +28,4 @@
 * 服务品牌
 * 案例
 * 产品 - /products
+* 产品 - /products/{id}
