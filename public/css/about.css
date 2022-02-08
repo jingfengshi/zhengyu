@@ -1,58 +1,83 @@
 .about-top-title {
-    padding: 2rem 4rem;
+    padding: 2.8rem 240px 1.45rem 240px;
 }
 
 .about-top-title a {
+    margin-right: 2.4rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
     color: #484848;
-    margin-right: 1.5rem;
 }
 
 .about-banner {
     height: 50rem;
+    width: 1920px;
     overflow: hidden;
 }
 
 .about-banner img {
-    width: 100%;
+    width: 1920px;
 }
 
 .about-banner-title-box {
     height: 25rem;
     padding-left: 13rem;
     position: relative;
-    top: -50rem;
+    top: -66.5rem;
+    left: 14rem;
 }
 
 .about-banner-title {
-    font-size: 2.4rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.996078431372549);
+    line-height: 50px;
 }
 
 .about-banner-desc {
     margin-top: 3rem;
-    font-size: 1.4rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.996078431372549);
 }
 
 .about-box {
-    width: 80%;
+    width: 1920px;
     margin: 10rem auto;
 }
 
 .about-box-title {
+    width: 1440px;
+    margin: 0 auto 3rem auto;
     text-align: center;
-    font-size: 2.7rem;
+    font-family: 'PingFang ', 'PingFang', sans-serif;
     font-weight: 100;
-    margin-bottom: 3rem;
+    font-style: normal;
+    font-size: 42px;
+    text-align: center;
 }
 
 .about-box-desc {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 350;
+    width: 1104px;
+    margin: 5rem auto;
+    font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;
+    font-size: 24px;
+    line-height: 40px;
     color: #333333;
 }
 
 .about-box-img {
-    margin-top: 5rem;
+    width: 1104px;
+    margin: 5rem auto;
     height: 30rem;
     background: url("../images/static/about-2.svg");
     background-size: 100% 100%;
@@ -71,73 +96,107 @@
     cursor: pointer;
 }
 
-.about-img-box{
-    height:30rem;
+.about-img-box {
+    height: 30rem;
+    width: 1500px;
+    margin: 0 auto;
 }
 
-.about-img-box-img{
+.about-img-box-img {
     height: 30rem;
     width: 50%;
 }
 
-.about-img-box-desc{
+.about-img-box-desc {
     height: 30rem;
     width: 50%;
     background-color: rgba(13, 58, 111, 1);
 }
-.about-img-box-desc-title{
+
+.about-img-box-desc-title {
     margin-top: 5rem;
     margin-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 2.5rem;
-}
-.about-img-box-desc-title-2{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 2rem;
-    line-height: 4rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.996078431372549);
 }
 
-.about-img-box-desc-title-3{
+.about-img-box-desc-title-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.996078431372549);
+    line-height: 60px;
+}
+
+.about-img-box-desc-title-3 {
     margin-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-family: 'Arial Narrow', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.996078431372549);
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
 }
-.more-msg-box{
+
+.more-msg-box {
     width: 80%;
     margin: 6rem auto;
 }
-.more-msg-box-title{
+
+.more-msg-box-title {
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
     color: #2D2D2D;
     text-align: center;
-    font-size: 2.7rem;
 }
-.more-msg-box-news,.more-msg-box-story{
+
+.more-msg-box-news, .more-msg-box-story {
     margin-top: 3rem;
     border-radius: 1rem;
-    width: 35rem;
-    height: 18rem;
+    width: 500px;
+    height: 280px;
     background-color: rgba(234, 234, 234, 1);
     padding: 3rem 3rem;
 }
 
-.more-msg-box-item-title{
-    font-size: 2.2rem;
+.more-msg-box-item-title {
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
     color: #333333;
 }
 
-.more-msg-box-item-desc{
-    font-size: 1.6rem;
+.more-msg-box-item-desc {
     color: #333333;
-    font-weight: 300;
-    line-height: 3.2rem;
+    font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;
+    font-size: 24px;
+    line-height: 50px;
 }
 
-.more-msg-box-item-btn{
-    font-size: 1rem;
+.more-msg-box-item-btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     height: 2.7rem;
     line-height: 2.7rem;
     width: 12rem;

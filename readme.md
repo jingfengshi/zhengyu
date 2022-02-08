@@ -26,11 +26,11 @@
 * 金牌服务
 * 定制与试用
 * 首页
+* 关于我们
 
 
 待完成
 
-* /about
 * /connect
 * /brand
 * /products
