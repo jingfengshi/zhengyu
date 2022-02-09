@@ -24,9 +24,8 @@
         <div class="product-top-title">
             <a href="/about">行业</a>
             <a id="nav_btn" href="javascript:;">产品</a>
-            <a href="/cases">企业荣誉</a>
-            <a href="/cert">产品认证</a>
-            <a href="/connect">联系我们</a>
+            <a href="#zhidexinlai">关键时刻值得信赖</a>
+            <a href="#projects">项目</a>
         </div>
 
         <div style="width: 1920px;">
@@ -121,7 +120,7 @@
         </div>
 
         <div style="width: 1920px;">
-            <div class="product-block-title">正域 值得信赖</div>
+            <div id="zhidexinlai" class="product-block-title">正域 值得信赖</div>
 
             <div class="product-trust-box">
                 <div class="product-trust-item"
@@ -142,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="product-block-title">我们的解决方案</div>
+            <div id='projects' class="product-block-title">我们的解决方案</div>
 
             <div class="product-plan-box">
                 @foreach($cases as $case)
