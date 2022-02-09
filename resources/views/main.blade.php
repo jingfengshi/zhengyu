@@ -19,7 +19,7 @@
         </div>
         <div class="flex items-center space-x-8" style="width:255px;margin-right:162px;margin-top: 7px">
             <a style="font-size: 14px" href="/service">服务</a>
-            <a style="font-size: 14px" href="/brand">伙伴</a>
+            <a style="font-size: 14px" href="{{route('supply')}}">伙伴</a>
             <a style="font-size: 14px" href="{{route('occupation')}}">职业</a>
             <a style="font-size: 14px" href="/about">关于我们</a>
         </div>

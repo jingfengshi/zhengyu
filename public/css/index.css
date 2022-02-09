@@ -82,6 +82,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 190px;
+    width: 80%;
 }
 
 .header-bottom {

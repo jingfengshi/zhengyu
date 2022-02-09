@@ -26,16 +26,16 @@
 
 .apply-box {
     background-color: rgba(242, 242, 242, 1);
-    width: 90%;
-    margin: 3rem auto;
-    height: 23rem;
+    width: 1422px;
+    margin-top: 3rem;
+    margin-left: 150px;
+    height: 348px;
 }
 
 .apply-box-left {
     width: 37%;
     float: left;
     height: 23rem;
-    background: url("../images/static/banner-1.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -81,6 +81,8 @@
     text-align: center;
     margin-top: 2rem;
     cursor: pointer;
+    display: inline-block;
+    margin-left: 180px;
 }
 
 
