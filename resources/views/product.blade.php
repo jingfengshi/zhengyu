@@ -110,10 +110,16 @@
                 @foreach($categories as $category)
                     <div class="product-item inline-block shadow-xl">
                         <img src="{{URL::asset('uploads').'/'.$category->image}}">
-                        <div class="product-item-title">{{$category->name}}</div>
-                        <a href="/cate/{{$category->id}}">
-                            <div class="product-item-btn font-color-white">查看更多产品</div>
-                        </a>
+                        <div style="height: 107px">
+                            <div class="product-item-title">{{$category->name}}</div>
+                        </div>
+
+
+                            <div class="product-item-btn font-color-white">
+                        <a href="/cate/{{$category->id}}">查看更多产品  </a>
+
+                    </div>
+
                     </div>
                 @endforeach
             </div>
