@@ -10,19 +10,18 @@ use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
 {
-    public function index(Request  $request)
+    public function index(Request $request)
     {
-        $cates =Category2::with('products')->where('type',$request->input('type','protected'))->get();
+        $cates = Category2::with('products')->where('type', $request->input('type', 'protected'))->get();
         $cases = Cases::where('show', 1)->orderBy('id', 'desc')->limit(3)->get();
-        return view('product', compact('cases', 'cates'));
+        $type = $request->input('type', null);
+        return view('product', compact('cases', 'cates', 'type'));
     }
 
-
-
-    public function showCategory(Request  $request,Category2 $cate)
+    public function showCategory(Request $request, Category2 $cate)
     {
         $type = $cate->type;
-        $allCategories = Category2::where('type',$type)->get();
-        return view('product_list',compact('cate','allCategories'));
+        $allCategories = Category2::where('type', $type)->get();
+        return view('product_list', compact('cate', 'allCategories','type'));
     }
 }

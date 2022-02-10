@@ -18,12 +18,13 @@
 
         </div>
         <style>
-            .nav-title a:hover{
-                text-decoration:underline
+            .nav-title a:hover {
+                text-decoration: underline
             }
         </style>
-        <div id="nav-title" class="nav-title flex items-center space-x-8" style="width:255px;margin-right:162px;margin-top: 7px">
-            <a style="font-size: 14px;"  href="/service">服务</a>
+        <div id="nav-title" class="nav-title flex items-center space-x-8"
+             style="width:255px;margin-right:162px;margin-top: 7px">
+            <a style="font-size: 14px;" href="/service">服务</a>
             <a style="font-size: 14px" href="{{route('supply')}}">伙伴</a>
             <a style="font-size: 14px" href="{{route('occupation')}}">职业</a>
             <a style="font-size: 14px" href="/about">关于我们</a>
@@ -41,10 +42,12 @@
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
-                    <a class="header-a" href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a>
+                    <a class="header-a" @if($type == 'cal') style="color:#7F7F7F !important;"
+                       @endif href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a>
                 </div>
                 <div>
-                    <a class="header-a" href="{{route('cate',['type'=>'cal'])}}">智慧计量工具</a>
+                    <a class="header-a" @if($type == 'protected') style="color:#7F7F7F !important;"
+                       @endif href="{{route('cate',['type'=>'cal'])}}">智慧计量工具</a>
                 </div>
             </div>
 
@@ -166,7 +169,8 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                                 <a style="font-size: 20px" href="{{route('cate')}}">业务</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境中安全工作</a>
+                                <a style="font-size: 20px"
+                                   href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境中安全工作</a>
                             </div>
                             <div>
                                 <a style="font-size: 20px" href="{{route('cate',['type'=>'cal'])}}">智慧工业计量</a>
@@ -200,7 +204,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                         </div>
                         <div class="flex flex-col space-y-3 w-[23rem]">
                             <div>
-                                <a style="font-size: 20px" href="">关于我们</a>
+                                <a style="font-size: 20px" href="/about">关于我们</a>
                             </div>
                             <div>
                                 <a style="font-size: 20px" href="">我们是正域</a>
@@ -212,7 +216,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                                 <a style="font-size: 20px" href="">企业荣誉</a>
                             </div>
                             <div>
-                                <a style="font-size: 20px" href="">联系我们</a>
+                                <a style="font-size: 20px" href="/connect">联系我们</a>
                             </div>
                         </div>
                     </div>
@@ -250,16 +254,16 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                 <div style="line-height: 2.45rem;">
                     <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
-                <div>
+                <div style="margin-left: 15px;">
                     <a href="http://shcainfo.miitbeian.gov.cn"> 沪ICP备17032420号 </a>
                 </div>
-                <div>
+                <div style="margin-left: 15px;">
                     <a href="http://shcainfo.miitbeian.gov.cn">沪公网安备 31010402018099号</a>
                 </div>
 
             </div>
             <div class="flex w-1/4 space-x-2">
-                <a href="{{route('private')}}">Cookies</a>
+                <a href="javascript:;" onclick="showCookikBox();">Cookies</a>
                 <a href="{{route('private')}}">隐私声明</a>
                 <a href="{{route('coInfo')}}">企业信息</a>
             </div>
@@ -284,6 +288,10 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
     function allow_cookie() {
         localStorage.setItem("allow_get_cookie", true)
         $('#cookie_box').hide();
+    }
+
+    function showCookikBox() {
+        $('#cookie_box').show();
     }
 </script>
 

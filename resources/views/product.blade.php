@@ -31,7 +31,25 @@
         <div style="width: 1920px;">
             <div class="product-banner-box">
                 <div class="product-banner-box-preview-box f-left"
-                     style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+                     style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
+                    <div style="font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #FEFEFF;
+    line-height: 55px;
+margin-top: 68px;
+    margin-left: 95px;">工业级照明+AI
+                    </div>
+                    <div style="font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #FEFEFF;
+    line-height: 55px;
+    margin-left: 95px;" id="banner_preview_text_box">赋能风电能源
+                    </div>
+                </div>
                 <div class="product-banner-box-tab-box f-left">
                     <div class="banner-box-tab-item" style="background-color: rgba(129, 211, 248, 1);"
                          data-img="{{URL::asset('images/static/banner-fengche.jpeg')}}">风电能源
@@ -115,10 +133,10 @@
                         </div>
 
 
-                            <div class="product-item-btn font-color-white">
-                        <a href="/cate/{{$category->id}}">查看更多产品  </a>
+                        <div class="product-item-btn font-color-white">
+                            <a href="/cate/{{$category->id}}">查看更多产品 </a>
 
-                    </div>
+                        </div>
 
                     </div>
                 @endforeach
@@ -174,7 +192,8 @@
             $('.banner-box-tab-item-mask').removeClass('show');
             $(this).addClass('hidden');
             $(this).next().addClass('show');
-            $('.product-banner-box-preview-box').attr('style', "background: url('" + $(this).data('img') + "'); background-size: 100% 100%; background-repeat: no-repeat;")
+            $('.product-banner-box-preview-box').attr('style', "background: url('" + $(this).data('img') + "'); background-size: 100% 100%; background-repeat: no-repeat;");
+            $('#banner_preview_text_box').html($(this).next('.banner-box-tab-item-mask').find('.mask-desc').html())
         })
 
         $(document).on('mouseout', '.banner-box-tab-item-mask', function () {
