@@ -122,7 +122,7 @@
                             <div class="item-bottom-title">
                                 <a href="/product-info/{{$product->id}}">{{$product->title}}</a>
                             </div>
-                            <div class="item-bottom-desc">
+                            <div class="item-bottom-desc" style="margin-top: 5px;">
                                 <a href="/product-info/{{$product->id}}">{{$product->desc}}</a>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
     margin: 100px auto;">
             <div class="left-box">
                 <div class="left-box-about"
-                     style='background: url("{{URL::asset('images/static/banner-3.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                     style='background: url("{{URL::asset('images/static/banner-3.jpg')}}"); /*background-size: 100% 100%; background-repeat: no-repeat;*/'>
                     <div style="
                     position: relative;
                     z-index: 999;
@@ -187,7 +187,7 @@ width: 595px;">上海正域自动化设备有限公司于2010年6月成立，201
                 </div>
                 <div class="left-box-about-mask"></div>
                 <div class="left-box-invite"
-                     style='background: url("{{URL::asset('images/zhaoxiannashi.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                     style='background: url("{{URL::asset('images/zhaoxiannashi.jpg')}}"); /*background-size: 100% 100%; background-repeat: no-repeat;*/'>
                     <div class="left-box-invite-title font-color-white">招贤纳士</div>
                     <div class="left-box-invite-desc">员工能持续不断地自我成长，并提供内外部研讨会和培训帮助员工找到合适的发展通道。</div>
                     <a href="{{route('occupation')}}">
@@ -198,7 +198,7 @@ width: 595px;">上海正域自动化设备有限公司于2010年6月成立，201
             </div>
             <div class="right-box">
                 <div class="right-box-top-img"
-                     style='background: url("{{URL::asset('images/news-head.jpg')}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                     style='background: url("{{URL::asset('images/news-head.jpg')}}"); /*background-size: 100% 100%; background-repeat: no-repeat;*/'>
                     <div class="right-box-top-img-title">新闻活动</div>
                 </div>
                 <div class="right-box-top-img-mask"></div>
@@ -260,7 +260,7 @@ top: 35px;
             <div class="swiper-wrapper">
                 @foreach($cases as $case)
                     <div class="project-item swiper-slide"
-                         style='background: url("{{URL::asset('uploads').'/'.$case->covers}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                         style='background: url("{{URL::asset('uploads').'/'.$case->covers}}");/* background-size: 100% 100%; background-repeat: no-repeat;*/'>
                         <div class="project-item-content-box">
                             <div
                                 class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
