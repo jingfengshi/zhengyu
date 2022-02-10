@@ -65,25 +65,16 @@
             <div class="product-box-left-box">
                 @foreach($cates as $cate)
                     <div class="product-box-left-item">
-                        <div class="inline-block"><img
+                        <div class="inline-block" style="float: left;margin-top: 17px;"><img
                                 @if($cate['id'] == $products[0]->category_id)
                                 src="{{URL::asset('images/static/checked.svg')}}"
                                 @else
                                 src="{{URL::asset('images/static/check.svg')}}"
                                 @endif></div>
                         <a href="/products/{{$cate->id}}">
-                            <div class="inline-block product-box-left-item-nav">{{$cate->name}}</div>
+                            <div class="inline-block product-box-left-item-nav"
+                                 style="width: 200px">{{$cate->name}}</div>
                         </a>
-                        {{--                        如果需要子分类--}}
-                        {{--                    <div class="product-box-left-item-child show">--}}
-                        {{--                        @foreach($category->products as $pr)--}}
-                        {{--                        @if($pr->id == $product->id)--}}
-                        {{--                        <div style="color:red;">{{$pr->title}}</div>--}}
-                        {{--                        @else--}}
-                        {{--                        <div>{{$pr->title}}</div>--}}
-                        {{--                        @endif--}}
-                        {{--                        @endforeach--}}
-                        {{--                    </div>--}}
                     </div>
                 @endforeach
             </div>

@@ -17,18 +17,10 @@
             <div class="product-box-left-box">
                 @foreach($categories as $category)
                     <div class="product-box-left-item">
-                        <div class="inline-block"><img src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
-                        <div class="inline-block product-box-left-item-nav">{{$category->name}}</div>
-                        {{--                        如果需要子分类--}}
-                        {{--                    <div class="product-box-left-item-child show">--}}
-                        {{--                        @foreach($category->products as $pr)--}}
-                        {{--                        @if($pr->id == $product->id)--}}
-                        {{--                        <div style="color:red;">{{$pr->title}}</div>--}}
-                        {{--                        @else--}}
-                        {{--                        <div>{{$pr->title}}</div>--}}
-                        {{--                        @endif--}}
-                        {{--                        @endforeach--}}
-                        {{--                    </div>--}}
+                        <div class="inline-block" style="float: left;margin-top: 17px;"><img
+                                src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
+                        <div class="inline-block product-box-left-item-nav"
+                             style="width: 200px">{{$category->name}}</div>
                     </div>
                 @endforeach
             </div>
@@ -44,7 +36,8 @@
                 <div class="product-box-right-box-banner-list inline-block">
                     @if($product && $product->sub_image)
                         @foreach($product->sub_image as $img)
-                            <div class="product-box-right-box-banner-item"><img src="{{URL::asset('uploads/'.$img)}}"></div>
+                            <div class="product-box-right-box-banner-item"><img src="{{URL::asset('uploads/'.$img)}}">
+                            </div>
                         @endforeach
                     @endif
                 </div>
