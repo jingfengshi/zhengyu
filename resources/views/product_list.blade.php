@@ -5,7 +5,10 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product_list.css')}}">
 
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="nav">首页 > @if($cate->type =='protected')<a style="font-size: 16px;" href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品</div>
+        <div class="nav">首页 > @if($cate->type =='protected')<a style="font-size: 16px;"
+                                                               href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
+                <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品
+        </div>
 
         <div class="top-banner"
              style='background: url("{{URL::asset('images/cat-info.jpg')}}");background-size: 100% 100%;background-repeat: no-repeat;'>
@@ -44,14 +47,15 @@
                     <div class="product-box-left-box">
                         @foreach($allCategories as $cat)
                             <div class="product-box-left-item">
-                                <div class="inline-block"><img
+                                <div class="inline-block" style="float: left;margin-top: 17px;"><img
                                         @if($cat['id'] == $cate->id)
                                         src="{{URL::asset('images/static/checked.svg')}}"
                                         @else
                                         src="{{URL::asset('images/static/check.svg')}}"
                                         @endif></div>
                                 <a href="/cate/{{$cat->id}}">
-                                    <div class="inline-block product-box-left-item-nav">{{$cat->name}}</div>
+                                    <div class="inline-block product-box-left-item-nav"
+                                         style="width: 200px">{{$cat->name}}</div>
                                 </a>
                             </div>
                         @endforeach
