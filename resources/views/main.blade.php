@@ -42,12 +42,12 @@
             <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
-                    <a class="header-a" @if(!empty($type) && $type == 'cal') style="color:#7F7F7F !important;"
+                    <a class="header-a" @if(!empty($type) && $type == 'protected') style="color:#7F7F7F !important;"
                        @else style="color:#303030;"
                        @endif href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a>
                 </div>
                 <div>
-                    <a class="header-a" @if(!empty($type) && $type == 'protected') style="color:#7F7F7F !important;"
+                    <a class="header-a" @if(!empty($type) && $type == 'cal') style="color:#7F7F7F !important;"
                        @else style="color:#303030;"
                        @endif href="{{route('cate',['type'=>'cal'])}}">智慧计量工具</a>
                 </div>
