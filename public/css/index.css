@@ -69,6 +69,7 @@
 
 .banner-box .active .text, .banner-box .active .text div {
     text-align: inherit;
+    margin-right: 45px;
 }
 
 .banner-box .active .text {
@@ -80,7 +81,7 @@
 
 .banner-box .active .text .hidden-box .links {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-top: 190px;
     width: 80%;
 }
