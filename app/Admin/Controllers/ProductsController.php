@@ -33,6 +33,9 @@ class ProductsController extends AdminController
         $grid->on_sale('已上架')->display(function ($value) {
             return $value ? '是' : '否';
         });
+        $grid->is_creative('创新产品')->display(function ($value) {
+            return $value ? '是' : '否';
+        });
         $grid->is_new('新品')->display(function ($value) {
             return $value ? '是' : '否';
         });
@@ -78,13 +81,16 @@ class ProductsController extends AdminController
         $form->multipleImage("sub_image","产品图片")->removable()->sortable();
 
         // 添加简短描述
-        $form->text("desc","简短描述");
+        $form->editor("desc","简短描述");
+
 
         // 创建一个富文本编辑器
         $form->editor('description', '优点和特点')->rules('required');
 
         // 创建一组单选框
         $form->radio('on_sale', '上架')->options(['1' => '是', '0'=> '否'])->default('0');
+        $form->radio('is_creative', '创新产品')->options(['1' => '是', '0'=> '否'])->default('0');
+        $form->editor("creative_desc","创新产品内容");
         $form->radio('is_new', '新品')->options(['1' => '是', '0'=> '否'])->default('0');
         $form->radio('is_authentication', '认证')->options(['1' => '是', '0'=> '否'])->default('0');
         $form->radio('is_recommend', '推荐')->options(['1' => '是', '0'=> '否'])->default('0');
@@ -94,6 +100,10 @@ class ProductsController extends AdminController
         $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {
             $form->text('name', '属性名')->rules('required');
             $form->text('value', '属性值')->rules('required');
+            $form->select('type', '类型')->options([
+                'dianqi'=>'电器参数',
+                'jiegou'=>'结构参数',
+            ])->required();
         });
         $form->file("file","资料下载")->removable();
         $form->file("video","视频")->removable();

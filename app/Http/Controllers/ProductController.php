@@ -31,10 +31,17 @@ class ProductController extends Controller
     public function info($id)
     {
         $product = Product::findOne($id);
+        if(!$product->is_creative){
+            $categories = Category2::with('products')->get();
+            return view('products', compact('product', 'products','categories'));
+        }else{
+            $cate=Category2::find($product->category_id);
 
-        $products = Product::where('id', '!=', $id)->get();
+           $categories = Category2::where('type',$cate->type)->get();
+           $type = $cate->type;
+            return view('product_info', compact('product', 'categories','type'));
+        }
 
-        return view('product_info', compact('product', 'products'));
     }
 
 }

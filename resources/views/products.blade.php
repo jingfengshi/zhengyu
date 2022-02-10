@@ -4,21 +4,25 @@
 
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/products.css')}}">
-
-    <div class="nav" style="padding: 20px 240px 0 240px;
+    <div style="width: 1920px;margin: auto">
+        <div class="nav" style="padding: 20px 240px 0 240px;
     font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: #484848;">首页 > 保护人们在危险环境安全工作 > 产品
+    color: #484848;">首页 > @if($product->category->type =='protected')<a style="font-size: 16px;"
+                                                     href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
+                <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品
+        </div>
+
+        <div class="top-banner"
+             style='background: url({{URL::asset('images/static/pd1.png')}});background-size: 100% 100%;background-repeat: no-repeat;'>
+            <div class="top-banner-title font-color-white">{{$product->category->name}}</div>
+        </div>
     </div>
 
-    <div class="top-banner"
-         style='background: url({{URL::asset('images/static/pd1.png')}});background-size: 100% 100%;background-repeat: no-repeat;'>
-        <div class="top-banner-title font-color-white">声光报警</div>
-    </div>
 
-    <div style="width: 1920px;">
+    <div style="width: 1920px;margin: auto">
         <div class="product-box">
             @if(!empty($categories))
                 <div class="product-box-left-box">
@@ -27,8 +31,14 @@
                             <div class="inline-block" style="float: left;margin-top: 9px;"><img
                                     src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
                             <div class="inline-block product-box-left-item-nav"
-                                 style="width: 200px"><a style="font-size: 1.15rem;
-    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a></div>
+                                 style="width: 200px">
+                                <a style="font-size: 1.15rem;
+    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
+                                @foreach($category->products as $p)
+                                    <div>{{$p->title}}</div>
+                                @endforeach
+
+                            </div>
                         </div>
                     @endforeach
                 </div>
@@ -67,10 +77,36 @@
                     <div class="product-box-right-box-tab-box">
                         <div class="product-box-right-box-tab-box-item">{!! $product->description !!}</div>
                         <div class="product-box-right-box-tab-box-item">{{$product->apply_area}}</div>
-                        <div class="product-box-right-box-tab-box-item">333333</div>
-                        <div class="product-box-right-box-tab-box-item">444444</div>
-                        <div class="product-box-right-box-tab-box-item">555555</div>
-                        <div class="product-box-right-box-tab-box-item">666666</div>
+                        <div class="product-box-right-box-tab-box-item">
+                            @foreach(collect($product->properties)->groupBy('type') as $type=>$value)
+                                @if($type=='dianqi')
+                                    <div>
+                                        电器参数
+                                    </div>
+                                    @foreach(collect($value)->groupBy('name') as $k=>$v)
+                                        {{$k}} =>
+                                        @foreach($v as $i)
+                                            {{$i->value}}
+                                        @endforeach
+                                    @endforeach
+                                @else
+                                    <div>
+                                        结构参数
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                        <div class="product-box-right-box-tab-box-item">
+                            <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="">
+                        </div>
+                        <div class="product-box-right-box-tab-box-item">
+                              <a href="{{URL::asset('uploads').'/'.$product->file}}">
+                        </div>
+                        <div class="product-box-right-box-tab-box-item">
+                            <video src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
+                                您的浏览器不支持 video 标签。
+                            </video>
+                        </div>
                         <div class="product-box-right-box-tab-box-item">
                             @if($product && $product->install)
                                 @foreach($product->install as $install)

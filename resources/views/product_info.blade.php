@@ -6,20 +6,23 @@
     <link rel="stylesheet" href="{{URL::asset('swiper/css/idangerous.swiper.css')}}">
     <script src="{{URL::asset('swiper/js/idangerous.swiper.min.js')}}"></script>
 
-    <div class="nav" style="padding: 1.5rem 240px 1.45rem 240px;font-family: 'Arial Normal', 'Arial', sans-serif;
+
+
+    <div style="width: 1920px;margin: auto" >
+        <div class="nav" style="padding: 1.5rem 240px 1.45rem 240px;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: #484848;">首页 > 保护人们在危险环境安全工作 > 产品</div>
-
-    <div style="width: 1920px;">
+    color: #484848;">首页 > @if($type =='protected')<a style="font-size: 16px;"
+                                                           href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
+                <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品</div>
         <div class="product-info-title" style="width: 1440px;margin: 0 auto;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;font-size: 40px;
     color: #484848;
     line-height: 50px;">{{$product->title}}</div>
 
-        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">{!! $product->description !!}</div>
+        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">{!! $product->creative_desc !!}</div>
 
         @if(!empty($product->file))
             <div class="product-info-file-box" style="width: 1440px;margin: 0 auto;">
@@ -33,13 +36,13 @@
             <div class="more-product-box-title" style="margin-top: 30px;">想知道我们更多产品消息？</div>
             <div class="more-product-box-list-box swiper-container">
                 <div class="swiper-wrapper">
-                    @foreach($products as $product)
+                    @foreach($categories as $cate)
                         <div class="more-product-box-list-box-item swiper-slide"
-                             style='background: url("{{URL::asset('uploads').'/'.$product->image}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
+                             style='background: url("{{URL::asset('uploads').'/'.$cate->image}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
                             <div class="more-product-box-list-box-item-mask"></div>
-                            <a href="/product-info/{{$product->id}}">
+                            <a href="/cate/{{$cate->id}}">
                                 <div
-                                    class="more-product-box-list-box-item-button font-color-white text-overflow">{{$product->title}}</div>
+                                    class="more-product-box-list-box-item-button font-color-white text-overflow">{{$cate->name}}</div>
                             </a>
                         </div>
                     @endforeach
