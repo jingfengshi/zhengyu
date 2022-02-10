@@ -108,8 +108,14 @@
         $(document).ready(function () {
             $(".about-box-desc font").each(function () {
                 // $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
-                // $(this).css({'font-size': $(this).attr('size')+'px'})
-                $(this).attr({'size': $(this).attr('size')})
+                $(this).css({
+                    'font-size': '24px',
+                    'line-height': '40px',
+                    'font-family': "'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif",
+                    'font-weight': '200',
+                    'color': '#333333'
+                })
+                // $(this).attr({'size': $(this).attr('size')})
             })
         })
 
