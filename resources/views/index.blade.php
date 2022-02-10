@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{URL::asset('swiper/css/idangerous.swiper.css')}}">
     <script src="{{URL::asset('swiper/js/idangerous.swiper.min.js')}}"></script>
 
-    <div style="width: 1920px;margin: auto" >
+    <div style="width: 1920px;margin: auto">
         {{--  banner  --}}
         <div class="banner-box">
             <div class="item active">
@@ -122,7 +122,7 @@
                             <div class="item-bottom-title">
                                 <a href="/product-info/{{$product->id}}">{{$product->title}}</a>
                             </div>
-                            <div class="item-bottom-desc" style="margin-top: 5px;">
+                            <div class="item-bottom-desc" style="margin-top: 5px;max-height: 133px;overflow: hidden;">
                                 <a href="/product-info/{{$product->id}}">{{$product->desc}}</a>
                             </div>
                         </div>
@@ -253,7 +253,8 @@ top: 35px;
     font-style: normal;
     font-size: 45px;letter-spacing: normal;
     color: #333333;width: 1440px;
-    margin: -40px auto 50px auto;">主要项目</div>
+    margin: -40px auto 50px auto;">主要项目
+        </div>
 
         {{--  project  --}}
         <div class="project swiper-container-project">
