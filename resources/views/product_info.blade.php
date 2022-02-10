@@ -19,10 +19,10 @@
     color: #484848;
     line-height: 50px;">{{$product->title}}</div>
 
-        <div class="product-info-box" style="width: 1440px;margin: 0 auto;">{!! $product->description !!}</div>
+        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">{!! $product->description !!}</div>
 
         @if(!empty($product->file))
-            <div class="product-info-file-box" style="width: 1440px;margin:40px auto 0 auto;">
+            <div class="product-info-file-box" style="width: 1440px;margin: 0 auto;">
                 点击下载
                 <a href="{{URL::asset('uploads').'/'.$product->file}}">{{$product->title}}</a>
                 相关资料
