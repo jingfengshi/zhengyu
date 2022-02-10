@@ -72,7 +72,7 @@
 
                             @if(!empty($cates) && isset($cates['cal']))
 
-                                @foreach($cates['protected'] as  $cate)
+                                @foreach($cates['cal'] as  $cate)
                                     <div><a href="/cate/{{$cate->id}}"
                                             style="font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 13px;letter-spacing: normal;">{{$cate->name}}</a>
                                     </div>
