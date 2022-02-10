@@ -8,14 +8,18 @@
 
 
     <div style="width: 1920px;margin: auto;">
-        <div class="brand-top-title">
+        <div class="brand-top-title" style="position: fixed;
+    width: 1920px;
+    top: 120px;
+    background-color: #ffffff;z-index: 9998;">
             <a href="{{route('occupation')}}">职业</a>
             <a href="{{route('occupation')}}#jiazhiguan">价值观</a>
             <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
         </div>
 
-        <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;" >
-            <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
+        <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;">
+            <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}"
+                 alt="">
         </div>
 
 
@@ -25,7 +29,7 @@
     font-size: 32px;
     color:#333333;
     text-align: center;margin: auto">
-               加入我们
+                加入我们
             </div>
             <div style="width: 1120px;height:75px;font-weight: 200;
         font-style: normal;
@@ -42,7 +46,7 @@
     font-size: 32px;
     color:#333333;
     text-align: center;margin: auto">
-              什么是好工作？
+                什么是好工作？
             </div>
             <div style="width: 1120px;height:75px;font-weight: 200;
         font-style: normal;
@@ -53,7 +57,7 @@
             </div>
         </div>
 
-        <div style="display: flex;margin-left: 26rem" >
+        <div style="display: flex;margin-left: 26rem">
             <div style="width:440px;height: 459px;margin-right: 2rem">
                 <div style="height: 252px;overflow: hidden">
                     <img src="{{URL::asset('images/peixun.jpg')}}" alt="">
@@ -73,7 +77,6 @@
                     </div>
 
                 </div>
-
 
 
             </div>
@@ -100,12 +103,11 @@
                 </div>
 
 
-
             </div>
 
             <div style="width:440px;height: 459px;">
                 <div style="height: 252px;overflow: hidden">
-                    <img  src="{{URL::asset('images/chengzhang.jpeg')}}" alt="">
+                    <img src="{{URL::asset('images/chengzhang.jpeg')}}" alt="">
                 </div>
                 <div style="padding-left: 3rem;padding-top: 2rem">
                     <div style="width: 112px;height: 40px;ont-weight: 200;
@@ -124,10 +126,8 @@
                 </div>
 
 
-
             </div>
         </div>
-
 
 
         <div style="display: flex;margin-left: 26rem;margin-top: 6rem;">
@@ -162,7 +162,8 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 16px;text-align: center;padding-top: 0.5rem;float: right ;margin-right: 2rem;">
-                        <a href="https://qy.58.com/3027416113927" style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
+                        <a href="https://qy.58.com/3027416113927"
+                           style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
                     </div>
 
                 </div>

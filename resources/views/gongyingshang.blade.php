@@ -28,7 +28,7 @@
             <a href="{{route('cases')}}">案例</a>
         </div>
 
-        <div class="brand-banner">
+        <div class="brand-banner" style="margin-top: 210px;">
             <img src="{{URL::asset('images/gongyingshang.jpg')}}">
         </div>
 

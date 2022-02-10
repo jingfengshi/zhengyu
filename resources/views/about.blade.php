@@ -15,7 +15,7 @@
             <a href="/connect">联系我们</a>
         </div>
 
-        <div class="about-banner">
+        <div class="about-banner" style="margin-top: 210px;">
             <img
                 src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads').'/'.$banner->file}}">
             <div class="about-banner-title-box">

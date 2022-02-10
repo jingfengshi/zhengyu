@@ -31,7 +31,7 @@
             <a href="#projects">项目</a>
         </div>
 
-        <div style="width: 1920px;">
+        <div style="width: 1920px;margin-top:210px;">
             <div class="product-banner-box">
                 <div class="product-banner-box-preview-box f-left"
                      style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">

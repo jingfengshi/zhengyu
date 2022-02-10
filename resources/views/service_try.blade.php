@@ -12,7 +12,7 @@
             <a href="{{route('service')}}">定制与试用</a>
         </div>
 
-        <div class="service-banner">
+        <div class="service-banner" style="margin-top: 210px;">
             <img src="{{empty($banner->file)?URL::asset('images/try-banner.jpg'):URL::asset('uploads/'.$banner->file)}}">
         </div>
 
