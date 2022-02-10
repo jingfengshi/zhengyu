@@ -17,7 +17,7 @@
             <div class="product-box-left-box">
                 @foreach($categories as $category)
                     <div class="product-box-left-item">
-                        <div class="inline-block" style="float: left;margin-top: 17px;"><img
+                        <div class="inline-block" style="float: left;margin-top: 7px;"><img
                                 src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
                         <div class="inline-block product-box-left-item-nav"
                              style="width: 200px">{{$category->name}}</div>
