@@ -5,7 +5,10 @@
     <link rel="stylesheet" type="text/css" href="css/service.css">
 
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="service-top-title">
+        <div class="service-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'service')style="position: fixed;
+    width: 1920px;
+    top: 120px;
+    background-color: #ffffff;z-index: 99999;"@endif>
             <a href="{{route('service',['q'=>'gold'])}}">金牌服务</a>
             <a href="{{route('service')}}">定制与试用</a>
         </div>
@@ -21,7 +24,8 @@
 在这里，你可以找到与我们解决方案和产品相关的所有服务和支持。
 你可以随时通过电话在工作时间获得正确的帮助和信息。
 我们会确保这里的内容是最新的，简单的和全面的。
-                </pre></div>
+                </pre>
+            </div>
 
 
             <div class="brand-title">服务说明</div>

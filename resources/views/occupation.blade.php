@@ -8,7 +8,29 @@
 
 
     <div style="width: 1920px;margin: auto;">
-       @include('_bread_occupation')
+        <style>
+            .cases-top-title{
+                padding: 2.8rem 240px 1.45rem 240px;
+            }
+
+            .cases-top-title a{
+                margin-right: 2.4rem;
+                font-family: 'Arial Normal', 'Arial', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px;
+                color: #484848;
+            }
+        </style>
+        <div class="cases-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'occupation')style="position: fixed;
+    width: 1920px;
+    top: 120px;
+    background-color: #ffffff;z-index: 99999;"@endif>
+            <a href="{{route('supply')}}">伙伴</a>
+            <a href="{{route('supply')}}#foward">共同推动行业前进</a>
+            <a href="{{route('brand')}}">服务的品牌</a>
+            <a href="{{route('cases')}}">案例</a>
+        </div>
         <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;" >
             <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
         </div>

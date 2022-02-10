@@ -4,7 +4,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/service.css">
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="service-top-title">
+        <div class="service-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'service')style="position: fixed;
+    width: 1920px;
+    top: 120px;
+    background-color: #ffffff;z-index: 99999;"@endif>
             <a href="{{route('service',['q'=>'gold'])}}">金牌服务</a>
             <a href="{{route('service')}}">定制与试用</a>
         </div>
