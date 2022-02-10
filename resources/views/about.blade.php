@@ -16,7 +16,8 @@
         </div>
 
         <div class="about-banner">
-            <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads').'/'.$banner->file}}">
+            <img
+                src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads').'/'.$banner->file}}">
             <div class="about-banner-title-box">
                 <div class="about-banner-title font-color-white">在希望和可能之间</div>
                 <div class="about-banner-title font-color-white">有一座桥梁</div>
@@ -24,7 +25,8 @@
     font-weight: 700;font-style: normal;
     font-size: 38px;
     color: rgba(255, 255, 255, 0.996078431372549);
-    line-height: 50px;">正域</div>
+    line-height: 50px;">正域
+                </div>
                 <div class="about-banner-title font-color-white">正在创造一个充满潜力的世界。</div>
                 <div class="about-banner-desc font-color-white">正域承诺：保护人们更安全、更智能、更高效的工作</div>
             </div>
@@ -56,7 +58,9 @@
                      style='background: url("../images/static/about-deng.png");background-size: 100% 100%;background-repeat: no-repeat;'></div>
                 <div class="about-img-box-desc f-left" style="background-color: rgba(109, 190, 74, 1);">
                     <div class="about-img-box-desc-title font-color-white">我们的使命</div>
-                    <div class="about-img-box-desc-title-2 font-color-white" style="line-height: 40px;margin-top: 2rem;margin-bottom: 2rem;">我们每天都努力寻求更好的方法来提升安全性并提高客户的生产力</div>
+                    <div class="about-img-box-desc-title-2 font-color-white"
+                         style="line-height: 40px;margin-top: 2rem;margin-bottom: 2rem;">我们每天都努力寻求更好的方法来提升安全性并提高客户的生产力
+                    </div>
                     <div class="about-img-box-desc-title-3 font-color-white">
                         每一天，我们都通过提供创新解决方案来应对危险环境安全和生产力的挑战，使生产力更安全、更节能、更智能、更低碳。我们通过有目的的方案和产品创造、引领并改变日常安全工作，真正遵循可持续发展的信念，成为为用户创造价值的强大力量。
                     </div>
@@ -104,7 +108,8 @@
         $(document).ready(function () {
             $(".about-box-desc font").each(function () {
                 // $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
-                $(this).css({'font-size': $(this).attr('size')+'px'})
+                // $(this).css({'font-size': $(this).attr('size')+'px'})
+                $(this).attr({'size': $(this).attr('size')})
             })
         })
 
