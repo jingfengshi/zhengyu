@@ -22,7 +22,7 @@
         <div class="product-info-box" style="width: 1440px;margin: 0 auto;">{!! $product->description !!}</div>
 
         @if(!empty($product->file))
-            <div class="product-info-file-box" style="width: 1440px;margin: 0 auto;">
+            <div class="product-info-file-box" style="width: 1440px;margin:40px auto 0 auto;">
                 点击下载
                 <a href="{{URL::asset('uploads').'/'.$product->file}}">{{$product->title}}</a>
                 相关资料
@@ -30,7 +30,7 @@
         @endif
 
         <div class="more-product-box" style="width: 1440px;margin: 0 auto;">
-            <div class="more-product-box-title">想知道我们更多产品消息？</div>
+            <div class="more-product-box-title" style="margin-top: 30px;">想知道我们更多产品消息？</div>
             <div class="more-product-box-list-box swiper-container">
                 <div class="swiper-wrapper">
                     @foreach($products as $product)
