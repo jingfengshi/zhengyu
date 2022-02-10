@@ -67,7 +67,7 @@
                         <div class="product-box-right-item inline-block">
                             <a href="/product-info/{{$product->id}}">
                                 <div class="product-item-img"
-                                     style='background: url("{{URL::asset('uploads').'/'.$product->image}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
+                                     style='background: url("{{URL::asset('uploads').'/'.$product->image}}");/*background-size: 100% 100%;background-repeat: no-repeat;*/'></div>
                             </a>
                             <div class="tips-box">
                                 @if($product->is_new)

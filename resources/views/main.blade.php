@@ -12,7 +12,7 @@
 <body>
 
 <div class="text-gray-900 text-sm fixed top-0 right-0 left-0 shadow-xl"
-     style="z-index:9999;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto;height: 130px;">
+     style="z-index:10000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto;height: 130px;">
     <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white  py-3 flex">
         <div style="width: 1235px;">
 

@@ -4,21 +4,18 @@
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product.css')}}">
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="product-menu-box hidden">
-            <div class="product-menu-box-mask"></div>
-            <div class="close-mask">关闭</div>
-            <div class="product-menu-item-warp">
-                @foreach($cates as $cate)
-                    <div class="product-menu-item f-left">
-                        <div class="product-menu-cate">{{$cate->name}}</div>
-                        @foreach($cate->products as $product)
-                            <a href="/product/{{$product->id}}">
-                                <div class="product-menu-cate-child-product">{{$product->title}}</div>
-                            </a>
-                        @endforeach
-                    </div>
-                @endforeach
-            </div>
+
+        <div class="product-menu-item-warp shadow-xl hidden">
+            @foreach($cates as $cate)
+                <div class="product-menu-item f-left">
+                    <div class="product-menu-cate">{{$cate->name}}</div>
+                    @foreach($cate->products as $product)
+                        <a href="/product/{{$product->id}}">
+                            <div class="product-menu-cate-child-product">{{$product->title}}</div>
+                        </a>
+                    @endforeach
+                </div>
+            @endforeach
         </div>
 
         <div class="product-top-title" style="position: fixed;
@@ -204,8 +201,18 @@ margin-top: 68px;
             $('.banner-box-tab-item-mask').removeClass('show');
         })
 
-        $(document).on('click', '#nav_btn', function () {
-            $('.product-menu-box').removeClass('hidden');
+        $(document).on('mousemove', '#nav_btn', function () {
+            $('.product-menu-item-warp').removeClass('hidden');
+            return false;
+        })
+
+        $(document).on('mousemove', '.product-menu-item-warp', function () {
+            $('.product-menu-item-warp').removeClass('hidden');
+            return false;
+        })
+
+        $(document).on('mouseout', '.product-menu-item-warp', function () {
+            $('.product-menu-item-warp').addClass('hidden');
             return false;
         })
 
