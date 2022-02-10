@@ -8,7 +8,7 @@
             <div class="product-menu-box-mask"></div>
             <div class="close-mask">关闭</div>
             <div class="product-menu-item-warp">
-                @foreach($categories as $cate)
+                @foreach($cates as $cate)
                     <div class="product-menu-item f-left">
                         <div class="product-menu-cate">{{$cate->name}}</div>
                         @foreach($cate->products as $product)
@@ -107,7 +107,7 @@
         <div class="product-box" style="width: 1920px;">
             <div class="product-box-title">更强安全性 更高生产力</div>
             <div class="product-item-box">
-                @foreach($categories as $category)
+                @foreach($cates as $category)
                     <div class="product-item inline-block shadow-xl">
                         <img src="{{URL::asset('uploads').'/'.$category->image}}">
                         <div style="height: 107px">
