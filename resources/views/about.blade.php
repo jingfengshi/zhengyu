@@ -7,7 +7,7 @@
         <div class="about-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'about')style="position: fixed;
     width: 1920px;
     top: 120px;
-    background-color: #ffffff;z-index: 99999;"@endif>
+    background-color: #ffffff;z-index: 9998;"@endif>
             <a href="/about">关于正域</a>
             <a href="/news">新闻</a>
             <a href="/cert">企业荣誉</a>

@@ -25,7 +25,7 @@
         <div class="cases-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'occupation')style="position: fixed;
     width: 1920px;
     top: 120px;
-    background-color: #ffffff;z-index: 99999;"@endif>
+    background-color: #ffffff;z-index: 9998;"@endif>
             <a href="">职业</a>
             <a href="#jiazhiguan">价值观</a>
             <a href="">职位描述</a>

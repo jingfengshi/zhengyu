@@ -21,7 +21,7 @@
         <div class="cases-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'supply')style="position: fixed;
     width: 1920px;
     top: 120px;
-    background-color: #ffffff;z-index: 99999;"@endif>
+    background-color: #ffffff;z-index: 9998;"@endif>
             <a href="{{route('supply')}}">伙伴</a>
             <a href="{{route('supply')}}#foward">共同推动行业前进</a>
             <a href="{{route('brand')}}">服务的品牌</a>

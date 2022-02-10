@@ -21,7 +21,10 @@
             </div>
         </div>
 
-        <div class="product-top-title">
+        <div class="product-top-title" style="position: fixed;
+    width: 1920px;
+    top: 120px;
+    background-color: #ffffff;z-index: 9998;">
             <a href="/about">行业</a>
             <a id="nav_btn" href="javascript:;">产品</a>
             <a href="#zhidexinlai">关键时刻值得信赖</a>
