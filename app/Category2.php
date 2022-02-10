@@ -9,7 +9,6 @@ class Category2 extends Model
     const TYPE_PRO = 'protected';
     const TYPE_CAL = 'cal';
 
-
     public static function getTypeLabel()
     {
         return [
@@ -18,9 +17,8 @@ class Category2 extends Model
         ];
     }
 
-
     public function products()
     {
-        return $this->hasMany(Product::class,'category_id','id');
+        return $this->hasMany(Product::class, 'category_id', 'id');
     }
 }
