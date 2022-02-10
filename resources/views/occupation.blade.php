@@ -28,7 +28,7 @@
     background-color: #ffffff;z-index: 9998;"@endif>
             <a href="">职业</a>
             <a href="#jiazhiguan">价值观</a>
-            <a href="">职位描述</a>
+            <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
         </div>
         <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;" >
             <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
