@@ -78,7 +78,7 @@ class ProductsController extends AdminController
         $form->multipleImage("sub_image","产品图片")->removable()->sortable();
 
         // 添加简短描述
-        $form->editor("desc","简短描述");
+        $form->text("desc","简短描述");
 
         // 创建一个富文本编辑器
         $form->editor('description', '优点和特点')->rules('required');
