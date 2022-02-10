@@ -26,10 +26,9 @@
     width: 1920px;
     top: 120px;
     background-color: #ffffff;z-index: 99999;"@endif>
-            <a href="{{route('supply')}}">伙伴</a>
-            <a href="{{route('supply')}}#foward">共同推动行业前进</a>
-            <a href="{{route('brand')}}">服务的品牌</a>
-            <a href="{{route('cases')}}">案例</a>
+            <a href="">职业</a>
+            <a href="#jiazhiguan">价值观</a>
+            <a href="">职位描述</a>
         </div>
         <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;" >
             <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
@@ -53,7 +52,9 @@
             </div>
         </div>
 
-        <div id="jiazhiguan" style="width: 192px;height: 45px; font-weight: 200;
+
+        <div style="width: 1920px;height: 150px;" id="jiazhiguan"></div>
+        <div style="width: 192px;height: 45px; font-weight: 200;
     font-style: normal;
     font-size: 32px;
     text-align: center;margin: auto;  color:#333333;margin-top:10rem;">

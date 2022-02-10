@@ -10,8 +10,8 @@
     background-color: #ffffff;z-index: 99999;"@endif>
             <a href="/about">关于正域</a>
             <a href="/news">新闻</a>
-            <a href="/cases">企业荣誉</a>
-            <a href="/cert">产品认证</a>
+            <a href="/cert">企业荣誉</a>
+            <a href="/ccCert">产品认证</a>
             <a href="/connect">联系我们</a>
         </div>
 
