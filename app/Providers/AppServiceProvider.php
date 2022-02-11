@@ -63,9 +63,13 @@ class AppServiceProvider extends ServiceProvider
                 'value' => '',
                 'type'=>Config::TYPE_FUWU
             ],
-
             [
-                'name' => '备案号',
+                'name' => 'ICP备案号',
+                'value' => '',
+                'type'=>Config::TYPE_WEB
+            ],
+            [
+                'name' => '网安备案号',
                 'value' => '',
                 'type'=>Config::TYPE_WEB
             ],

@@ -256,10 +256,10 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                     <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
                 <div style="margin-left: 15px;">
-                    <a href="https://beian.miit.gov.cn"> 沪ICP备17032420号 </a>
+                    <a href="https://beian.miit.gov.cn"> @if(!empty($config['ICP备案号']['value'])) {{$config['ICP备案号']['value']}} @endif </a>
                 </div>
                 <div style="margin-left: 15px;">
-                    <a href="https://beian.miit.gov.cn">沪公网安备 31010402018099号</a>
+                    <a href="https://beian.miit.gov.cn"> @if(!empty($config['网安备案号']['value'])) {{$config['网安备案号']['value']}} @endif </a>
                 </div>
 
             </div>
