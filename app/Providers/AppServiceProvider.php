@@ -111,8 +111,10 @@ class AppServiceProvider extends ServiceProvider
             ],$config);
         }
 
-
-
+        view()->composer('main', function ($view) {
+            $view->with('sys_icp',Config::where('name','ICP备案号')->select('value')->first());
+            $view->with('sys_wa',Config::where('name','网安备案号')->select('value')->first());
+        });
 
     }
 }
