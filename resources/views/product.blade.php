@@ -10,7 +10,7 @@
                 <div class="product-menu-item f-left">
                     <div class="product-menu-cate">{{$cate->name}}</div>
                     @foreach($cate->products as $product)
-                        <a href="/product/{{$product->id}}">
+                        <a href="/product-info/{{$product->id}}">
                             <div class="product-menu-cate-child-product">{{$product->title}}</div>
                         </a>
                     @endforeach
@@ -147,7 +147,7 @@ margin-top: 68px;
         <div style="position:relative;top:200px;">
             <div id="zhidexinlai" class="product-block-title">正域 值得信赖</div>
         </div>
-            
+
 
             <div class="product-trust-box">
                 <div class="product-trust-item"

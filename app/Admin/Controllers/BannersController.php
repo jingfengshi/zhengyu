@@ -76,7 +76,6 @@ class BannersController extends AdminController
         $form->image('file', 'banner图片')->rules('required');
         $form->number('sort', '排序');
         $form->switch('show','是否显示')->default(1);
-
         return $form;
     }
 }
