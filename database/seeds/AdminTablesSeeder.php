@@ -1,6 +1,8 @@
 <?php
 
+namespace Database\Seeds;
 
+use DB;
 use Illuminate\Database\Seeder;
 
 class AdminTablesSeeder extends Seeder
@@ -18,15 +20,7 @@ class AdminTablesSeeder extends Seeder
             [
                 [
                     "parent_id" => 0,
-                    "order" => 1,
-                    "title" => "后台功能面板",
-                    "icon" => "fa-bar-chart",
-                    "uri" => "/",
-                    "permission" => NULL
-                ],
-                [
-                    "parent_id" => 0,
-                    "order" => 2,
+                    "order" => 6,
                     "title" => "后台管理",
                     "icon" => "fa-tasks",
                     "uri" => NULL,
@@ -34,7 +28,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 2,
-                    "order" => 3,
+                    "order" => 7,
                     "title" => "用户管理",
                     "icon" => "fa-users",
                     "uri" => "auth/users",
@@ -42,7 +36,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 2,
-                    "order" => 4,
+                    "order" => 8,
                     "title" => "角色管理",
                     "icon" => "fa-user",
                     "uri" => "auth/roles",
@@ -50,7 +44,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 2,
-                    "order" => 5,
+                    "order" => 9,
                     "title" => "权限管理",
                     "icon" => "fa-ban",
                     "uri" => "auth/permissions",
@@ -58,7 +52,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 2,
-                    "order" => 6,
+                    "order" => 10,
                     "title" => "菜单管理",
                     "icon" => "fa-bars",
                     "uri" => "auth/menu",
@@ -66,7 +60,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 2,
-                    "order" => 7,
+                    "order" => 11,
                     "title" => "操作日志",
                     "icon" => "fa-history",
                     "uri" => "auth/logs",
@@ -74,7 +68,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 0,
-                    "order" => 8,
+                    "order" => 12,
                     "title" => "新闻管理",
                     "icon" => "fa-edge",
                     "uri" => "/news",
@@ -82,7 +76,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 0,
-                    "order" => 0,
+                    "order" => 1,
                     "title" => "系统管理",
                     "icon" => "fa-bars",
                     "uri" => NULL,
@@ -90,23 +84,15 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 9,
-                    "order" => 0,
+                    "order" => 2,
                     "title" => "配置管理",
                     "icon" => "fa-adjust",
                     "uri" => "configs",
                     "permission" => NULL
                 ],
                 [
-                    "parent_id" => 9,
-                    "order" => 0,
-                    "title" => "Banner管理",
-                    "icon" => "fa-photo",
-                    "uri" => "banners",
-                    "permission" => NULL
-                ],
-                [
                     "parent_id" => 0,
-                    "order" => 0,
+                    "order" => 3,
                     "title" => "产品管理",
                     "icon" => "fa-bars",
                     "uri" => NULL,
@@ -114,7 +100,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 11,
-                    "order" => 0,
+                    "order" => 4,
                     "title" => "产品类目",
                     "icon" => "fa-bars",
                     "uri" => "categories",
@@ -122,7 +108,7 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 11,
-                    "order" => 0,
+                    "order" => 5,
                     "title" => "产品数据",
                     "icon" => "fa-anchor",
                     "uri" => "/products",
@@ -130,20 +116,44 @@ class AdminTablesSeeder extends Seeder
                 ],
                 [
                     "parent_id" => 0,
-                    "order" => 0,
-                    "title" => "案例",
-                    "icon" => "fa-briefcase",
-                    "uri" => NULL,
+                    "order" => 13,
+                    "title" => "案例管理",
+                    "icon" => "fa-cc",
+                    "uri" => "/cases",
                     "permission" => NULL
                 ],
                 [
-                    "parent_id" => 15,
-                    "order" => 0,
-                    "title" => "案例列表",
-                    "icon" => "fa-briefcase",
-                    "uri" => "cases",
+                    "parent_id" => 0,
+                    "order" => 14,
+                    "title" => "服务品牌",
+                    "icon" => "fa-bookmark",
+                    "uri" => "/service",
                     "permission" => NULL
                 ],
+                [
+                    "parent_id" => 0,
+                    "order" => 15,
+                    "title" => "Banners管理",
+                    "icon" => "fa-bars",
+                    "uri" => "/banners",
+                    "permission" => NULL
+                ],
+                [
+                    "parent_id" => 0,
+                    "order" => 16,
+                    "title" => "证书管理",
+                    "icon" => "fa-bars",
+                    "uri" => "/cert",
+                    "permission" => NULL
+                ],
+                [
+                    "parent_id" => 0,
+                    "order" => 17,
+                    "title" => "服务管理",
+                    "icon" => "fa-bars",
+                    "uri" => "/fuwu",
+                    "permission" => NULL
+                ]
             ]
         );
 
@@ -194,8 +204,8 @@ class AdminTablesSeeder extends Seeder
         );
 
         // pivot tables
-        \DB::table('admin_role_menu')->truncate();
-        \DB::table('admin_role_menu')->insert(
+        DB::table('admin_role_menu')->truncate();
+        DB::table('admin_role_menu')->insert(
             [
                 [
                     "role_id" => 1,
@@ -204,8 +214,8 @@ class AdminTablesSeeder extends Seeder
             ]
         );
 
-        \DB::table('admin_role_permissions')->truncate();
-        \DB::table('admin_role_permissions')->insert(
+        DB::table('admin_role_permissions')->truncate();
+        DB::table('admin_role_permissions')->insert(
             [
                 [
                     "role_id" => 1,
