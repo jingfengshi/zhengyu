@@ -22,7 +22,7 @@
     width: 1920px;
     top: 120px;
     background-color: #ffffff;z-index: 9998;">
-            <a href="/about">行业</a>
+            <a href="">行业</a>
             <a id="nav_btn" href="javascript:;">产品</a>
             <a href="#zhidexinlai">关键时刻值得信赖</a>
             <a href="#projects">项目</a>
