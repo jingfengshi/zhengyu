@@ -65,7 +65,7 @@ class CertController extends AdminController
         $form->text('title', '证书名称')->rules('required');
         $form->select('type', '类型')->options(Cert::getTypeLabel());
         $form->image('file', '证书');
-
+        $form->number('order','排序');
         $form->switch('show','是否显示')->default(1);
         return $form;
     }
