@@ -10,7 +10,7 @@
                 <div class="product-menu-item f-left">
                     <div class="product-menu-cate">{{$cate->name}}</div>
                     @foreach($cate->products as $product)
-                        <a href="/product/{{$product->id}}">
+                        <a href="/product-info/{{$product->id}}">
                             <div class="product-menu-cate-child-product">{{$product->title}}</div>
                         </a>
                     @endforeach
@@ -22,7 +22,7 @@
     width: 1920px;
     top: 120px;
     background-color: #ffffff;z-index: 9998;">
-            <a href="/about">行业</a>
+            <a href="">行业</a>
             <a id="nav_btn" href="javascript:;">产品</a>
             <a href="#zhidexinlai">关键时刻值得信赖</a>
             <a href="#projects">项目</a>
@@ -147,7 +147,7 @@ margin-top: 68px;
         <div id="zhidexinlai">
             <div   style="position:relative;top:200px;" class="product-block-title">正域 值得信赖</div>
         </div>
-            
+
 
             <div class="product-trust-box">
                 <div class="product-trust-item"

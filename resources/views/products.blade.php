@@ -123,22 +123,17 @@
                 </div>
                 <div class="product-box-right-box-recommend-box">
                     <div class="product-box-right-box-recommend-title">推荐产品</div>
-                    <div class="product-box-right-box-recommend-item inline-block">
-                        <img src="images/static/product-fmq.png" alt="">
-                        <div class="product-box-right-box-recommend-item-title">BC-3B 声光电子蜂鸣器</div>
-                    </div>
-                    <div class="product-box-right-box-recommend-item inline-block">
-                        <img src="images/static/product-fmq.png" alt="">
-                        <div class="product-box-right-box-recommend-item-title">BC-3B 声光电子蜂鸣器</div>
-                    </div>
-                    <div class="product-box-right-box-recommend-item inline-block">
-                        <img src="images/static/product-fmq.png" alt="">
-                        <div class="product-box-right-box-recommend-item-title">BC-3B 声光电子蜂鸣器</div>
-                    </div>
-                    <div class="product-box-right-box-recommend-item inline-block">
-                        <img src="images/static/product-fmq.png" alt="">
-                        <div class="product-box-right-box-recommend-item-title">BC-3B 声光电子蜂鸣器</div>
-                    </div>
+                    @if(!empty($recommendProducts))
+                        @foreach($recommendProducts as $recommendProduct)
+                            <div class="product-box-right-box-recommend-item inline-block">
+                                <a href="/product-info/{{$recommendProduct['id']}}">
+                                    <img src="{{URL::asset('uploads/'.$recommendProduct['image'])}}" alt="">
+                                    <div class="product-box-right-box-recommend-item-title">{{$recommendProduct['title']}}</div>
+                                </a>
+
+                            </div>
+                        @endforeach
+                    @endIf
                 </div>
             </div>
         </div>
