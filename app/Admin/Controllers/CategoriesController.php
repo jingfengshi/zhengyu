@@ -60,7 +60,7 @@ class CategoriesController extends AdminController
         $form = new Form(new Category2);
 
         $form->text('name', '类目名称')->rules('required');
-        $form->image('image', '分类图片')->rules('required|image');
+        $form->image('image', '分类图片')->rules('required|image')->uniqueName();
         $form->select('type', '类型')->options(Category2::getTypeLabel())->required();
 
         return $form;
