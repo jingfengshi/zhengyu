@@ -35,7 +35,7 @@
                                 <a style="font-size: 1.15rem;
     color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
                                 @foreach($category->products as $p)
-                                    <div>{{$p->title}}</div>
+                                    <div class="product-box-left-item-nav-child">{{$p->title}}</div>
                                 @endforeach
 
                             </div>
@@ -66,21 +66,22 @@
                 </div>
                 <div class="product-box-right-box-tab-list">
                     <div class="product-box-right-box-tab">
-                        <div class="product-box-right-box-tab-item inline-block">优势与特点</div>
-                        <div class="product-box-right-box-tab-item inline-block">应用范围</div>
-                        <div class="product-box-right-box-tab-item inline-block">技术规格</div>
-                        <div class="product-box-right-box-tab-item inline-block">外形尺寸</div>
-                        <div class="product-box-right-box-tab-item inline-block">资料下载</div>
-                        <div class="product-box-right-box-tab-item inline-block">视频介绍</div>
-                        <div class="product-box-right-box-tab-item inline-block">现场安装</div>
+                        <div data-index="0" class="product-box-right-box-tab-item inline-block">优势与特点</div>
+                        <div data-index="1" class="product-box-right-box-tab-item inline-block">应用范围</div>
+                        <div data-index="2" class="product-box-right-box-tab-item inline-block">技术规格</div>
+                        <div data-index="3" class="product-box-right-box-tab-item inline-block">外形尺寸</div>
+                        <div data-index="4" class="product-box-right-box-tab-item inline-block">资料下载</div>
+                        <div data-index="5" class="product-box-right-box-tab-item inline-block">视频介绍</div>
+                        <div data-index="6" class="product-box-right-box-tab-item inline-block">现场安装</div>
                     </div>
                     <div class="product-box-right-box-tab-box">
-                        <div class="product-box-right-box-tab-box-item">{!! $product->description !!}</div>
-                        <div class="product-box-right-box-tab-box-item">{{$product->apply_area}}</div>
+                        <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">优势与特点</h5>{!! $product->description !!}</div>
+                        <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">应用范围</h5>{{$product->apply_area}}</div>
                         <div class="product-box-right-box-tab-box-item">
                             @foreach(collect($product->properties)->groupBy('type') as $type=>$value)
                                 @if($type=='dianqi')
                                     <div>
+                                    <h5 class="product-box-right-box-tab-box-item-title">技术规格</h5>
                                         电器参数
                                     </div>
                                     @foreach(collect($value)->groupBy('name') as $k=>$v)
@@ -97,17 +98,21 @@
                             @endforeach
                         </div>
                         <div class="product-box-right-box-tab-box-item">
+                            <h5 class="product-box-right-box-tab-box-item-title">外形尺寸</h5>
                             <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="">
                         </div>
                         <div class="product-box-right-box-tab-box-item">
+                             <h5 class="product-box-right-box-tab-box-item-title">资料下载</h5>
                               <a href="{{URL::asset('uploads').'/'.$product->file}}">
                         </div>
                         <div class="product-box-right-box-tab-box-item">
-                            <video src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
+                        <h5 class="product-box-right-box-tab-box-item-title">视频介绍</h5>
+                            <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
                                 您的浏览器不支持 video 标签。
                             </video>
                         </div>
                         <div class="product-box-right-box-tab-box-item">
+                        <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product && $product->install)
                                 @foreach($product->install as $install)
                                     <img src="{{URL::asset('uploads/'.$install)}}" alt="">
@@ -167,6 +172,14 @@
         $(document).on('mouseover', '.product-box-right-box-tab-item', function () {
             $('.product-box-right-box-tab-box-item').removeClass('tab-box-item-active');
             $('.product-box-right-box-tab-box-item').eq($(this).index()).addClass('tab-box-item-active');
+        })
+
+        var top_ = $('.product-box-right-box-tab').offset().top-118
+
+        $(document).on('click', '.product-box-right-box-tab-item', function () {
+            var index = $(this).attr('data-index')
+            $(this).addClass('tab-item-active').siblings().removeClass('tab-item-active')
+            $(window).scrollTop($('.product-box-right-box-tab-box-item').eq(index).offset().top - 180)
         })
 
     </script>
