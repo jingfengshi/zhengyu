@@ -2,14 +2,11 @@
 
 namespace App;
 
-
-
 class Config extends Base
 {
     const TYPE_WEB= 'web';
     const TYPE_FUWU = 'fuwu';
     const TYPE_INDEX = 'index';
-
 
     public static function getTypeLabel()
     {

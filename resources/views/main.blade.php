@@ -149,7 +149,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[23rem]">
+                        <div class="w-[46rem]">
 
                         </div>
                         <div class="flex w-[23rem] " style="margin-top: 3rem">
@@ -165,7 +165,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                         </div>
                     </div>
                     <div class="flex h-[300px] justify-around mt-[5rem]">
-                        <div class="flex flex-col space-y-3 w-[23rem]">
+                        <div class="flex flex-col space-y-3 w-[46rem]">
                             <div>
                                 <a style="font-size: 20px" href="{{route('cate')}}">业务</a>
                             </div>
@@ -178,7 +178,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                             </div>
 
                         </div>
-                        <div class="flex flex-col space-y-3 w-[23rem]">
+                        <div class="flex flex-col space-y-3 w-[26rem]">
                             <div>
                                 <a style="font-size: 20px" href="{{route('service')}}">服务</a>
                             </div>
@@ -256,10 +256,10 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                     <a class="space-y-2" href="">©️ 2022 上海正域自动化设备有限公司</a>
                 </div>
                 <div style="margin-left: 15px;">
-                    <a href="https://beian.miit.gov.cn"> 沪ICP备17032420号 </a>
+                    <a href="https://beian.miit.gov.cn"> @if(!empty($sys_icp->value)) {{$sys_icp->value}} @endif </a>
                 </div>
                 <div style="margin-left: 15px;">
-                    <a href="https://beian.miit.gov.cn">沪公网安备 31010402018099号</a>
+                    <a href="https://beian.miit.gov.cn"> @if(!empty($sys_wa->value)) {{$sys_wa->value}} @endif </a>
                 </div>
 
             </div>
