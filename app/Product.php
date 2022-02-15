@@ -18,8 +18,20 @@ class Product extends Model
         'is_authentication' => 'boolean',
         'is_recommend' => 'boolean',
         'install' => 'array',
-        'sub_image'=>'array'
+        'sub_image'=>'array',
+        'extra'=>'array',
+        'extra2'=>'array'
     ];
+
+//    public function getExtraAttribute($value)
+//    {
+//        return array_values(json_decode($value, true) ?: []);
+//    }
+//
+//    public function setExtraAttribute($value)
+//    {
+//        $this->attributes['extra'] = json_encode(array_values($value));
+//    }
 
     public function getSubImageAttribute($value)
     {
