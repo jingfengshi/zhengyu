@@ -27,12 +27,12 @@
 
             {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
             {{--            首图 --}}
-            <img src="{{URL::asset('uploads/'.$product->extra['first_image'])}}" alt="">
+            <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
 
             {{--            首图描述 --}}
             {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
             {{--            第二张图片 --}}
-            <img src="{{URL::asset('uploads/'.$product->extra['s_image'])}}" alt="">
+            <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
 
 
 
@@ -41,9 +41,17 @@
             {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
 
             {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
+            <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
+            <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
+                您的浏览器不支持 video 标签。
+            </video>
 
-            {{isset($product->extra['video'])?$product->extra['video']:""}}
-            {{isset($product->extra['file'])?$product->extra['file']:""}}
+            <div class="product-box-right-box-tab-box-item">
+
+                <a href="{{URL::asset('uploads').'/'.$product->c_file}}"><h5 class="product-box-right-box-tab-box-item-title">资料下载</h5></a>
+            </div>
+
+
         </div>
 
         @if(!empty($product->file))
