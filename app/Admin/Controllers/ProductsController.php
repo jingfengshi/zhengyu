@@ -84,16 +84,16 @@ class ProductsController extends AdminController
         $form->radio('on_sale', '上架')->options(['1' => '是', '0'=> '否'])->default('0');
         $form->radio('is_creative', '创新产品')->options(['1' => '是', '0'=> '否'])
             ->when(1,function(Form $form){
-                $form->image('image', '封面图片')->removable();
+                $form->image('image', '封面图片')->removable()->uniqueName();
                 $form->embeds('extra','详情页', function ($form) {
                     $form->text('f_title','首图标题');
                     $form->text('f_mark','首图此标题');
-                    $form->image('first_image','首图商品');
+                    $form->image('first_image','首图商品')->uniqueName();
                     $form->text('s_desc','中图描述');
-                    $form->image('s_image','中图商品');
-                    $form->file("video","视频")->removable();
+                    $form->image('s_image','中图商品')->uniqueName();
+                    $form->file("video","视频")->removable()->uniqueName();
                     $form->text('l_title','尾图标题');
-                    $form->file('file','文件');
+                    $form->file('file','文件')->uniqueName();
 
                 });
                 $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {
