@@ -93,6 +93,7 @@ class ProductsController extends AdminController
                     $form->image('s_image','中图商品');
                     $form->file("video","视频")->removable();
                     $form->text('l_title','尾图标题');
+                    $form->file('file','文件');
 
                 });
                 $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {

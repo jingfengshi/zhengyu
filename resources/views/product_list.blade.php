@@ -64,22 +64,25 @@
 
                 <div class="product-box-right-box">
                     @foreach($cate->products as $product)
-                        <div class="product-box-right-item inline-block">
-                            <a href="/product-info/{{$product->id}}">
-                                <div class="product-item-img"
-                                     style='background: url("{{URL::asset('uploads').'/'.$product->image}}");/*background-size: 100% 100%;background-repeat: no-repeat;*/'></div>
-                            </a>
-                            <div class="tips-box">
-                                @if($product->is_new)
-                                    <div class="new-box font-color-white">NEW</div>
-                                @endif
+                        @if(($product->is_creative ==0))
+                            <div class="product-box-right-item inline-block">
+                                <a href="/product-info/{{$product->id}}">
+                                    <div class="product-item-img"
+                                         style='background: url("{{URL::asset('uploads').'/'.$product->image}}");/*background-size: 100% 100%;background-repeat: no-repeat;*/'></div>
+                                </a>
+                                <div class="tips-box">
+                                    @if($product->is_new)
+                                        <div class="new-box font-color-white">NEW</div>
+                                    @endif
+                                </div>
+                                <a href="/product-info/{{$product->id}}">
+                                    <div class="product-item-title">{{$product->title}}</div>
+                                </a>
+                                <div class="product-item-color">颜色：{{$product->extra['color']}}</div>
+                                <div class="product-item-power">功率：{{$product->extra['power']}}</div>
                             </div>
-                            <a href="/product-info/{{$product->id}}">
-                                <div class="product-item-title">{{$product->title}}</div>
-                            </a>
-                            <div class="product-item-color">颜色：</div>
-                            <div class="product-item-power">功率：</div>
-                        </div>
+                        @endif
+
                     @endforeach
                 </div>
             </div>

@@ -22,7 +22,21 @@
     color: #484848;
     line-height: 50px;">{{$product->title}}</div>
 
-        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">{!! $product->creative_desc !!}</div>
+        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
+{{--            首图标题 --}}
+            {{$product->extra['f_title']}}
+            {{--            首图 --}}
+            {{$product->extra['first_image']}}
+            {{--            首图描述 --}}
+            {{$product->extra['f_mark']}}
+            {{--            第二张图片 --}}
+            {{$product->extra['s_image']}}
+            {{--           描述 --}}
+            {{$product->extra['s_desc']}}
+            {{$product->extra['l_title']}}
+            {{$product->extra['video']}}
+            {{isset($product->extra['file'])?$product->extra['file']:""}}
+        </div>
 
         @if(!empty($product->file))
             <div class="product-info-file-box" style="width: 1440px;margin: 0 auto;">
