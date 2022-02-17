@@ -56,7 +56,7 @@
 }
 
 .product-banner-box {
-    width: 1440px;
+    width: 100%;
     height: 39rem;
     margin: 2rem auto;
 }
@@ -129,7 +129,7 @@
 }
 
 .product-item-box {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 5rem;
 }
@@ -189,7 +189,7 @@
 }
 
 .product-trust-box {
-    width: 1440px;
+    width: 100%;
     margin: 30px auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -228,7 +228,7 @@
 .product-plan-box {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    width: 1440px;
+    width: 100%;
     margin: 30px auto;
     height: 18rem;
     display: flex;

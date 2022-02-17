@@ -306,9 +306,10 @@
 }
 
 .right-box-top-img {
-    height: 178px;
+    height: 168px;
     width: 640px;
     overflow: hidden;
+	margin-bottom: 10px;
 }
 
 .right-box-top-img-mask {

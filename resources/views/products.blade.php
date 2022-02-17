@@ -12,7 +12,7 @@
     font-size: 16px;
     color: #484848;">首页 > @if($product->category->type =='protected')<a style="font-size: 16px;"
                                                      href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
-                <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品
+                <a style="font-size: 16px;color:#7F7F7F" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品
         </div>
 
         <div class="top-banner"
@@ -111,7 +111,7 @@
                                 您的浏览器不支持 video 标签。
                             </video>
                         </div>
-                        <div class="product-box-right-box-tab-box-item">
+                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product && $product->install)
                                 @foreach($product->install as $install)

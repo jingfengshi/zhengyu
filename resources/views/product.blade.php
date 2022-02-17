@@ -3,7 +3,7 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product.css')}}">
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
 
         <div class="product-menu-item-warp shadow-xl hidden">
             @foreach($cates as $cate)
@@ -19,7 +19,7 @@
         </div>
 
         <div class="product-top-title" style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;">
             <a href="">行业</a>
@@ -28,7 +28,7 @@
             <a href="#projects">项目</a>
         </div>
 
-        <div style="width: 1920px;margin-top:210px;">
+        <div style="width: 100%;margin-top:210px;">
             <div class="product-banner-box">
                 <div class="product-banner-box-preview-box f-left"
                      style="background: url('{{URL::asset('images/static/about-fengche.png')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
@@ -122,7 +122,7 @@ margin-top: 68px;
 
         </div>
 
-        <div class="product-box" style="width: 1920px;">
+        <div class="product-box" style="width: 100%;">
             <div class="product-box-title">更强安全性 更高生产力</div>
             <div class="product-item-box">
                 @foreach($cates as $category)
@@ -143,9 +143,9 @@ margin-top: 68px;
             </div>
         </div>
 
-        <div style="width: 1920px;">
+        <div style="width: 100%;">
         <div id="zhidexinlai">
-            <div   style="position:relative;top:200px;" class="product-block-title">正域 值得信赖</div>
+            <div   style="position:relative;" class="product-block-title">正域 值得信赖</div>
         </div>
 
 

@@ -12,9 +12,9 @@
 <body>
 
 <div class="text-gray-900 text-sm fixed top-0 right-0 left-0 shadow-xl"
-     style="z-index:10000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto;height: 130px;">
+     style="z-index:10000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 100%;margin: auto;height: 130px;">
     <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white  py-3 flex">
-        <div style="width: 1235px;">
+        <div style="width: 80%;">
 
         </div>
         <style>
@@ -87,7 +87,7 @@
     @yield("content")
     <div id="cookie_box" style="display: none;">
         <div
-            style="width: 1920px;height: 1000px;background-color: #CCCCCC;opacity: 0.6;position: fixed;z-index: 999;top:0;"></div>
+            style="width: 100%;height: 1000px;background-color: #CCCCCC;opacity: 0.6;position: fixed;z-index: 999;top:0;"></div>
         <div
             style="width: 700px;height: 200px;position: fixed;top: 50%;left:27%;background-color: #FFFFFF; z-index: 1000;">
             <div style="font-size: 16px;
@@ -122,7 +122,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
 </div>
 
 <footer class="text-white"
-        style="width: 1920px;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
+        style="width: 100%;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
     <div class="to-top" id="to-top"
          style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
         <div class="to-top-icon"
