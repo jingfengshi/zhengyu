@@ -24,20 +24,25 @@
 
         <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
 {{--            首图标题 --}}
-            {{$product->extra['f_title']}}
+
+            {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
             {{--            首图 --}}
             <img src="{{URL::asset('uploads/'.$product->extra['first_image'])}}" alt="">
 
             {{--            首图描述 --}}
-            {{$product->extra['f_mark']}}
+            {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
             {{--            第二张图片 --}}
             <img src="{{URL::asset('uploads/'.$product->extra['s_image'])}}" alt="">
-            {{$product->extra['s_image']}}
-            {{--           描述 --}}
-            {{$product->extra['s_desc']}}
-            {{$product->extra['l_title']}}
 
-            {{$product->extra['video']}}
+
+
+            {{--           描述 --}}
+
+            {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
+
+            {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
+
+            {{isset($product->extra['video'])?$product->extra['video']:""}}
             {{isset($product->extra['file'])?$product->extra['file']:""}}
         </div>
 
