@@ -24,27 +24,29 @@
 
         <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
 {{--            首图标题 --}}
+            <div>
+                {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
+                {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
+                <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
 
-            {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
-            {{--            首图 --}}
-            <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
+            </div>
 
-            {{--            首图描述 --}}
-            {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
-            {{--            第二张图片 --}}
-            <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
+            <div>
+                <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
+                {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
+                <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+
+            <div>
+                {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
+                <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
+            </div>
 
 
 
-            {{--           描述 --}}
 
-            {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
-
-            {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
-            <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
-            <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
-                您的浏览器不支持 video 标签。
-            </video>
 
             <div class="product-box-right-box-tab-box-item">
 
