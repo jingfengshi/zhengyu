@@ -25,15 +25,23 @@
         <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
 {{--            首图标题 --}}
             <div>
-                {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
-                {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
+                <div>
+                    {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
+                </div>
+                <div>
+                    {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
+                </div>
+
                 <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
 
             </div>
 
             <div>
                 <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
-                {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
+                <div>
+                    {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
+                </div>
+
                 <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
                     您的浏览器不支持 video 标签。
                 </video>
