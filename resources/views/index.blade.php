@@ -260,16 +260,19 @@ top: 35px;
         <div class="project swiper-container-project">
             <div class="swiper-wrapper">
                 @foreach($cases as $case)
-                    <div class="project-item swiper-slide"
-                         style='background: url("{{URL::asset('uploads').'/'.$case->covers}}");/* background-size: 100% 100%; background-repeat: no-repeat;*/'>
-                        <div class="project-item-content-box">
-                            <div
-                                class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
-                            <div
-                                class="project-item-content-box-desc font-color-white text-overflow">{{$case->desc}}</div>
+                    <a href="/cases/{{$case->id}}">
+                        <div class="project-item swiper-slide"
+                             style='background: url("{{URL::asset('uploads').'/'.$case->covers}}");/* background-size: 100% 100%; background-repeat: no-repeat;*/'>
+                            <div class="project-item-content-box">
+                                <div
+                                    class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
+                                <div
+                                    class="project-item-content-box-desc font-color-white text-overflow">{{$case->desc}}</div>
+                            </div>
+                            <div class="project-item-content-box-mask"></div>
                         </div>
-                        <div class="project-item-content-box-mask"></div>
-                    </div>
+                    </a>
+
                 @endforeach
             </div>
         </div>
