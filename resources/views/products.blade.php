@@ -78,23 +78,15 @@
                         <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">优势与特点</h5>{!! $product->description !!}</div>
                         <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">应用范围</h5>{{$product->apply_area}}</div>
                         <div class="product-box-right-box-tab-box-item">
-                            @foreach(collect($product->properties)->groupBy('type') as $type=>$value)
-                                @if($type=='dianqi')
-                                    <div>
-                                    <h5 class="product-box-right-box-tab-box-item-title">技术规格</h5>
-                                        电器参数
-                                    </div>
-                                    @foreach(collect($value)->groupBy('name') as $k=>$v)
-                                        {{$k}} =>
-                                        @foreach($v as $i)
-                                            {{$i->value}}
-                                        @endforeach
+                            @foreach($product->extra3 as $type=>$value)
+                                {{$type}}
+
+                                @foreach($value as $k =>$v)
+                                    <p>{{$k}}</p>
+                                    @foreach($v as $vv)
+                                        {{$vv['value']}}
                                     @endforeach
-                                @else
-                                    <div>
-                                        结构参数
-                                    </div>
-                                @endif
+                                @endforeach
                             @endforeach
                         </div>
                         <div class="product-box-right-box-tab-box-item">

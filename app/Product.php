@@ -20,9 +20,10 @@ class Product extends Model
         'install' => 'array',
         'sub_image'=>'array',
         'extra'=>'array',
-        'extra2'=>'array'
+       // 'extra2'=>'array'
     ];
 
+    protected $appends=['extra3'];
 //    public function getExtraAttribute($value)
 //    {
 //        return array_values(json_decode($value, true) ?: []);
@@ -33,6 +34,28 @@ class Product extends Model
 //        $this->attributes['extra'] = json_encode(array_values($value));
 //    }
 
+
+    public function getExtra2Attribute($value)
+    {
+        return array_values(json_decode($value, true) ?: []);
+    }
+
+    public function setExtra2Attribute($value)
+    {
+        $this->attributes['extra2'] = json_encode(array_values($value));
+    }
+
+    public function getExtra3Attribute()
+    {
+        if(empty($this->extra2)){
+           return "";
+        }else{
+            $res=collect($this->extra2)->groupBy('type')->map(function($item){
+                return collect($item)->groupBy('name')->toArray();
+            })->toArray();
+            return $res;
+        }
+    }
     public function getSubImageAttribute($value)
     {
         return json_decode($value,true);

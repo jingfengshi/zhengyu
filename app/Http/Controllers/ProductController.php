@@ -39,6 +39,7 @@ class ProductController extends Controller
         }else{
             $cate=Category2::find($product->category_id);
            $categories = Category2::where('type',$cate->type)->get();
+
            $type = $cate->type;
             return view('product_info', compact('product', 'categories','type'));
         }

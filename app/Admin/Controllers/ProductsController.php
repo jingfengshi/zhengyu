@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Category2;
 use App\Product;
+use App\ProductGuige;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -75,6 +76,8 @@ class ProductsController extends AdminController
             $options[$cate['id']]=$cate['name'];
         }
 
+
+
         $form->select('category_id', '类目')->options($options)->required();
 
         // 添加简短描述
@@ -124,19 +127,29 @@ class ProductsController extends AdminController
                 $form->textarea("apply_area","应用范围");
                 $form->image("sharp","外形尺寸")->removable();
 
-    //                $form->table('extra2','规格参数', function ($table) {
-    //                    $table->text('key');
-    //                    $table->text('value');
-    //                    $table->text('type');
-    //                });
-                $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {
-                    $form->text('name', '属性名');
-                    $form->text('value', '属性值');
-                    $form->select('type', '类型')->options([
-                        'dianqi'=>'电器参数',
-                        'jiegou'=>'结构参数',
-                    ]);
-                });
+                    $form->table('extra2','规格参数', function ($table) {
+                                         $guigeOptions =[];
+                    $guiges=ProductGuige::all()->toArray();
+                    foreach ($guiges as $guige){
+                      $guigeOptions[$guige['id']]=$guige['name'];
+                    }
+//
+                        $table->text('name');
+                        $table->text('value');
+                        $table->text('type');
+                    });
+
+//                $form->hasMany('properties', '技术规格', function (Form\NestedForm $form) {
+////                    $guigeOptions =[];
+////                    $guiges=ProductGuige::all()->toArray();
+////                    foreach ($guiges as $guige){
+////                        $guigeOptions[$guige['id']]=$guige['name'];
+////                    }
+//
+//                    $form->text('name', '属性名');
+//                    $form->text('value', '属性值');
+//                   // $form->select('type2', '类型')->options($guigeOptions);
+//                });
                 $form->file("file","资料下载")->removable();
                 $form->file("video","视频")->removable();
                 $form->multipleImage("install","现场安装")->removable()->sortable();
