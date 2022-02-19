@@ -24,18 +24,34 @@
 
         <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
 {{--            首图标题 --}}
-            {{$product->extra['f_title']}}
-            {{--            首图 --}}
-            {{$product->extra['first_image']}}
-            {{--            首图描述 --}}
-            {{$product->extra['f_mark']}}
-            {{--            第二张图片 --}}
-            {{$product->extra['s_image']}}
-            {{--           描述 --}}
-            {{$product->extra['s_desc']}}
-            {{$product->extra['l_title']}}
-            {{$product->extra['video']}}
-            {{isset($product->extra['file'])?$product->extra['file']:""}}
+            <div>
+                <div>
+                    {{isset($product->extra['f_title'])?$product->extra['f_title']:""}}
+                </div>
+                <div>
+                    {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
+                </div>
+
+                <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
+
+            </div>
+
+            <div>
+                <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
+                <div>
+                    {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
+                </div>
+
+                <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+
+            <div>
+                {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
+                <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
+            </div>
+
         </div>
 
         @if(!empty($product->file))
