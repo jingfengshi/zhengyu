@@ -48,7 +48,7 @@ class Product extends Model
     public function getExtra3Attribute()
     {
         if(empty($this->extra2)){
-           return "";
+           return [];
         }else{
             $res=collect($this->extra2)->groupBy('type')->map(function($item){
                 return collect($item)->groupBy('name')->toArray();
