@@ -178,3 +178,30 @@ font-family: 'Arial Normal', 'Arial', sans-serif;
     font-size: 20px;
     color: #2D2D2D;
 }
+.product-info-box div:nth-child(3) div:nth-child(1){
+    position:relative;
+    padding-left:20px
+}
+.product-info-box div:nth-child(3) div:nth-child(1) div:nth-child(1){
+        font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.996078431372549);
+    text-align: justify;
+    top: inherit;
+    margin-top: 4rem;
+    padding-left: 10px;
+}
+.product-info-box div:nth-child(3) div:nth-child(1) div:nth-child(2){
+     text-align: left;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.996078431372549);
+    text-align: justify;
+    top: inherit;
+    margin-top: 0px;
+padding-left: 10px;
+}
