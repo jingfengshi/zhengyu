@@ -49,6 +49,18 @@
 
             <div>
                 {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
+                @if(!empty($product->properties))
+                <div>
+                    @foreach($product->properties as $pro)
+                        <div>
+                            {{$pro->name}}
+                        </div>
+                        <div>
+                            {{$pro->value}}
+                        </div>
+                    @endforeach
+                </div>
+                @endif
                 <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
             </div>
 
