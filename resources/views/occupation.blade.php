@@ -53,11 +53,11 @@
         </div>
 
 
-        <div style="width: 1920px;height: 150px;" id="jiazhiguan"></div>
+        <!--<div style="width: 1920px;height: 150px;" id="jiazhiguan"></div>-->
         <div style="width: 192px;height: 45px; font-weight: 200;
     font-style: normal;
     font-size: 32px;
-    text-align: center;margin: auto;  color:#333333;margin-top:10rem;">
+    text-align: center;margin: auto;  color:#333333;margin-top:5rem;">
             我们的价值观
         </div>
 
