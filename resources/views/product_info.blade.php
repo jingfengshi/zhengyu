@@ -41,7 +41,9 @@
                 <div>
                     {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
                 </div>
-
+                <button>
+                    观看视频
+                </button>
                 <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
                     您的浏览器不支持 video 标签。
                 </video>
