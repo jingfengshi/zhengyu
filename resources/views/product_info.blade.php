@@ -55,10 +55,10 @@
                 <div>
                     @foreach($product->properties as $pro)
                         <div>
-                            {{$pro->name}}
+                            {{$pro->name}}      {{$pro->value}}
                         </div>
                         <div>
-                            {{$pro->value}}
+
                         </div>
                     @endforeach
                 </div>
@@ -76,7 +76,7 @@
             </div>
         @endif
 
-        <div class="more-product-box" style="width: 1440px;margin: 0 auto;">
+        <div class="more-product-box" style="width: 1440px;margin: 0 auto;margin-top: 200px">
             <div class="more-product-box-title" style="margin-top: 30px;">想知道我们更多产品消息？</div>
             <div class="more-product-box-list-box swiper-container">
                 <div class="swiper-wrapper">
