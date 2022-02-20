@@ -41,12 +41,49 @@
                 <div>
                     {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
                 </div>
-                <button>
-                    观看视频
-                </button>
-                <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
-                    您的浏览器不支持 video 标签。
-                </video>
+
+                @if(!empty($product->c_video))
+                    <button id="play" style="font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    width: 12rem;
+    background-color: rgba(3, 100, 210, 1);
+    border-radius: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    cursor: pointer;
+    position: relative;
+    left: 828px;
+    top: -192px;
+">
+                        观看视频
+                    </button>
+                    <video id="diveoID" style="visibility:hidden" class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->c_video}}" controls="controls">
+                        您的浏览器不支持 video 标签。
+                    </video>
+
+                    <script>
+                        $(function(){
+                            $("#play").click(function(){
+                                //此处写点击触发的操作
+                                $(this).css("display","none");
+                                //1、取得播放器的对象
+                                var objVideo=$("#diveoID");
+                                //2、调用视频播放API
+                                $('#diveoID').css('visibility',"visible")
+                                objVideo.play();
+
+                                //视频停止API
+                                //objVideo.pause();
+                            });
+                        });
+                    </script>
+                @endif
+
             </div>
 
             <div>
@@ -57,9 +94,7 @@
                         <div>
                             {{$pro->name}}      {{$pro->value}}
                         </div>
-                        <div>
 
-                        </div>
                     @endforeach
                 </div>
                 @endif
