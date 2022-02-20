@@ -10,9 +10,11 @@
                 <div class="product-menu-item f-left">
                     <div class="product-menu-cate">{{$cate->name}}</div>
                     @foreach($cate->products as $product)
-                        <a href="/product-info/{{$product->id}}">
-                            <div class="product-menu-cate-child-product">{{$product->title}}</div>
-                        </a>
+                        @if(!$product->is_creative)
+                            <a href="/product-info/{{$product->id}}">
+                                <div class="product-menu-cate-child-product">{{$product->title}}</div>
+                            </a>
+                        @endif
                     @endforeach
                 </div>
             @endforeach

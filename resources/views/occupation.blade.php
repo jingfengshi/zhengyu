@@ -57,7 +57,7 @@
         <div style="width: 192px;height: 45px; font-weight: 200;
     font-style: normal;
     font-size: 32px;
-    text-align: center;margin: auto;  color:#333333;margin-top:5rem;">
+    text-align: center;margin: auto;  color:#333333;margin-top:5rem;" id="jiazhiguan">
             我们的价值观
         </div>
 

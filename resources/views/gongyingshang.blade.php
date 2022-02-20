@@ -41,7 +41,7 @@
             <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;">我们为员工感到骄傲。我们鼓励员工大胆思考，提出棘手问题并挑战传统思维——无需担心失败。员工公开分享自己的才华和想法之时将诞生创意。所以我们致力于营造一种尊重与接受的文化氛围，使上海正域的每位员工及其创新思想都能在其中蓬勃发展。</div>
 
             <!--<div style="height: 180px;width: 1920px;" id="foward"></div>-->
-            <div class="brand-title" style="padding-left: 240px;padding-right: 240px;">共同推动行业前进</div>
+            <div class="brand-title" id="foward" style="padding-left: 240px;padding-right: 240px;">共同推动行业前进</div>
             <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;">
                 <pre>1. 采购态度，本公司的采购员对待供应商要注重礼仪，要公平公正并且诚实地应对处理。
 ·  应以社会一员的良知和礼仪，带着责任心去执行采购业务。
