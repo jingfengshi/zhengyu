@@ -34,6 +34,7 @@ class CategoriesController extends AdminController
         $grid->column('type', '类型')->display(function ($type){
             return Category2::getTypeLabel()[$type];
         });
+
         $grid->actions(function ($actions) {
             // 不展示 Laravel-Admin 默认的查看按钮
             $actions->disableView();
@@ -62,7 +63,13 @@ class CategoriesController extends AdminController
         $form->text('name', '类目名称')->rules('required');
         $form->image('image', '分类图片')->rules('required|image')->uniqueName();
         $form->select('type', '类型')->options(Category2::getTypeLabel())->required();
-
+        $form->textarea('desc','描述')->rows(5);
+        $form->image('f_icon','第一个图标')->required()->uniqueName();
+        $form->text('f_icon_desc','第一个图标文字');
+        $form->image('s_icon','第二个图标')->required()->uniqueName();
+        $form->text('s_icon_desc','第二个图标文字');
+        $form->image('l_icon','第三个图标')->required()->uniqueName();
+        $form->text('l_icon_desc','第三个图标文字');
         return $form;
     }
 

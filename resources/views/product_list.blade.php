@@ -18,24 +18,23 @@
         <div style="width: 1920px;">
             <div class="desc-box">
                 <div class="desc-box-top-text">
-                    无论是何种应用 -过程控制、工厂安全或紧急疏散 ， 正域都能提供满足您需求的信号解决方案。 <br>
-                    频闪灯和LED灯等专为安全区域、危险和防爆应用设计外壳、多种安装选项和各种工作电压用于每个应用场景。
+                    {{$cate ->desc}}
                 </div>
                 <div class="desc-box-icon-box">
                     <div class="desc-box-icon-item">
                         <div class="desc-box-icon"
-                             style='width:113px;height:99px;background: url("{{URL::asset('images/static/pdd-1.png')}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
-                        <div class="desc-box-icon-desc">全面提升安全性能</div>
+                             style='width:113px;height:99px;background: url("{{URL::asset('uploads').'/'.$cate->f_icon}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
+                        <div class="desc-box-icon-desc">{{empty($cate->f_icon_desc)?"":$cate->f_icon_desc}}</div>
                     </div>
                     <div class="desc-box-icon-item">
                         <div class="desc-box-icon"
-                             style='width:102px;height:101px;background: url("{{URL::asset('images/static/pdd-2.png')}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
-                        <div class="desc-box-icon-desc">全面提升安全性能</div>
+                             style='width:102px;height:101px;background: url("{{URL::asset('uploads').'/'.$cate->s_icon}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
+                        <div class="desc-box-icon-desc">{{empty($cate->s_icon_desc)?"":$cate->s_icon_desc}}</div>
                     </div>
                     <div class="desc-box-icon-item">
                         <div class="desc-box-icon"
-                             style='width:117px;height:100px;background: url("{{URL::asset('images/static/pdd-3.png')}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
-                        <div class="desc-box-icon-desc">全面提升安全性能</div>
+                             style='width:117px;height:100px;background: url("{{URL::asset('uploads').'/'.$cate->l_icon}}");background-size: 100% 100%;background-repeat: no-repeat;'></div>
+                        <div class="desc-box-icon-desc">{{empty($cate->l_icon_desc)?"":$cate->l_icon_desc}}</div>
                     </div>
                 </div>
             </div>

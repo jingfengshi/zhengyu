@@ -79,6 +79,11 @@ class AppServiceProvider extends ServiceProvider
                 'type'=>Config::TYPE_WEB
             ],
             [
+                'name' => '咨询电话',
+                'value' => '',
+                'type'=>Config::TYPE_WEB
+            ],
+            [
                 'name' => '抖音号',
                 'value' => '',
                 'type'=>Config::TYPE_WEB
@@ -114,6 +119,11 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('main', function ($view) {
             $view->with('sys_icp',Config::where('name','ICP备案号')->select('value')->first());
             $view->with('sys_wa',Config::where('name','网安备案号')->select('value')->first());
+            $view->with('sys_tel',Config::where('name','咨询电话')->select('value')->first());
+            $view->with('sys_titok',Config::where('name','抖音号')->select('value')->first());
+            $view->with('sys_wechat',Config::where('name','公众号')->select('value')->first());
+            $view->with('sys_ercode',Config::where('name','二维码')->select('value')->first());
+
         });
 
     }

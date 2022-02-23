@@ -226,15 +226,15 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                 <div class="w-1/4 flex flex-col justify-center space-y-6 mt-[10rem]">
                     <div>
                         <div style="width: 68px;height: 68px;">
-                            <img style="width: 68px;height: 68px;" src="{{URL::asset('/images/首页/u28.png')}}" alt="">
+                            <img style="width: 68px;height: 68px;" src="{{URL::asset('/images/首页/u28.png')}}" ">
                         </div>
                     </div>
                     <div class="flex space-x-2">
                         <div style="width: 31px;height: 25px;">
-                            <img style="width: 31px;height: 25px;" src="{{URL::asset('/images/首页/u14.svg')}}" alt="">
+                            <img style="width: 31px;height: 25px;" src="{{URL::asset('/images/首页/u14.svg')}}" title="@if(!empty($sys_wechat->value)) {{$sys_wechat->value}} @endif ">
                         </div>
                         <div style="width: 31px;height: 25px;margin-left: 1rem">
-                            <img src="{{URL::asset('/images/首页/u15.svg')}}" alt="">
+                            <img src="{{URL::asset('/images/首页/u15.svg')}}" title="@if(!empty($sys_titok->value)) {{$sys_titok->value}} @endif">
                         </div>
                     </div>
                     <div>
@@ -242,7 +242,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                             <span style="font-size: 20px">咨询服务</span>
                         </div>
                         <div>
-                            <span style="font-size: 20px">400-0000-000</span>
+                            <span style="font-size: 20px">@if(!empty($sys_tel->value)) {{$sys_tel->value}} @endif</span>
                         </div>
 
                     </div>

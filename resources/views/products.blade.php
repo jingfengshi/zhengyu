@@ -27,19 +27,23 @@
             @if(!empty($categories))
                 <div class="product-box-left-box">
                     @foreach($categories as $category)
-                        <div class="product-box-left-item">
-                            <div class="inline-block" style="float: left;margin-top: 9px;"><img
-                                    src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
-                            <div class="inline-block product-box-left-item-nav"
-                                 style="width: 200px">
-                                <a style="font-size: 1.15rem;
+                        @if($category->type == $product->category->type)
+                            <div class="product-box-left-item">
+                                <div class="inline-block" style="float: left;margin-top: 9px;"><img
+                                        src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
+                                <div class="inline-block product-box-left-item-nav"
+                                     style="width: 200px">
+                                    <a style="font-size: 1.15rem;
     color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
-                                @foreach($category->products as $p)
-                                    <div class="product-box-left-item-nav-child">{{$p->title}}</div>
-                                @endforeach
+                                    @foreach($category->products as $p)
+                                        <div class="product-box-left-item-nav-child">{{$p->title}}</div>
+                                    @endforeach
 
+                                </div>
                             </div>
-                        </div>
+                        @endif
+
+
                     @endforeach
                 </div>
             @endif

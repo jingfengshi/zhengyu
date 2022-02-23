@@ -73,7 +73,7 @@ class BannersController extends AdminController
 
 //        $form->text('type', __('Type'));
         $form->select('type', '类型')->options(Banners::getTypeLabel());
-        $form->image('file', 'banner图片')->rules('required');
+        $form->image('file', 'banner图片')->rules('required')->uniqueName();
         $form->number('sort', '排序');
         $form->switch('show','是否显示')->default(1);
         return $form;
