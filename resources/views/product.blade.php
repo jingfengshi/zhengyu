@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product.css')}}">
     <div style="width: 100%;height: auto;margin: auto">
 
-        <div class="product-menu-item-warp shadow-xl hidden">
+        <div class="product-menu-item-warp shadow-xl hidden" style="width: 70%;margin: auto">
             @foreach($cates as $cate)
                 <div class="product-menu-item f-left">
                     <div class="product-menu-cate">{{$cate->name}}</div>
@@ -24,10 +24,13 @@
     width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;">
-            <a href="">行业</a>
-            <a id="nav_btn" href="javascript:;">产品</a>
-            <a href="#zhidexinlai">关键时刻值得信赖</a>
-            <a href="#projects">项目</a>
+            <div style="width: 70%;margin: auto;padding: 2.8rem 240px 1.45rem 0px">
+                <a href="">行业</a>
+                <a id="nav_btn" href="javascript:;">产品</a>
+                <a href="#zhidexinlai">关键时刻值得信赖</a>
+                <a href="#projects">项目</a>
+            </div>
+
         </div>
 
         <div style="width: 100%;margin-top:210px;">

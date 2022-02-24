@@ -37,7 +37,7 @@
     color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
                                     @foreach($category->products as $p)
                                         @if(!$p->is_creative)
-                                        <div class="product-box-left-item-nav-child">{{$p->title}}</div>
+                                        <div class="product-box-left-item-nav-child"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
                                         @endif
                                     @endforeach
 
@@ -110,11 +110,11 @@
                                 您的浏览器不支持 video 标签。
                             </video>
                         </div>
-                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install">
+                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product && $product->install)
                                 @foreach($product->install as $install)
-                                    <img style="width: 220px;height: 140px" src="{{URL::asset('uploads/'.$install)}}" alt="">
+                                    <img style="width: 348px;height: 243px" src="{{URL::asset('uploads/'.$install)}}" alt="">
                                 @endforeach
                             @endif
                         </div>
