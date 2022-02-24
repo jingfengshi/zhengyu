@@ -36,7 +36,9 @@
                                     <a style="font-size: 1.15rem;
     color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
                                     @foreach($category->products as $p)
+                                        @if(!$p->is_creative)
                                         <div class="product-box-left-item-nav-child">{{$p->title}}</div>
+                                        @endif
                                     @endforeach
 
                                 </div>
@@ -49,8 +51,8 @@
             @endif
 
             <div class="product-box-right-box">
-                <div class="product-box-right-box-nav">产品 / 声光报警 / AL203 声光多层报警灯</div>
-                <div class="product-box-right-box-title">AL203 声光多层报警灯</div>
+                <div class="product-box-right-box-nav">产品 /{{$product->category->name}} / {{$product->title}}</div>
+                <div class="product-box-right-box-title">{{$product->title}}</div>
                 <div class="product-box-right-box-banner-box">
                     <div class="product-box-right-box-banner-preview inline-block"><img
                             src="{{URL::asset('uploads/'.$product->image)}}" alt=""></div>
@@ -112,7 +114,7 @@
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product && $product->install)
                                 @foreach($product->install as $install)
-                                    <img src="{{URL::asset('uploads/'.$install)}}" alt="">
+                                    <img style="width: 220px;height: 140px" src="{{URL::asset('uploads/'.$install)}}" alt="">
                                 @endforeach
                             @endif
                         </div>
