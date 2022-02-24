@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product.css')}}">
     <div style="width: 100%;height: auto;margin: auto">
 
-        <div class="product-menu-item-warp shadow-xl hidden" style="width: 70%;margin: auto">
+        <div class="product-menu-item-warp shadow-xl hidden" >
             @foreach($cates as $cate)
                 <div class="product-menu-item f-left">
                     <div class="product-menu-cate">{{$cate->name}}</div>
