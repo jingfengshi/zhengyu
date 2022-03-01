@@ -22,13 +22,13 @@
 
         <div class="product-top-title" style="position: fixed;
     width: 100%;
-    top: 120px;
+    top: 123px;
     background-color: #ffffff;z-index: 9998;">
-            <div style="width: 70%;margin: auto;padding: 2.8rem 240px 1.45rem 0px">
+            <div style="width: 70%;">
                 <a href="">行业</a>
                 <a id="nav_btn" href="javascript:;">产品</a>
-                <a href="#zhidexinlai">关键时刻值得信赖</a>
-                <a href="#projects">项目</a>
+                <a class="zyxinlai" href="#">关键时刻值得信赖</a>
+                <a class="zyprojects" href="#">项目</a>
             </div>
 
         </div>
@@ -126,8 +126,8 @@ margin-top: 68px;
             </div>
 
         </div>
-
-        <div class="product-box" style="width: 100%;">
+		
+        <div class="product-box" style="width: 100%;margin-top:100px">
             <div class="product-box-title">更强安全性 更高生产力</div>
             <div class="product-item-box">
                 @foreach($cates as $category)
@@ -147,9 +147,9 @@ margin-top: 68px;
                 @endforeach
             </div>
         </div>
-
+		<div id="zhidexinlai" style="height:65px"></div>
         <div style="width: 100%;">
-        <div id="zhidexinlai">
+        <div id="test">
             <div   style="position:relative;" class="product-block-title">正域 值得信赖</div>
         </div>
 
@@ -173,10 +173,11 @@ margin-top: 68px;
                 </div>
             </div>
 
-            <div id='projects' class="product-block-title">我们的解决方案</div>
+            <div id='projects' class="product-block-title" style="padding-top:55px">我们的解决方案</div>
 
             <div class="product-plan-box">
                 @foreach($cases as $case)
+					<a href="/cases/{{$case->id}}">
                     <div class="product-plan-item"
                          style="background: url('{{URL::asset('uploads').'/'.$case->covers}}'); background-size: 100% 100%; background-repeat: no-repeat;">
                         <div class="product-plan-item-mask"></div>
@@ -184,11 +185,12 @@ margin-top: 68px;
                         <div class="product-plan-item-title font-color-white">{{$case->title}}</div>
                         <div class="product-plan-item-desc font-color-white">{{$case->desc}}</div>
                     </div>
+					</a>
                 @endforeach
             </div>
 
             <a href="/connect">
-                <div class="product-connect-btn font-color-white">联系我们</div>
+                <div class="product-connect-btn font-color-white" style="margin-top:90px">联系我们</div>
             </a>
         </div>
     </div>
@@ -227,6 +229,13 @@ margin-top: 68px;
         $(document).on('click', '.close-mask', function () {
             $('.product-menu-box').addClass('hidden');
         })
+		$(".zyxinlai").click(function(){
+			$("html,body").animate({scrollTop:$("#zhidexinlai").offset().top-200},1000);
+		})
+		$(".zyprojects").click(function(){
+			$("html,body").animate({scrollTop:$("#projects").offset().top-200},1000);
+		})
+		
     </script>
 
 @endsection

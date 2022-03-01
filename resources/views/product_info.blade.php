@@ -8,12 +8,12 @@
 
 
 
-    <div style="width: 1920px;margin: auto" >
+    <div style="width: 1920px;margin: auto" class="ytclass">
         <div class="nav" style="padding: 1.5rem 240px 1.45rem 240px;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: #484848;">首页 > @if($type =='protected')<a style="font-size: 16px;"
+    color: #484848;"><a href="/">首页</a> > @if($type =='protected')<a style="font-size: 16px;"
                                                            href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
                 <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品</div>
         <div class="product-info-title" style="width: 1440px;margin: 0 auto;font-family: 'Arial Normal', 'Arial', sans-serif;
@@ -143,10 +143,23 @@
         });
 
         $(document).ready(function () {
-            $(".product-info-box font").each(function () {
-                $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
-            })
+            //$(".product-info-box font").each(function () {
+            //    $(this).css({'font-size': $(this).attr('size') / 3 + 'rem'})
+            //})
+			setTimeout(function(){
+				$(".product-box-right-box-tab-box").css("line-height","30px");
+			$(".product-box-right-box-tab-box p font").css("font-size","18px");
+			},2000);
+			
         })
     </script>
+	<style type="text/css">
+	.product-box-right-box-tab-box{
+		line-height:30px;
+	}
+	.product-box-right-box-tab-box p font{
+		font-size:18px;
+	}
+	</style>
 
 @endsection

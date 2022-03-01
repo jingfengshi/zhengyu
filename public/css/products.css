@@ -156,7 +156,7 @@ footer {
 
 .product-box-right-box-banner-item {
     height: 9rem;
-    border: 1px dashed #484848;
+    border: 1px dashed #BDBABA;
     margin-top: 0.75rem;
     overflow: hidden;
 }
@@ -192,7 +192,7 @@ footer {
 }
 
 .product-box-right-box-tab {
-    border-bottom: 1px dashed #484848;
+    border-bottom: 1px dashed #BDBABA;
     background: #fff;
     position: sticky;
     position: -webkit-sticky;
@@ -214,10 +214,11 @@ footer {
 }
 
 .product-box-right-box-tab-box-item-title{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #000;
+	font-size:18px;
+	font-weight:400;
 }
-
 .product-box-right-box-tab-box-item-video{
     width: 46rem;
 }
@@ -229,9 +230,22 @@ footer {
 .product-box-right-box-tab-box-item {
     /* display: none; */
     padding-top: 2rem;
-    color: #7D7D7D;
-	max-width:722px;
+    color: #555555;
+	max-width:822px;
+	font-size:16px;
+	font-weight:300;
 }
+.product-box-right-box-tab-box-item p{
+	font-size:16px;
+	font-weight:300;
+	color: #555555;
+}
+/*.product-box-right-box-tab-box-item a{
+	font-size:16px;
+	font-weight:300;
+	color: #555555;
+	text-decoration:revert;
+}*/
 
 .tab-box-item-active {
     display: block;
@@ -245,9 +259,9 @@ footer {
 
 .product-box-right-box-recommend-box {
     /*height: 21rem;*/
-    border: 1px dashed #484848;
+    border: 1px dashed #cebfbf;
     border-radius: 1rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1rem;
 	margin-top:2rem;
 }
 

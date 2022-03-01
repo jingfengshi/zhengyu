@@ -36,7 +36,7 @@
 }
 
 .brand-img-box{
-    width: 95%;
+    width: 99%;
     margin: 0 auto;
 }
 
@@ -50,6 +50,6 @@
 }
 
 .brand-img-item img {
-    height: 8rem;
+    height: 125px;
     width: 18rem;
 }

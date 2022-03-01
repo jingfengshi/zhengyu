@@ -12,7 +12,7 @@
 <body>
 
 <div class="text-gray-900 text-sm fixed top-0 right-0 left-0 shadow-xl"
-     style="z-index:10000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 1920px;margin: auto;height: 130px;">
+     style="z-index:10000;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 100%;margin: auto;height: 130px;">
     <nav style="background-color: rgba(51, 51, 51, 1); height:35px" class="text-white  py-3 flex">
         <div style="width: 1235px;">
 
@@ -34,7 +34,7 @@
         </div>
     </nav>
     <div class="bg-white text-black flex justify-between pr-8 " style="height: 95px;">
-        <div style="margin-left:240px;margin-top: 40px;font-family: 'Arial Normal', 'Arial', sans-serif;
+        <div style="margin-left:175px;margin-top: 40px;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;

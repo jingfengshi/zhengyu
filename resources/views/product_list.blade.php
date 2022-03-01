@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product_list.css')}}">
 
     <div style="width: 1920px;height: auto;margin: auto">
-        <div class="nav">首页 > @if($cate->type =='protected')<a style="font-size: 16px;"
+        <div class="nav"><a href="/">首页 </a> > @if($cate->type =='protected')<a style="font-size: 16px;"
                                                                href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
                 <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品
         </div>
@@ -98,6 +98,10 @@
             $(this).find('img').attr('src', '{{URL::asset('images/static/checked.svg')}}');
             $(this).find('.product-box-left-item-child').addClass('show');
         })
+		$(function(){
+			$(".product-box-right-box-tab-box").css("line-height","30px");
+			$(".product-box-right-box-tab-box p font").css("font-size","18px");
+		});
     </script>
 
 @endsection

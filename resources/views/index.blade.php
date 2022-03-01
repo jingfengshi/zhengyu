@@ -130,7 +130,7 @@
                 @endforeach
             </div>
         </div>
-        <div class="product-arrow-box">
+        <div class="product-arrow-box" style="margin-top:20px">
             <div class="pagination"></div>
         </div>
 
@@ -260,18 +260,18 @@ top: 35px;
         <div class="project swiper-container-project">
             <div class="swiper-wrapper">
                 @foreach($cases as $case)
-                    <a href="/cases/{{$case->id}}">
                         <div class="project-item swiper-slide"
                              style='background: url("{{URL::asset('uploads').'/'.$case->covers}}");/* background-size: 100% 100%; background-repeat: no-repeat;*/'>
+							 <a href="/cases/{{$case->id}}">
                             <div class="project-item-content-box">
                                 <div
                                     class="project-item-content-box-title font-color-white text-overflow">{{$case->title}}</div>
                                 <div
                                     class="project-item-content-box-desc font-color-white text-overflow">{{$case->desc}}</div>
                             </div>
+							</a>
                             <div class="project-item-content-box-mask"></div>
                         </div>
-                    </a>
 
                 @endforeach
             </div>
@@ -290,7 +290,7 @@ top: 35px;
         var _swiper = new Swiper('.swiper-container', {
             autoplay: 3000,
             slidesPerView: 3,
-            slidesPerGroup: 1,
+            slidesPerGroup: 3,
             pagination: '.pagination',
             paginationClickable: true,
         });
@@ -302,6 +302,15 @@ top: 35px;
             pagination: '.pagination-project',
             paginationClickable: true,
         });
+		$(function(){
+			var productlist=$(".item-bottom-desc");
+			$(productlist).each(function(varval,indexs){
+				var curtext=$(this).find("a").text();
+				var newtext=curtext.replace('<p>','').replace('</p><p><br></p>','').replace('</p>','');
+				$(this).find('a').text(newtext);
+				//console.log(newtext);
+			})
+		})
     </script>
 
 @endsection

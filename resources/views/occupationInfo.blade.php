@@ -163,7 +163,7 @@
     box-shadow: none;
     font-size: 16px;text-align: center;padding-top: 0.5rem;float: right ;margin-right: 2rem;">
                         <a href="https://qy.58.com/3027416113927"
-                           style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
+                           style="font-size: 16px;color: #FFFFFF;margin-top: 1rem" target="_blank">了解更多</a>
                     </div>
 
                 </div>

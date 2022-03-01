@@ -10,7 +10,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: #484848;">首页 > @if($product->category->type =='protected')<a style="font-size: 16px;"
+    color: #484848;"><a href="/">首页</a> > @if($product->category->type =='protected')<a style="font-size: 16px;"
                                                      href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
                 <a style="font-size: 16px;color:#7F7F7F" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品
         </div>
@@ -51,7 +51,7 @@
             @endif
 
             <div class="product-box-right-box">
-                <div class="product-box-right-box-nav">产品 /{{$product->category->name}} / {{$product->title}}</div>
+                <div class="product-box-right-box-nav">产品 / {{$product->category->name}} / {{$product->title}}</div>
                 <div class="product-box-right-box-title">{{$product->title}}</div>
                 <div class="product-box-right-box-banner-box">
                     <div class="product-box-right-box-banner-preview inline-block"><img
@@ -98,36 +98,39 @@
                         </div>
                         <div class="product-box-right-box-tab-box-item">
                             <h5 class="product-box-right-box-tab-box-item-title">外形尺寸</h5>
-                            <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="">
+                            <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="" />
                         </div>
-                        <div class="product-box-right-box-tab-box-item">
+                        <div class="product-box-right-box-tab-box-item" style="margin-bottom:33px">
                              <h5 class="product-box-right-box-tab-box-item-title">资料下载</h5>
-                              <a href="{{URL::asset('uploads').'/'.$product->file}}">
+							 <div>
+                              <img src="{{URL::asset('images/ipdf.png')}}" style="width:30px;float:left;margin-right:10px" /><a href="{{URL::asset('uploads').'/'.$product->file}}" class="zldownload">{{$product->file}}</a>
+							  </div>
+							 <div style="margin-top:29px"><hr/></div>
                         </div>
                         <div class="product-box-right-box-tab-box-item">
                         <h5 class="product-box-right-box-tab-box-item-title">视频介绍</h5>
-                            <video class="product-box-right-box-tab-box-item-video" src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
+                            <video class="product-box-right-box-tab-box-item-video" id="videocontrol" src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
                                 您的浏览器不支持 video 标签。
                             </video>
                         </div>
-                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;">
+                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;margin-top:40px">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product && $product->install)
                                 @foreach($product->install as $install)
-                                    <img style="width: 348px;height: 243px" src="{{URL::asset('uploads/'.$install)}}" alt="">
+                                    <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$install)}}" alt="">
                                 @endforeach
                             @endif
                         </div>
                     </div>
                 </div>
-                <div class="product-box-right-box-recommend-box">
+                <div class="product-box-right-box-recommend-box" style="margin-top:55px;width:88%;height:287px">
                     <div class="product-box-right-box-recommend-title">推荐产品</div>
                     @if(!empty($recommendProducts))
                         @foreach($recommendProducts as $recommendProduct)
-                            <div class="product-box-right-box-recommend-item inline-block">
+                            <div class="product-box-right-box-recommend-item inline-block" style="width:265px">
                                 <a href="/product-info/{{$recommendProduct['id']}}">
-                                    <img src="{{URL::asset('uploads/'.$recommendProduct['image'])}}" alt="">
-                                    <div class="product-box-right-box-recommend-item-title">{{$recommendProduct['title']}}</div>
+                                    <img src="{{URL::asset('uploads/'.$recommendProduct['image'])}}" alt="" style="width:294px;height:auto;padding-left:53px">
+                                    <div style="width:294px" class="product-box-right-box-recommend-item-title">{{$recommendProduct['title']}}</div>
                                 </a>
 
                             </div>
@@ -150,6 +153,16 @@
             $('.product-box-right-box-tab-item').first().addClass('tab-item-active');
             $('.product-box-right-box-tab-box-item').removeClass('tab-box-item-active');
             $('.product-box-right-box-tab-box-item').first().addClass('tab-box-item-active');
+			var strzltxt=$(".zldownload").text().split('files/')[1];
+			$(".zldownload").text(strzltxt);
+			
+			var strvideo=$("#videocontrol").attr("src");
+			var st=strvideo.substring(strvideo.lastIndexOf('uploads/'))
+			if(st=="uploads/"){
+				$("#videocontrol").hide();
+			}
+			$(".product-box-right-box-tab-box").css("line-height","30px");
+			$(".product-box-right-box-tab-box p font").css("font-size","17px");
         })
 
         $(document).on('mouseover', '.product-box-left-item', function () {
@@ -177,5 +190,15 @@
         })
 
     </script>
+	<style type="text/css">
+	.product-box-right-box-tab-box{
+		line-height:30px;
+	}
+	.product-box-right-box-tab-box p font{
+		font-size:16px !important;
+		font-weight:300;
+		color:#555555;
+	}
+	</style>
 
 @endsection

@@ -34,11 +34,16 @@
 
         <div style="width: 91%;margin:auto;padding-right: 160px;">
             <div class="brand-title" style="padding-left: 240px;padding-right: 240px;">供应商合作</div>
-            <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;">上海正域公司认为“优质的设备要由优质安全的产品来构成，而优质安全的产品又是用优质的原材料来制作”这一基本理念，在遵守伦理及法令、重视品质和交货期、保护环境等多个方面上正在不断地加强合作关系。以追求更高的品质和服务为目标，严格的质量把控、及时的交付是我们欣赏的优良品质，这也可以使上海正域与供应商之间的关系更加紧密。</div>
+            <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;">
+			<pre>上海正域公司认为“优质的设备要由优质安全的产品来构成，而优质安全的产品又是用优质的原材料来制作”这一基本理念，
+在遵守伦理及法令、重视品质和交货期、保护环境等多个方面上正在不断地加强合作关系。以追求更高的品质和服务为目标，严格的质量把控、
+及时的交付是我们欣赏的优良品质，这也可以使上海正域与供应商之间的关系更加紧密。</pre></div>
 
 
             <div class="brand-title" style="padding-left: 240px;padding-right: 240px;">倾听员工心声</div>
-            <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;">我们为员工感到骄傲。我们鼓励员工大胆思考，提出棘手问题并挑战传统思维——无需担心失败。员工公开分享自己的才华和想法之时将诞生创意。所以我们致力于营造一种尊重与接受的文化氛围，使上海正域的每位员工及其创新思想都能在其中蓬勃发展。</div>
+            <div class="brand-desc" style="padding-left: 240px;padding-right: 240px;"><pre>我们为员工感到骄傲。我们鼓励员工大胆思考，提出棘手问题并挑战传统思维——无需担心失败。
+员工公开分享自己的才华和想法之时将诞生创意。所以我们致力于营造一种尊重与接受的文化氛围，
+使上海正域的每位员工及其创新思想都能在其中蓬勃发展。</pre></div>
 
             <!--<div style="height: 180px;width: 1920px;" id="foward"></div>-->
             <div class="brand-title" id="foward" style="padding-left: 240px;padding-right: 240px;padding-top:200px; margin-top:-200px;">共同推动行业前进</div>

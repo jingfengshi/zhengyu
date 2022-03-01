@@ -226,7 +226,7 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 16px;text-align: center;padding-top: 0.5rem;float: right ;margin-right: 2rem;margin-top: 4rem">
-                        <a href="{{route('occupation',['q'=>'info'])}}" style="font-size: 16px;color: #FFFFFF;margin-top: 1rem">了解更多</a>
+                        <a href="{{route('occupation',['q'=>'info'])}}" style="font-size: 16px;color: #FFFFFF;margin-top: 1rem" target="_blank">了解更多</a>
                     </div>
 
 
