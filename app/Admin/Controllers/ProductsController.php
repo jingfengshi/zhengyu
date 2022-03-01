@@ -152,7 +152,13 @@ class ProductsController extends AdminController
 //                });
                 $form->file("file","资料下载")->removable();
                 $form->file("video","视频")->removable();
-                $form->multipleImage("install","现场安装")->removable()->sortable();
+
+                $form->image('install1', '现场安装图1')->removable()->uniqueName();
+                $form->image('install2', '现场安装图2')->removable()->uniqueName();
+                $form->image('install3', '现场安装图3')->removable()->uniqueName();
+                $form->text('install1_desc', '现场安装图1描述');
+                $form->text('install2_desc', '现场安装图2描述');
+                $form->text('install3_desc', '现场安装图3描述');
 
         })->default(0);
 

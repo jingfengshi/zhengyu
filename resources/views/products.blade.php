@@ -115,10 +115,37 @@
                         </div>
                         <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;margin-top:40px">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
-                            @if($product && $product->install)
-                                @foreach($product->install as $install)
-                                    <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$install)}}" alt="">
-                                @endforeach
+                            @if($product)
+                                <div style="width: 313px;height: 254px;display: inline-block">
+                                    @if($product->install1)
+                                        <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install1)}}" alt="">
+                                        @if($product->install1_desc)
+                                            <div style="    padding-left: 20px;
+    padding-top: 10px;">{{$product->install1_desc}}</div>
+                                        @endif
+                                    @endif
+                                </div>
+
+                                <div style="width: 313px;height: 254px;display: inline-block">
+                                @if($product->install2)
+                                    <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install2)}}" alt="">
+                                        @if($product->install2_desc)
+                                            <div style="    padding-left: 20px;
+    padding-top: 10px;">{{$product->install2_desc}}</div>
+                                        @endif
+                                @endif
+                                </div>
+
+                                <div style="width: 313px;height: 254px;display: inline-block">
+                                @if($product->install3)
+                                    <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install3)}}" alt="">
+                                        @if($product->install3_desc)
+                                            <div style="    padding-left: 20px;
+    padding-top: 10px;">{{$product->install3_desc}}</div>
+                                        @endif
+                                @endif
+                                </div>
+
                             @endif
                         </div>
                     </div>
@@ -155,7 +182,7 @@
             $('.product-box-right-box-tab-box-item').first().addClass('tab-box-item-active');
 			var strzltxt=$(".zldownload").text().split('files/')[1];
 			$(".zldownload").text(strzltxt);
-			
+
 			var strvideo=$("#videocontrol").attr("src");
 			var st=strvideo.substring(strvideo.lastIndexOf('uploads/'))
 			if(st=="uploads/"){
