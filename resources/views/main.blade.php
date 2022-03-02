@@ -122,7 +122,7 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
 </div>
 
 <footer class="text-white"
-        style="width: 1920px;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
+        style="width: 100%;margin:auto;height: auto;margin-top:5rem;font-family: 'Arial Normal', 'Arial', sans-serif;font-weight: 400;font-style: normal;font-size: 20px;">
     <div class="to-top" id="to-top"
          style="width:3.35rem;text-align:center;float:right;margin-top:-4rem;margin-right:5rem;cursor: pointer;">
         <div class="to-top-icon"

@@ -63,8 +63,8 @@ margin-top: 68px;
                         <div class="mask-icon f-left"
                              style="background: url('{{URL::asset('images/static/icon-fengche.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                         <div class="mask-text-box f-left">
-                            <div class="mask-title">食品饮料</div>
-                            <div class="mask-desc">赋能食品饮料</div>
+                            <div class="mask-title">风电能源</div>
+                            <div class="mask-desc">赋能风电能源</div>
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(88, 175, 220, 1);"
@@ -94,7 +94,7 @@ margin-top: 68px;
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
-                             style="backgroun{d: url('{URL::asset('images/static/icon-jixie.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
+                             style="background: url('{{URL::asset('images/static/icon-jixie.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                         <div class="mask-text-box f-left">
                             <div class="mask-title">工程机械</div>
                             <div class="mask-desc">赋能工程机械</div>

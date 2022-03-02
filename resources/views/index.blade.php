@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{URL::asset('swiper/css/idangerous.swiper.css')}}">
     <script src="{{URL::asset('swiper/js/idangerous.swiper.min.js')}}"></script>
 
-    <div style="width: 1920px;margin: auto">
+    <div style="width:100%;margin: auto">
         {{--  banner  --}}
         <div class="banner-box">
             <div class="item active">
