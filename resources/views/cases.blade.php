@@ -11,7 +11,7 @@
 
         <div>
             <div class="cases-title">客户案例</div>
-            <div class="cases-desc">客户的认可是对我们最大的肯定！</div>
+            <div class="cases-desc"></div>
             <div class="cases-list-box">
                 @foreach($cases as $case)
                     <div class="cases-item-box inline-block">
@@ -21,7 +21,7 @@
                             <div class="cases-item-title text-overflow">{{$case->title}}</div>
                         </a>
                         <a href="/cases/{{$case->id}}">
-                            <div class="cases-item-desc">{{$case->desc}}</div>
+                            <div class="cases-item-desc">{{$case->company_desc}}</div>
                         </a>
                     </div>
                 @endforeach

@@ -77,7 +77,8 @@ class CasesController extends AdminController
             'protected'=>'保护人们在危险环境安全工作',
             'cal'=>'智慧计量工具',
         ])->required();
-        $form->textarea('desc', '描述');
+        $form->textarea('desc', '产品描述');
+        $form->textarea('company_desc', '公司描述');
         $form->image('covers', '封面图片')->rules('required');
 
         $form->editor('content', '内容')->rules('required');
