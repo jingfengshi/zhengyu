@@ -64,8 +64,8 @@ margin-top: 68px;
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-fengche.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">食品饮料</div>
-                                <div class="mask-desc">赋能食品饮料</div>
+                                <div class="mask-title">风电能源</div>
+                                <div class="mask-desc">赋能风电能源</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(88, 175, 220, 1);"
@@ -151,69 +151,69 @@ margin-top: 68px;
                     </div>
                     <div class="product-banner-box-tab-box f-left">
                         <div class="banner-box-tab-item" style="background-color: rgba(129, 211, 248, 1);"
-                             data-img="{{URL::asset('images/static/banner-fengche.jpeg')}}">风电能源
+                             data-img="{{URL::asset('images/static/banner-fengche.jpeg')}}">食品饮料
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-fengche.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">风电能源</div>
-                                <div class="mask-desc">赋能风电能源</div>
+                                <div class="mask-title">食品饮料</div>
+                                <div class="mask-desc">赋能食品饮料</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(88, 175, 220, 1);"
-                             data-img="{{URL::asset('images/static/banner-matou.jpeg')}}">港口码头
+                             data-img="{{URL::asset('images/static/banner-matou.jpeg')}}">水和废水
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-matou.png')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">港口码头</div>
-                                <div class="mask-desc">赋能智慧港口</div>
+                                <div class="mask-title">水和废水</div>
+                                <div class="mask-desc">赋能水和废水</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(3, 146, 204, 1);"
-                             data-img="{{URL::asset('images/static/banner-hangkong.jpeg')}}">航空信号
+                             data-img="{{URL::asset('images/static/banner-hangkong.jpeg')}}">电力能源
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-hangkong.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">航空信号</div>
-                                <div class="mask-desc">赋能航空信号</div>
+                                <div class="mask-title">电力能源</div>
+                                <div class="mask-desc">赋能电力能源</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(1, 125, 197, 1);"
-                             data-img="{{URL::asset('images/static/banner-jixie.jpeg')}}">工程机械
+                             data-img="{{URL::asset('images/static/banner-jixie.jpeg')}}">化工和天然气
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-jixie.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">工程机械</div>
-                                <div class="mask-desc">赋能工程机械</div>
+                                <div class="mask-title">化工和天然气械</div>
+                                <div class="mask-desc">赋能化工和天然气械</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(0, 114, 193, 1);"
-                             data-img="{{URL::asset('images/static/banner-shiyou.jpeg')}}">石油化工
+                             data-img="{{URL::asset('images/static/banner-shiyou.jpeg')}}">造纸和纸浆
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-shiyou.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">石油化工</div>
-                                <div class="mask-desc">赋能石油化工</div>
+                                <div class="mask-title">造纸和纸浆</div>
+                                <div class="mask-desc">赋能造纸和纸浆</div>
                             </div>
                         </div>
                         <div class="banner-box-tab-item" style="background-color: rgba(9, 92, 153, 1);"
-                             data-img="{{URL::asset('images/static/banner-tielu.jpeg')}}">铁路交轨
+                             data-img="{{URL::asset('images/static/banner-tielu.jpeg')}}">矿产冶金
                         </div>
                         <div class="banner-box-tab-item-mask hidden">
                             <div class="mask-icon f-left"
                                  style="background: url('{{URL::asset('images/static/icon-tielu.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                             <div class="mask-text-box f-left">
-                                <div class="mask-title">铁路交轨</div>
-                                <div class="mask-desc">赋能铁路交轨</div>
+                                <div class="mask-title">矿产冶金</div>
+                                <div class="mask-desc">赋能矿产冶金</div>
                             </div>
                         </div>
                     </div>
