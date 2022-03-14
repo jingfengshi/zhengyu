@@ -13,12 +13,12 @@
 
 .cases-banner{
     height: 33rem;
-    width: 1920px;
+    width: 100%;
     overflow: hidden;
 }
 
 .cases-banner img{
-    width: 1920px;
+    width: 100%;
 }
 
 .cases-title{
@@ -31,23 +31,24 @@
 }
 
 .cases-desc{
-    margin-left: 240px;
+    /*margin-left: 240px;*/
     padding: 2rem 5rem;
     font-size: 1.5rem;
     font-weight: 300;
-    width: 1440px;
+    width: 1177px;
 	text-align:center;
 }
 
 .cases-list-box{
-    width: 1440px;
+    width: 1349px;
     max-width: 1440px;
     margin: 0 auto;
-    margin-left: 240px;
+    /*margin-left: 240px;*/
+	text-align:center;
 }
 
 .cases-item-box{
-    width: 440px;
+    width: 405px;
     height: 459px;
     overflow: hidden;
     margin: 1.2rem;

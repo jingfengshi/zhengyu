@@ -87,7 +87,7 @@
     @yield("content")
     <div id="cookie_box" style="display: none;">
         <div
-            style="width: 1920px;height: 1000px;background-color: #CCCCCC;opacity: 0.6;position: fixed;z-index: 999;top:0;"></div>
+            style="width: 100%;height: 1000px;background-color: #CCCCCC;opacity: 0.6;position: fixed;z-index: 999;top:0;"></div>
         <div
             style="width: 700px;height: 200px;position: fixed;top: 50%;left:27%;background-color: #FFFFFF; z-index: 1000;">
             <div style="font-size: 16px;

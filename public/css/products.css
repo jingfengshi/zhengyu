@@ -10,7 +10,7 @@ footer {
 
 .top-banner {
     height: 13rem;
-    width: 1920px;
+    width: 100%;
 }
 
 .top-banner-title {
@@ -61,7 +61,7 @@ footer {
 
 .product-box {
     /*height: 60rem;*/
-    width: 1440px;
+    width: 1349px;
     margin: 0 auto;
 	background-color: rgba(242, 242, 242, 1);
 }
@@ -86,7 +86,7 @@ footer {
     width: 18%;
     float: left;
     padding-top: 5rem;
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
 }
 
 .product-box-left-item {
@@ -105,7 +105,7 @@ footer {
     width: 82%;
     float: right;
     padding-top: 5rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
 	padding-bottom: 5rem;
 	background-color:white;
 }
@@ -135,14 +135,14 @@ footer {
 }
 
 .product-box-right-box-banner-preview {
-    width: 60%;
+    width: 55%;
     height: 30rem;
     overflow: hidden;
 }
 
 .product-box-right-box-banner-preview img {
     position: relative;
-    left: 50%;
+    left: 47%;
     top: 50%;
     transform: translate(-50%, -50%);
 }

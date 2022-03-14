@@ -3,7 +3,7 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/cases.css')}}">
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         @include('_bread_case')
         <div class="cases-banner">
             <img src="{{empty($banner->file)?URL::asset('images/cases.jpg'):URL::asset('uploads').'/'.$banner->file}}">

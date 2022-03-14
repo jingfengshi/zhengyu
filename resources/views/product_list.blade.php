@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/product_list.css')}}">
 
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width:100%;height: auto;margin: auto">
         <div class="nav"><a href="/">首页 </a> > @if($cate->type =='protected')<a style="font-size: 16px;"
                                                                href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
                 <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品
@@ -15,7 +15,7 @@
             <div class="top-banner-title font-color-white">{{$cate->name}}</div>
         </div>
 
-        <div style="width: 1920px;">
+        <div style="width: 100%;">
             <div class="desc-box">
                 <div class="desc-box-top-text">
                     {{$cate ->desc}}
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div style="width: 1920px;">
+        <div style="width: 100%;">
             <div class="product-box">
                 @if(!empty($allCategories))
                     <div class="product-box-left-box">

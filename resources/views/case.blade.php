@@ -12,7 +12,8 @@
             line-height: 40px;
         }
     </style>
-    <div style="width: 1920px;height: auto;margin: auto">
+	
+    <div style="width: 100%;height: auto;margin: auto">
         @include('_bread_case')
         <div class="case-top">
             <div style="margin-left: 240px;">

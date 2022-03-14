@@ -11,7 +11,7 @@
 
 .banner-box .item .mask {
     opacity: 0.6;
-    background-color: #3E3E3E;
+    /*background-color: #3E3E3E;*/
     height: 670px;
     width: 449px;
     position: relative;
@@ -20,7 +20,7 @@
 
 .banner-box .active .mask {
     opacity: 0.6;
-    background-color: #3E3E3E;
+    /*background-color: #3E3E3E;*/
     height: 670px;
     width: 1479px !important;
     position: relative;
@@ -36,7 +36,7 @@
 }
 
 .banner-box .active img {
-    width: 1479px !important;
+    width: 100% !important;
     /*height: 670px;*/
 }
 
@@ -69,13 +69,14 @@
 
 .banner-box .active .text, .banner-box .active .text div {
     text-align: inherit;
-    margin-right: 45px;
+    /*margin-right: 45px;*/
+	margin-right:21px;
 }
 
 .banner-box .active .text {
     width: 70%;
     text-align: inherit;
-    margin-left: 420px !important;
+    margin-left: 232px !important;
     margin-top: 15px !important;
 }
 
@@ -83,7 +84,8 @@
     display: flex;
     /*justify-content: space-between;*/
     margin-top: 190px;
-    width: 80%;
+    /*width: 80%;*/
+	width:89%;
 }
 
 .header-bottom {
@@ -100,7 +102,7 @@
 }
 
 .about-box {
-    width: 1440px;
+    width: 1320px;
     height: 320px;
     margin: 50px auto;
     border-radius: 20px;
@@ -114,13 +116,13 @@
     opacity: 0.6;
     background-color: #3E3E3E;
     height: 320px;
-    width: 1440px;
+    width: 100%;
     position: relative;
 }
 
 .about-box .text-top {
     margin-top: -235px;
-    margin-left: 230px;
+    margin-left: 111px;
     font-family: 'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -149,23 +151,23 @@
 }
 
 .title {
-    width: 1440px;
+    width: 1350px;
     font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
-    margin: 100px auto 50px auto;
+    margin: 60px auto 50px auto;
     color: #333333;
 }
 
 .product-box {
-    width: 1440px;
+    width: 1350px;
     height: 524px;
     margin: 0 auto;
 }
 
 .product-box .item {
-    width: 468px !important;
+    width: 440px !important;
     height: 524px !important;
     margin-right: 10px;
     border-radius: 15px;
@@ -210,23 +212,24 @@
 
 .left-box {
     float: left;
-    width: 767px;
+    width: 682px;
     height: 890px;
 }
 
 .right-box {
-    float: right;
+    float: left;
     width: 640px;
     background-color: rgba(242, 242, 242, 1);
     height: 890px;
     border-radius: 15px;
     overflow: hidden;
+	margin-left:20px;
 }
 
 .left-box-about {
     height: 582px;
     border-radius: 15px;
-    width: 767px;
+    width: 682px;
 }
 
 .left-box-about-mask {
@@ -234,7 +237,7 @@
     opacity: 0.6;
     background-color: #3E3E3E;
     height: 582px;
-    width: 767px;
+    width: 682px;
     margin-top: -582px;
 }
 
@@ -242,7 +245,7 @@
     height: 265px;
     background-color: #1e1616;
     border-radius: 15px;
-    width: 767px;
+    width: 682px;
     margin-top: 30px;
     position: relative;
     float: left;
@@ -254,7 +257,7 @@
     opacity: 0;
     background-color: #3E3E3E;
     height: 265px;
-    width: 767px;
+    width: 682px;
     position: relative;
     top: 43px;
 }
@@ -400,7 +403,7 @@
 }
 
 .project {
-    width: 1440px;
+    width: 1336px;
     height: 20rem;
     margin: 50px auto;
     overflow: hidden;
@@ -408,7 +411,7 @@
 
 .project-item {
     display: inline-block;
-    width: 468px !important;
+    width: 430px !important;
     height: 21rem;
     margin-right: 1rem;
     border-radius: 1.5rem;

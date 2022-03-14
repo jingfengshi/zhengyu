@@ -27,7 +27,7 @@
             <div style="width: 70%;">
                 <a href="">行业</a>
                 <a id="nav_btn" href="javascript:;">产品</a>
-                <a class="zyxinlai" href="#">关键时刻值得信赖</a>
+                <a class="zyxinlai" href="#">智慧计量工具</a><!--关键时刻值得信赖-->
                 <a class="zyprojects" href="#">项目</a>
             </div>
 
@@ -57,29 +57,29 @@ margin-top: 68px;
                 </div>
                 <div class="product-banner-box-tab-box f-left">
                     <div class="banner-box-tab-item" style="background-color: rgba(129, 211, 248, 1);"
-                         data-img="{{URL::asset('images/static/banner-fengche.jpeg')}}">风电能源
+                         data-img="{{URL::asset('images/static/banner-fengche.jpeg')}}">食品饮料
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
                              style="background: url('{{URL::asset('images/static/icon-fengche.svg')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                         <div class="mask-text-box f-left">
-                            <div class="mask-title">风电能源</div>
-                            <div class="mask-desc">赋能风电能源</div>
+                            <div class="mask-title">氺和废水</div>
+                            <div style="display:none" class="mask-desc">赋能风电能源</div>
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(88, 175, 220, 1);"
-                         data-img="{{URL::asset('images/static/banner-matou.jpeg')}}">港口码头
+                         data-img="{{URL::asset('images/static/banner-matou.jpeg')}}">氺和废水
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
                              style="background: url('{{URL::asset('images/static/icon-matou.png')}}'); background-size: 50% 60%; background-position: center; background-repeat: no-repeat;"></div>
                         <div class="mask-text-box f-left">
-                            <div class="mask-title">港口码头</div>
-                            <div class="mask-desc">赋能智慧港口</div>
+                            <div class="mask-title">化工和天然气</div>
+                            <div style="display:none" class="mask-desc">赋能智慧港口</div>
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(3, 146, 204, 1);"
-                         data-img="{{URL::asset('images/static/banner-hangkong.jpeg')}}">航空信号
+                         data-img="{{URL::asset('images/static/banner-hangkong.jpeg')}}">电力能源
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
@@ -90,7 +90,7 @@ margin-top: 68px;
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(1, 125, 197, 1);"
-                         data-img="{{URL::asset('images/static/banner-jixie.jpeg')}}">工程机械
+                         data-img="{{URL::asset('images/static/banner-jixie.jpeg')}}">化工和天然气
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
@@ -101,7 +101,7 @@ margin-top: 68px;
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(0, 114, 193, 1);"
-                         data-img="{{URL::asset('images/static/banner-shiyou.jpeg')}}">石油化工
+                         data-img="{{URL::asset('images/static/banner-shiyou.jpeg')}}">造纸和纸浆
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
@@ -112,7 +112,7 @@ margin-top: 68px;
                         </div>
                     </div>
                     <div class="banner-box-tab-item" style="background-color: rgba(9, 92, 153, 1);"
-                         data-img="{{URL::asset('images/static/banner-tielu.jpeg')}}">铁路交轨
+                         data-img="{{URL::asset('images/static/banner-tielu.jpeg')}}">矿产冶金
                     </div>
                     <div class="banner-box-tab-item-mask hidden">
                         <div class="mask-icon f-left"
@@ -237,5 +237,10 @@ margin-top: 68px;
 		})
 		
     </script>
+	<style type="text/css">
+	body{
+		overflow:overlay;
+	}
+	</style>
 
 @endsection

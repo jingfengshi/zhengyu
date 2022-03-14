@@ -129,13 +129,17 @@
                     </div>
                 @endforeach
             </div>
+			<!--<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>-->
         </div>
         <div class="product-arrow-box" style="margin-top:20px">
             <div class="pagination"></div>
         </div>
+		<!-- 如果需要导航按钮 -->
+    
 
         {{--  news  --}}
-        <div style="width: 1440px;
+        <div style="width: 1350px;
     height: 890px;
     margin: 100px auto;">
             <div class="left-box">
@@ -252,7 +256,7 @@ top: 35px;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;letter-spacing: normal;
-    color: #333333;width: 1440px;
+    color: #333333;width: 1300px;
     margin: -40px auto 50px auto;">主要项目
         </div>
 
@@ -290,9 +294,15 @@ top: 35px;
         var _swiper = new Swiper('.swiper-container', {
             autoplay: 3000,
             slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerGroup: 1,
             pagination: '.pagination',
             paginationClickable: true,
+			spaceBetween: 30
+			// 如果需要前进后退按钮
+			//navigation: {
+			//  nextEl: '.swiper-button-next',
+			//  prevEl: '.swiper-button-prev',
+			//}
         });
 
         var _swiper_project = new Swiper('.swiper-container-project', {
@@ -301,6 +311,7 @@ top: 35px;
             slidesPerGroup: 1,
             pagination: '.pagination-project',
             paginationClickable: true,
+			spaceBetween: 30
         });
 		$(function(){
 			var productlist=$(".item-bottom-desc");
@@ -312,5 +323,10 @@ top: 35px;
 			})
 		})
     </script>
+	<style type="text/css">
+	 body{
+		 overflow:overlay;
+	 }
+	</style>
 
 @endsection

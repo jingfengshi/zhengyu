@@ -25,7 +25,7 @@
         </div>
    </div>
 
-    <div style="height: auto;width: 1920px;margin: auto">
+    <div style="height: auto;width: 100%;margin: auto">
         <div style="margin-top: 1rem;padding-top: 4rem;padding-left: 19rem;
         font-weight: 300;
         font-style: normal;

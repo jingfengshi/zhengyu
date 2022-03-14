@@ -333,5 +333,9 @@ margin-top: 68px;
 		})
 
     </script>
-
+	<style type="text/css">
+	body{
+		overflow:overlay;
+	}
+	</style>
 @endsection

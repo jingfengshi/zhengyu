@@ -3,9 +3,9 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="css/service.css">
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         <div class="service-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'service')style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;"@endif>
             <a href="{{route('service',['q'=>'gold'])}}">金牌服务</a>

@@ -4,7 +4,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/products.css')}}">
-    <div style="width: 1920px;margin: auto">
+    <div style="width: 100%;margin: auto">
         <div class="nav" style="padding: 20px 240px 0 240px;
     font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
@@ -22,7 +22,7 @@
     </div>
 
 
-    <div style="width: 1920px;margin: auto">
+    <div style="width: 100%;margin: auto">
         <div class="product-box">
             @if(!empty($categories))
                 <div class="product-box-left-box">
@@ -116,7 +116,7 @@
                         <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;margin-top:40px">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product)
-                                <div style="width: 313px;height: 254px;display: inline-block">
+                                <div style="width: 313px;height: 254px;display: inline-block; margin-right:20px">
                                     @if($product->install1)
                                         <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install1)}}" alt="">
                                         @if($product->install1_desc)
@@ -126,7 +126,7 @@
                                     @endif
                                 </div>
 
-                                <div style="width: 313px;height: 254px;display: inline-block">
+                                <div style="width: 313px;height: 254px;display: inline-block;margin-right:20px">
                                 @if($product->install2)
                                     <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install2)}}" alt="">
                                         @if($product->install2_desc)

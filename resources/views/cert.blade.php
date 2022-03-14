@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/cert.css')}}">
 
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         @include('_bread_news')
         <div class="cert-banner">
             <img src="{{empty($banner->file)?URL::asset('images/news-banner.jpeg'):URL::asset('uploads').'/'.$banner->file}}">

@@ -3,9 +3,9 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/about.css')}}">
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         <div class="about-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'about')style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;"@endif>
             <a href="/about">关于正域</a>
@@ -43,7 +43,7 @@
             </a>
         </div>
 
-        <div style="width: 1920px;">
+        <div style="width: 80%;margin:0 auto;">
             <div class="about-img-box">
                 <div class="about-img-box-img f-left"
                      style='background: url("../images/static/about-fengche.png");background-size: 100% 100%;background-repeat: no-repeat;'></div>
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="more-msg-box" style="width:1920px">
+        <div class="more-msg-box" style="width:100%">
             <div class="more-msg-box-title">想知道我们更新、更多的消息？</div>
             <div style="width: 1120px;margin: 0 auto;">
                 <div class="more-msg-box-news f-left">

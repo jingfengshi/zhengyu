@@ -3,7 +3,7 @@
 @section("content")
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/connect.css')}}">
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         <div class="connect-top-title">
             <a href="/about">关于正域</a>
             <a href="/news">新闻</a>
@@ -12,8 +12,8 @@
             <a href="/connect">联系我们</a>
         </div>
 
-        <div class="connect-banner">
-            <img src="{{URL::asset('images/static/about-banner.png')}}">
+        <div class="connect-banner" style="margin:0 auto">
+            <img src="{{URL::asset('images/static/about-banner.png')}}" style="margin:0 auto">
         </div>
 
         <div style="width: 75%;margin:auto;padding-right: 192px;">

@@ -7,9 +7,9 @@
 
 
 
-    <div style="width: 1920px;margin: auto;">
+    <div style="width: 100%;margin: auto;">
         <div class="brand-top-title" style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;">
             <a href="{{route('occupation')}}">职业</a>
@@ -17,13 +17,13 @@
             <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
         </div>
 
-        <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;">
-            <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}"
+        <div style="width: 100%;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;">
+            <img style="height:1001px;width: 100%;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}"
                  alt="">
         </div>
 
 
-        <div style="width: 1920px;margin: auto;margin-top:6.2rem;">
+        <div style="width: 100%;margin: auto;margin-top:6.2rem;">
             <div style="width: 288px;height: 45px;font-weight: 200;
     font-style: normal;
     font-size: 32px;
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div style="width: 1920px;margin: auto;margin-top:6.2rem;">
+        <div style="width: 100%;margin: auto;margin-top:6.2rem;">
             <div style="width: 288px;height: 45px;font-weight: 200;
     font-style: normal;
     font-size: 32px;
@@ -57,8 +57,8 @@
             </div>
         </div>
 
-        <div style="display: flex;margin-left: 26rem">
-            <div style="width:440px;height: 459px;margin-right: 2rem">
+        <div style="display: flex;margin:auto;width:1310px;">
+            <div style="width:420px;height: 459px;margin-right: 2rem">
                 <div style="height: 252px;overflow: hidden">
                     <img src="{{URL::asset('images/peixun.jpg')}}" alt="">
                 </div>
@@ -82,7 +82,7 @@
             </div>
 
 
-            <div style="width:440px;height: 459px;margin-right: 2rem">
+            <div style="width:420px;height: 459px;margin-right: 2rem">
                 <div style="height: 252px;overflow: hidden">
                     <img src="{{URL::asset('images/fuli.jpg')}}" alt="">
                 </div>
@@ -105,7 +105,7 @@
 
             </div>
 
-            <div style="width:440px;height: 459px;">
+            <div style="width:420px;height: 459px;">
                 <div style="height: 252px;overflow: hidden">
                     <img src="{{URL::asset('images/chengzhang.jpeg')}}" alt="">
                 </div>
@@ -130,11 +130,11 @@
         </div>
 
 
-        <div style="display: flex;margin-left: 26rem;margin-top: 6rem;">
+        <div style="display: flex;margin:auto;margin-top: 6rem;width:1310px">
             <div>
                 <img src="{{URL::asset('images/job.jpg')}}" alt="">
             </div>
-            <div style="margin-left: 5rem">
+            <div style="margin-left: 3rem">
                 <div style="width: 128px;height: 45px;font-weight: 200;
     font-style: normal;
     font-size: 32px;
@@ -142,7 +142,7 @@
                     立即申请
                 </div>
 
-                <div style="width: 798px;height: 46px;font-weight: 200;
+                <div style="width: 781px;height: 46px;font-weight: 200;
     font-style: normal;
     font-size: 24px;
     color: #7F7F7F;

@@ -14,7 +14,7 @@
         }
     </style>
 
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         @include('_bread_news')
 
 

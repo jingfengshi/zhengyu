@@ -13,7 +13,7 @@
 
 .connect-banner{
     height: 33rem;
-    width: 1920px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .connect-addr-box{
-    width: 1401px;
+    width: 1177px;
     height: 637px;
     margin: 0 auto;
 }

@@ -4,9 +4,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/service.css">
 
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: 0 auto">
         <div class="service-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'service')style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;"@endif>
             <a href="{{route('service',['q'=>'gold'])}}">金牌服务</a>
@@ -17,7 +17,7 @@
             <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads/'.$banner->file)}}">
         </div>
 
-        <div style="width: 91%;margin:auto;padding-right: 160px;">
+        <div style="width: 91%;margin:auto;padding-right: 160px; margin: 0 auto">
             <div class="brand-title">金牌客户服务</div>
             <div class="brand-desc"><pre>
 我们提供服务的目的就是为了客户满意。
@@ -64,7 +64,8 @@
 接客户报修后2小时内作出回应，如需上门服务，48小时内到达用户现场。
 
 备件及更换：
-上海正域在产品设计上十分注重零部件的“通用性”和“互换性”。并且对每一台产品建有完善的技术档案，以确保用户的产品能得到及时快捷的维修。
+上海正域在产品设计上十分注重零部件的“通用性”和“互换性”。
+并且对每一台产品建有完善的技术档案，以确保用户的产品能得到及时快捷的维修。
 
 保修条列
 总则：上海正域自动化承担由上海正域自动化制造的产品的保修责任。

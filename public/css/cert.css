@@ -32,7 +32,8 @@
 .cert-img-box{
     width: 95%;
     margin: 0 auto;
-    margin-left: 240px;
+    /*margin-left: 240px;*/
+	text-align:center;
 }
 
 .cert-img-item{

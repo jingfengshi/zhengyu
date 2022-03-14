@@ -13,12 +13,12 @@
 
 .about-banner {
     height: 50rem;
-    width: 1920px;
+    width: 100%;
     overflow: hidden;
 }
 
 .about-banner img {
-    width: 1920px;
+    width: 100%;
 }
 
 .about-banner-title-box {
@@ -48,12 +48,12 @@
 }
 
 .about-box {
-    width: 1920px;
+    width: 100%;
     margin: 10rem auto 85px auto;
 }
 
 .about-box-title {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto 3rem auto;
     text-align: center;
     font-family: 'PingFang ', 'PingFang', sans-serif;
@@ -98,7 +98,7 @@
 
 .about-img-box {
     height: 30rem;
-    width: 1500px;
+    width: 100%;
     margin: 0 auto;
 }
 

@@ -8,21 +8,21 @@
 
 
 
-    <div style="width: 1920px;margin: auto" class="ytclass">
-        <div class="nav" style="padding: 1.5rem 240px 1.45rem 240px;font-family: 'Arial Normal', 'Arial', sans-serif;
+    <div style="width:100%;margin: auto" class="ytclass">
+        <div class="nav" style="padding: 1.5rem 240px 1.45rem 176px;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     color: #484848;"><a href="/">首页</a> > @if($type =='protected')<a style="font-size: 16px;"
                                                            href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
                 <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif > 产品</div>
-        <div class="product-info-title" style="width: 1440px;margin: 0 auto;font-family: 'Arial Normal', 'Arial', sans-serif;
+        <div class="product-info-title" style="width: 1320px;margin: 0 auto;font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;font-size: 40px;
     color: #484848;
     line-height: 50px;">{{$product->title}}</div>
 
-        <div class="product-info-box" style="width: 1440px;margin: 30px auto 0 auto;">
+        <div class="product-info-box" style="width: 1320px;margin: 30px auto 0 auto;">
 {{--            首图标题 --}}
             <div>
                 <div>
@@ -32,12 +32,12 @@
                     {{isset($product->extra['f_mark'])?$product->extra['f_mark']:""}}
                 </div>
 
-                <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="">
+                <img src="{{URL::asset('uploads/'.$product->c_f_image)}}" alt="" style="width:1320px">
 
             </div>
 
             <div>
-                <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="">
+                <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="" style="width:1320px">
                 <div>
                     {{isset($product->extra['s_desc'])?$product->extra['s_desc']:""}}
                 </div>
@@ -86,7 +86,7 @@
 
             </div>
 
-            <div>
+            <div style="text-indent:20px">
                 {{isset($product->extra['l_title'])?$product->extra['l_title']:""}}
                 @if(!empty($product->properties))
                 <div>
@@ -98,7 +98,7 @@
                     @endforeach
                 </div>
                 @endif
-                <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="">
+                <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="" style="width:1320px">
             </div>
 
         </div>
@@ -111,9 +111,9 @@
             </div>
         @endif
 
-        <div class="more-product-box" style="width: 1440px;margin: 0 auto;margin-top: 200px">
+        <div class="more-product-box" style="width: 1350px;margin: 0 auto;margin-top: 64px">
             <div class="more-product-box-title" style="margin-top: 30px;">想知道我们更多产品消息？</div>
-            <div class="more-product-box-list-box swiper-container">
+            <div class="more-product-box-list-box swiper-container" style="width:1380px;height:281px;">
                 <div class="swiper-wrapper">
                     @foreach($categories as $cate)
                         <div class="more-product-box-list-box-item swiper-slide"
@@ -127,7 +127,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="arrow-box">
+            <div class="arrow-box" style="margin-top:20px">
                 <div class="pagination"></div>
             </div>
         </div>

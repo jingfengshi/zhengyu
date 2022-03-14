@@ -7,7 +7,7 @@
 
 
 
-    <div style="width: 1920px;height: auto;margin: auto">
+    <div style="width: 100%;height: auto;margin: auto">
         @include('_bread_news')
         <div class="cases-banner">
             <img src="{{URL::asset('images/xinwen.jpg')}}">
@@ -17,10 +17,10 @@
         <div class="cases-title">
             新闻活动
         </div>
-        <div class="grid grid-cols-2 justify-items-center" style="margin:auto;margin-top: 4rem;width: 1500px;height: auto">
+        <div class="grid grid-cols-2 justify-items-center" style="margin:auto;margin-top: 4rem;width: 1344px;height: auto">
 
             @foreach($newsList as $news)
-                <div class="flex w-full min-h-[17rem]" style="margin-right: 2rem;width: 708px;height: 256px;">
+                <div class="flex w-full min-h-[17rem]" style="width: 633px;height: 256px;">
                         <img src="uploads/{{$news->cover}}" alt="" style="width: 255px;height:200px;">
                     <div class="min-h-[12rem] bg-black-100 " style="margin-left:1rem;width: 50%">
                         <div style="width:380px;height: 56px;font-family: 'Arial Normal', 'Arial', sans-serif;
@@ -30,7 +30,7 @@
     line-height: 28px;">
                             {{$news->title}}
                         </div>
-                        <div  style="width: 375px;height: 77px;
+                        <div  style="width: 353px;height: 77px;
 font-weight: 200;
     font-style: normal;
     text-align: left;    font-size: 15px;

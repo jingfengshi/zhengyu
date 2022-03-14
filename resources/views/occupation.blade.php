@@ -7,7 +7,7 @@
 
 
 
-    <div style="width: 1920px;margin: auto;">
+    <div style="width: 100%;margin: auto;">
         <style>
             .cases-top-title{
                 padding: 2.8rem 240px 1.45rem 240px;
@@ -23,19 +23,19 @@
             }
         </style>
         <div class="cases-top-title" @if(\Illuminate\Support\Facades\Request::path() == 'occupation')style="position: fixed;
-    width: 1920px;
+    width: 100%;
     top: 120px;
     background-color: #ffffff;z-index: 9998;"@endif>
             <a href="">职业</a>
             <a href="#jiazhiguan">价值观</a>
             <a href="{{route('occupation',['q'=>'info'])}}">职位描述</a>
         </div>
-        <div style="width: 1920px;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;" >
-            <img style="height:1001px;width: 1920px;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
+        <div style="width: 100%;height: 500px;margin: auto;overflow:hidden;margin-top: 210px;" >
+            <img style="height:1001px;width: 100%;margin-top:-22rem;" src="{{URL::asset('images/职业/u4605.jpg')}}" alt="">
         </div>
 
 
-        <div style="width: 1920px;margin: auto;margin-top:6.2rem;">
+        <div style="width: 100%;margin: auto;margin-top:6.2rem;">
             <div style="width: 288px;height: 45px;font-weight: 200;
     font-style: normal;
     font-size: 32px;
@@ -62,9 +62,9 @@
         </div>
 
 
-        <div style="width: 1440px;margin-left: 26rem;height:800px;">
+        <div style="width: 1277px;margin-left: 5em;height:800px;margin:auto;">
             <div style="display:flex;margin-top: 4rem;">
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -79,7 +79,7 @@
                         我们对诚实和道德的坚持从不打折扣，只有这样行事，才能与他人、客户、供应商和社区建立值得信任的关系。
                     </div>
                 </div>
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/anquanyuzhiliang.jpeg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -94,7 +94,7 @@
                         我们坚定不移地为我们自己和客户提供最高标准的安全和质量。
                     </div>
                 </div>
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/kehuzhishang.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -112,7 +112,7 @@
             </div>
 
             <div style="display:flex;margin-top: 4rem;">
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/buduanjinbu.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -127,7 +127,7 @@
                         我们不懈地改进业务的所有方面，利用标准、反馈和纪律严明的管理流程因势利导。
                     </div>
                 </div>
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/hezuo.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -142,7 +142,7 @@
                         我们在不同地域、平台、业务单位和职能部门之间密切无间地合作，充分发挥我们无比深厚的实力和专长。
                     </div>
                 </div>
-                <div style="width: 440px;height: 370px">
+                <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/jijichuangxin.jpg')}}" alt="">
                     <div style="font-weight: 200;
     font-style: normal;
@@ -169,7 +169,7 @@
         </div>
 
 
-        <div style="width: 1440px;margin-left: 26rem;height:400px;display: flex">
+        <div style="width: 1273px;margin-left: 5rem;height:400px;display: flex;margin:auto">
             <div style="display:flex;margin-top: 4rem;margin-left: 6rem">
                 <div style="width: 500px;height: 280px;background-color: #EAEAEA;border: none;
     border-radius: 20px;">

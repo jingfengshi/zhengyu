@@ -13,12 +13,12 @@
 
 .brand-banner{
     height: 33rem;
-    width: 1920px;
+    width: 100%;
     overflow: hidden;
 }
 
 .brand-banner img{
-    width: 1920px;
+    width: 100%;
 }
 .brand-title{
     text-align: center;
@@ -29,7 +29,7 @@
 }
 .brand-desc{
     padding: 2rem 10rem;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 200;
     font-style: normal;
     line-height: 42px;
@@ -42,7 +42,7 @@
 
 .brand-img-item{
     border: 1px dashed #b3b3b3;
-    width: 279px;
+    width: 237px;
     height: 125px;
     overflow: hidden;
     margin: 0.2rem;
@@ -51,5 +51,5 @@
 
 .brand-img-item img {
     height: 125px;
-    width: 18rem;
+    width: 15rem;
 }
