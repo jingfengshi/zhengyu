@@ -13,7 +13,8 @@ class CategoriesController extends Controller
     public function index(Request $request)
     {
         $cates = Category2::with('products')->where('type', $request->input('type', 'protected'))->get();
-        $cases = Cases::where('show', 1)->orderBy('id', 'desc')->limit(3)->get();
+
+        $cases = Cases::where('show', 1)->where('type',$request->input('type', 'protected'))->orderBy('id', 'desc')->limit(3)->get();
         $type = $request->input('type', null);
         return view('product', compact('cases', 'cates', 'type'));
     }

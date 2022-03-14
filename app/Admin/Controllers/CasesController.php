@@ -34,6 +34,9 @@ class CasesController extends AdminController
         $grid->column('show','是否展示')->display(function($value){
             return $value ? '是':'否';
         });
+        $grid->column('type','类型')->display(function($value){
+            return $value=='protected' ? '保护':'计量';
+        });
         $grid->column('created_at', '创建时间');
         $grid->column('updated_at', '更新时间');
 
@@ -70,6 +73,10 @@ class CasesController extends AdminController
     {
         $form = new Form(new Cases());
         $form->text('title', '标题')->rules('required');
+        $form->select('type', '类型')->options([
+            'protected'=>'保护人们在危险环境安全工作',
+            'cal'=>'智慧计量工具',
+        ])->required();
         $form->textarea('desc', '描述');
         $form->image('covers', '封面图片')->rules('required');
 

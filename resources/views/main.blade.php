@@ -39,7 +39,7 @@
     font-style: normal;
     font-size: 16px;
     color: #7F7F7F;" class="flex">
-            <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
+            <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/zylogo.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
                     <a class="header-a" @if(!empty($type) && $type == 'cal') style="color:#7F7F7F !important;"
