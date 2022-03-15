@@ -33,16 +33,28 @@
                                         src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
                                 <div class="inline-block product-box-left-item-nav" style="width: 200px">
                                     <a style="font-size: 1.15rem;
-    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a> <a href="javascript:void(0)" class="excolitem" cl="+" >+</a>
-                                    @foreach($category->products as $p)
-                                        @if(!$p->is_creative)
-                                        <div class="product-box-left-item-nav-child excolproduct"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
-                                        @endif
-                                    @endforeach
+    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
+                                    @if($product->category->id==$category->id)
+                                        <a href="javascript:void(0)" class="excolitem" cl="-" style="color: red" >-</a>
+                                        @foreach($category->products as $p)
+                                            @if(!$p->is_creative)
+                                                <div class="product-box-left-item-nav-child excolproduct" style="display:block"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
+                                            @endif
+                                        @endforeach
+                                    @else
+                                    <a href="javascript:void(0)" class="excolitem" cl="+" >+</a>
+                                        @foreach($category->products as $p)
+                                            @if(!$p->is_creative)
+                                                <div class="product-box-left-item-nav-child excolproduct"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
+                                            @endif
+                                        @endforeach
+                                    @endif
+
 
                                 </div>
                             </div>
                         @endif
+
 
 
                     @endforeach
@@ -195,7 +207,7 @@
 			}
 			$(".product-box-right-box-tab-box").css("line-height","30px");
 			$(".product-box-right-box-tab-box p font").css("font-size","17px");
-			
+
 			$(".excolitem").click(function(){
 				var cureleattr=$(this).attr("cl");
 				if(cureleattr=="+"){
@@ -212,7 +224,7 @@
 					$(this).css("color","#0000006b");
 				}
 			});
-			
+
 			var curpathname=document.location.pathname;
 			$(".product-box-left-box").find(".excolproduct").each(function(index,item){
 				$(item).find("a").each(function(ins,item2){
@@ -221,7 +233,7 @@
 						$(item).eq(index).show();
 					}
 				})
-				
+
 			});
         })
 
@@ -248,7 +260,7 @@
             $(this).addClass('tab-item-active').siblings().removeClass('tab-item-active')
             $(window).scrollTop($('.product-box-right-box-tab-box-item').eq(index).offset().top - 180)
         })
-		
+
 
     </script>
 	<style type="text/css">
