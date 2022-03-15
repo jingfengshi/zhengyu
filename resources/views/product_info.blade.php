@@ -36,6 +36,7 @@
 
             </div>
 
+
             <div>
                 <img src="{{URL::asset('uploads/'.$product->c_s_image)}}" alt="" style="width:1320px">
                 <div>
@@ -100,7 +101,6 @@
                 @endif
                 <img src="{{URL::asset('uploads/'.$product->c_l_image)}}" alt="" style="width:1320px">
             </div>
-
         </div>
 
         @if(!empty($product->file))

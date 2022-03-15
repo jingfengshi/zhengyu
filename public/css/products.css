@@ -66,15 +66,10 @@ footer {
 	background-color: rgba(242, 242, 242, 1);
 }
 .product-box:after {
-
-    content:"."; 
-
+    content:".";
     display:block;
-
     height:0;
-
     visibility:hidden;
-
     clear:both; 
 	background-color: white;
 }
@@ -237,7 +232,7 @@ footer {
 }
 .product-box-right-box-tab-box-item p{
 	font-size:16px;
-	font-weight:300;
+	font-weight:500;
 	color: #555555;
 }
 /*.product-box-right-box-tab-box-item a{
