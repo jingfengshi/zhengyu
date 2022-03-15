@@ -110,17 +110,17 @@ footer{
 }
 
 .product-box-right-item {
-    margin-left: 1rem;
+    margin-left: 4.2rem;
     margin-bottom: 1rem;
     width: 274px;
     height: 412px;
-    border: 1px dashed #333333;
+    border: 1px dashed #4336;
 }
 
 .product-item-img {
     height: 216px;
     width: 274px;
-    border-bottom: 1px dashed #333333;
+    border-bottom: 1px dashed #4336;
 }
 
 .tips-box {
@@ -140,7 +140,7 @@ footer{
 .product-item-title {
     font-size: 20px;
     color: #484848;
-    line-height: 45px;
+    line-height: 33px;
     padding-left: 1.8rem;
     font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;

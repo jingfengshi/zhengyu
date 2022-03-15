@@ -144,7 +144,7 @@
     margin: 100px auto;">
             <div class="left-box">
                 <div class="left-box-about"
-                     style='background: url("{{URL::asset('images/static/banner-3.jpg')}}"); /*background-size: 100% 100%; background-repeat: no-repeat;*/'>
+                     style='background: url("{{URL::asset('images/static/homeaboutme.png')}}"); /*background-size: 100% 100%; background-repeat: no-repeat;*/'>
                     <div style="
                     position: relative;
                     z-index: 999;
@@ -265,7 +265,7 @@ top: 35px;
             <div class="swiper-wrapper">
                 @foreach($cases as $case)
                         <div class="project-item swiper-slide"
-                             style='background: url("{{URL::asset('uploads').'/'.$case->covers}}");/* background-size: 100% 100%; background-repeat: no-repeat;*/'>
+                             style='background: url("{{URL::asset('uploads').'/'.$case->covers}}"); background-size: 100% 100%; background-repeat: no-repeat;'>
 							 <a href="/cases/{{$case->id}}">
                             <div class="project-item-content-box">
                                 <div

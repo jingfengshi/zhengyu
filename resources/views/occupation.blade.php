@@ -63,7 +63,7 @@
 
 
         <div style="width: 1277px;margin-left: 5em;height:800px;margin:auto;">
-            <div style="display:flex;margin-top: 4rem;">
+            <div style="display:flex;margin-top: 7rem;">
                 <div style="width: 420px;height: 370px">
                     <img src="{{URL::asset('images/jiazhi.jpeg')}}" alt="">
                     <div style="font-weight: 200;

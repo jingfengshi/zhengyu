@@ -45,6 +45,7 @@
     margin: 0 auto;
     /*margin-left: 240px;*/
 	text-align:center;
+	display:table;
 }
 
 .cases-item-box{
@@ -52,6 +53,7 @@
     height: 459px;
     overflow: hidden;
     margin: 1.2rem;
+	float:left;
 }
 
 .cases-item-box img{

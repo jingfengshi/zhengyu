@@ -17,7 +17,7 @@
             <img src="{{empty($banner->file)?URL::asset('uploads/default.png'):URL::asset('uploads/'.$banner->file)}}">
         </div>
 
-        <div style="width: 91%;margin:auto;padding-right: 160px; margin: 0 auto">
+        <div style="width: 91%;margin:auto; margin: 0 auto">
             <div class="brand-title">金牌客户服务</div>
             <div class="brand-desc"><pre>
 我们提供服务的目的就是为了客户满意。
@@ -94,4 +94,13 @@
             })
         })
     </script>
+	<style type="text/css">
+	.brand-desc pre{
+		font-family:Microsoft YaHei;
+	}
+	<!--.brand-desc{
+		width:63%;
+		margin:0 auto;
+	}-->
+	</style>
 @endsection

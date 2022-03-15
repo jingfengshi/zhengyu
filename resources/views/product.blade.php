@@ -255,7 +255,7 @@ margin-top: 68px;
                      style="background: url('{{URL::asset('images/zhidexinlai-jiangbei.jpg')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
                     <a href="{{route('about')}}">
                         <div class="product-trust-item-mask"></div>
-                        <div class="product-trust-item-title font-color-white">值得信赖</div>
+                        <div class="product-trust-item-title font-color-white">量身定制</div>
                     </a>
 
                 </div>
@@ -263,7 +263,7 @@ margin-top: 68px;
                      style="background: url('{{URL::asset('images/zhidexinlai-moxing.jpg')}}'); background-size: 100% 100%; background-repeat: no-repeat;">
                     <a href="{{route('cases')}}">
                         <div class="product-trust-item-mask"></div>
-                        <div class="product-trust-item-title font-color-white">值得信赖</div>
+                        <div class="product-trust-item-title font-color-white">精工细作</div>
                     </a>
 
                 </div>

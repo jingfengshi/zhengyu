@@ -16,7 +16,7 @@
             <img src="{{empty($banner->file)?URL::asset('images/try-banner.jpg'):URL::asset('uploads/'.$banner->file)}}">
         </div>
 
-        <div style="width: 91%;margin:auto;padding-right: 160px;">
+        <div style="width: 91%;margin:auto;">
 
             <div style="margin-left: 50px;">
                 <div class="brand-title">定制服务</div>
@@ -73,5 +73,10 @@
             })
         })
     </script>
+	<style type="text/css">
+	.brand-desc pre{
+		font-family:Microsoft YaHei;
+	}
+	</style>
 
 @endsection

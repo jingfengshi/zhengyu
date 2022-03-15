@@ -39,7 +39,7 @@
     font-style: normal;
     font-size: 16px;
     color: #7F7F7F;" class="flex">
-            <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/zylogo.png')}}" alt=""></a>
+            <a href="/"><img style="width:288px;height:25px;" src="{{URL::asset('/images/首页/u125.png')}}" alt=""></a>
             <div class="flex space-x-8" style="margin-left: 100px;margin-top: 8px">
                 <div>
                     <a class="header-a" @if(!empty($type) && $type == 'cal') style="color:#7F7F7F !important;"
@@ -136,11 +136,12 @@ cursor: pointer;" onclick="allow_cookie();">接受全部 Cookie
                     <div class="flex justify-around  ">
                         <div style="background-color: rgba(72, 72, 72, 1);" class="w-[23rem]">
                             <div class="flex" style="height: 26px;margin-top: 3rem">
-                                <img src="{{URL::asset('/images/首页/u38.svg')}}" alt="">
+								<img src="{{URL::asset('/images/zhengyulogofooter.png')}}" alt="" />
+                                <!--<img src="{{URL::asset('/images/首页/u38.svg')}}" alt="">
                                 <img src="{{URL::asset('/images/首页/u34.svg')}}" alt="">
                                 <img src="{{URL::asset('/images/首页/u35.svg')}}"
                                      style="width: 14px;height: 15px;margin-top: 6px;" alt="">
-                                <img src="{{URL::asset('images/首页/u36.svg')}}" alt="" style="margin-left:-14px;">
+                                <img src="{{URL::asset('images/首页/u36.svg')}}" alt="" style="margin-left:-14px;">-->
                                 <div
                                     style="width:12px;height: 2px;background-color: rgba(255, 255, 255, 1);margin-top: 23px;margin-left: -22px;">
                                     <div style="visibility: hidden">

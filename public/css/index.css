@@ -76,7 +76,7 @@
 .banner-box .active .text {
     width: 70%;
     text-align: inherit;
-    margin-left: 232px !important;
+    margin-left: 255px !important;
     margin-top: 15px !important;
 }
 
@@ -104,9 +104,10 @@
 .about-box {
     width: 1320px;
     height: 320px;
-    margin: 50px auto;
+    margin: 70px auto;
     border-radius: 20px;
-    background: url("../images/static/banner-3.jpg");
+    /*background: url("../images/static/banner-3.jpg");*/
+	background:url("../images/static/homejieshao.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -114,7 +115,7 @@
 .about-box .mask {
     border-radius: 20px;
     opacity: 0.6;
-    background-color: #3E3E3E;
+    /*background-color: #3E3E3E;*/
     height: 320px;
     width: 100%;
     position: relative;
@@ -155,7 +156,7 @@
     font-family: 'Arial Normal', 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 45px;
+    font-size: 42px;
     margin: 60px auto 50px auto;
     color: #333333;
 }
@@ -220,7 +221,7 @@
     float: left;
     width: 640px;
     background-color: rgba(242, 242, 242, 1);
-    height: 890px;
+    height: 871px;
     border-radius: 15px;
     overflow: hidden;
 	margin-left:20px;
@@ -235,7 +236,7 @@
 .left-box-about-mask {
     border-radius: 15px;
     opacity: 0.6;
-    background-color: #3E3E3E;
+    /*background-color: #3E3E3E;*/
     height: 582px;
     width: 682px;
     margin-top: -582px;
@@ -246,7 +247,7 @@
     background-color: #1e1616;
     border-radius: 15px;
     width: 682px;
-    margin-top: 30px;
+    margin-top: 8px;
     position: relative;
     float: left;
     top: 13px;
@@ -309,7 +310,7 @@
 }
 
 .right-box-top-img {
-    height: 168px;
+    height: 167px;
     width: 640px;
     overflow: hidden;
 	margin-bottom: 10px;
@@ -403,7 +404,7 @@
 }
 
 .project {
-    width: 1336px;
+    width: 1334px;
     height: 20rem;
     margin: 50px auto;
     overflow: hidden;

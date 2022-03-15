@@ -31,13 +31,12 @@
                             <div class="product-box-left-item">
                                 <div class="inline-block" style="float: left;margin-top: 9px;"><img
                                         src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
-                                <div class="inline-block product-box-left-item-nav"
-                                     style="width: 200px">
+                                <div class="inline-block product-box-left-item-nav" style="width: 200px">
                                     <a style="font-size: 1.15rem;
-    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
+    color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a> <a href="javascript:void(0)" class="excolitem" cl="+" >+</a>
                                     @foreach($category->products as $p)
                                         @if(!$p->is_creative)
-                                        <div class="product-box-left-item-nav-child"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
+                                        <div class="product-box-left-item-nav-child excolproduct"><a href="/product-info/{{$p->id}}">{{$p->title}}</a></div>
                                         @endif
                                     @endforeach
 
@@ -83,19 +82,25 @@
                     <div class="product-box-right-box-tab-box">
                         <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">优势与特点</h5>{!! $product->description !!}</div>
                         <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">应用范围</h5>{{$product->apply_area}}</div>
-                        <div class="product-box-right-box-tab-box-item">
-                            <h5 class="product-box-right-box-tab-box-item-title">技术规格</h5>
+                        <div class="product-box-right-box-tab-box-item" style="display:table">
+                            <h5 class="product-box-right-box-tab-box-item-title" >技术规格</h5>
                             @foreach($product->extra3 as $type=>$value)
-                                {{$type}}
-
-                                @foreach($value as $k =>$v)
-                                    <p>{{$k}}</p>
-                                    @foreach($v as $vv)
-                                        {{$vv['value']}}
-                                    @endforeach
-                                @endforeach
-                            @endforeach
+                             <div class="guigeitem">
+								<h5 class="product-box-right-box-tab-box-item-title" style="margin-bottom:10px">{{$type}}</h5><hr/>
+									@foreach($value as $k =>$v)
+										<div class="techparm">
+											<div class="teahparmtitle"><p>{{$k}}</p></div>
+											<div class="techparmdesc">
+												@foreach($v as $vv)
+													{{$vv['value']}}
+												@endforeach
+											</div>
+										</div>
+									@endforeach
+							</div>
+							@endforeach
                         </div>
+						<br/>
                         <div class="product-box-right-box-tab-box-item">
                             <h5 class="product-box-right-box-tab-box-item-title">外形尺寸</h5>
                             <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="" />
@@ -190,6 +195,34 @@
 			}
 			$(".product-box-right-box-tab-box").css("line-height","30px");
 			$(".product-box-right-box-tab-box p font").css("font-size","17px");
+			
+			$(".excolitem").click(function(){
+				var cureleattr=$(this).attr("cl");
+				if(cureleattr=="+"){
+					var allitem=$(this).nextAll(".excolproduct");
+					$(allitem).show(500);
+					$(this).attr("cl","-");
+					$(this).text("-");
+					$(this).css("color","red");
+				}else{
+					var allitem=$(this).nextAll(".excolproduct");
+					$(allitem).hide(500);
+					$(this).attr("cl","+");
+					$(this).text("+");
+					$(this).css("color","#0000006b");
+				}
+			});
+			
+			var curpathname=document.location.pathname;
+			$(".product-box-left-box").find(".excolproduct").each(function(index,item){
+				$(item).find("a").each(function(ins,item2){
+					var strhref=$(item2).attr("href");
+					if(strhref==curpathname){
+						$(item).eq(index).show();
+					}
+				})
+				
+			});
         })
 
         $(document).on('mouseover', '.product-box-left-item', function () {
@@ -215,6 +248,7 @@
             $(this).addClass('tab-item-active').siblings().removeClass('tab-item-active')
             $(window).scrollTop($('.product-box-right-box-tab-box-item').eq(index).offset().top - 180)
         })
+		
 
     </script>
 	<style type="text/css">
@@ -225,6 +259,29 @@
 		font-size:16px !important;
 		font-weight:300;
 		color:#555555;
+	}
+	.guigeitem{
+		float:left;
+		width:400px;
+	}
+	.techparm{
+		display:flex;
+		border-bottom:1px solid #00000026;
+	}
+	.teahparmtitle{
+		float:left;
+	}
+	.techparmdesc{
+		float:left;
+		margin-left:50px;
+	}
+	.excolproduct{
+		display:none;
+	}
+	.excolitem{
+		margin-left:15px;
+		font-size:1.35rem;
+		color:#0000006b;
 	}
 	</style>
 
