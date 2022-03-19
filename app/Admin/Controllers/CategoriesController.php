@@ -63,6 +63,7 @@ class CategoriesController extends AdminController
         $form->text('name', '类目名称')->rules('required');
         $form->image('image', '分类图片')->rules('required|image')->uniqueName();
         $form->select('type', '类型')->options(Category2::getTypeLabel())->required();
+        $form->number('sort','排序');
         $form->textarea('desc','描述')->rows(5);
         $form->image('f_icon','第一个图标')->required()->uniqueName();
         $form->text('f_icon_desc','第一个图标文字');

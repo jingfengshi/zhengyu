@@ -23,7 +23,7 @@ class ProductController extends Controller
     // 产品详情页普通版
     public function show(Request $request, Product $product)
     {
-        $categories = Category2::with('products')->get();
+        $categories = Category2::with('products')->orderBy('sort','desc')->get();
 
         return view('products', compact('product', 'categories'));
     }
@@ -33,7 +33,7 @@ class ProductController extends Controller
         $product = Product::findOne($id);
 
         if(!$product->is_creative){
-            $categories = Category2::with('products')->get();
+            $categories = Category2::with('products')->orderBy('sort','desc')->get();
             $recommendProducts =$this->reCommand($product->category_id,$product->id);
             return view('products', compact('product', 'products','categories','recommendProducts'));
         }else{
