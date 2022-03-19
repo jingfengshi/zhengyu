@@ -29,10 +29,10 @@
                     @foreach($categories as $category)
                         @if($category->type == $product->category->type)
                             <div class="product-box-left-item">
-                                <div class="inline-block" style="float: left;margin-top: 9px;"><img
+                                <div class="inline-block" style="float: left;margin-top: 8px;"><img
                                         src="{{URL::asset('images/static/check.svg')}}" alt=""></div>
                                 <div class="inline-block product-box-left-item-nav" style="width: 200px">
-                                    <a style="font-size: 1.15rem;
+                                    <a style="font-size: 1.15rem;width:120px !important;display:inline-block;
     color: #484848;" href="/cate/{{$category->id}}">{{$category->name}}</a>
                                     @if($product->category->id==$category->id)
                                         <a href="javascript:void(0)" class="excolitem" cl="-" style="color: red" >-</a>
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-box-right-box-recommend-box" style="margin-top:55px;width:88%;height:287px">
+                <div class="product-box-right-box-recommend-box" style="margin-top:55px;width:88%">
                     <div class="product-box-right-box-recommend-title">推荐产品</div>
                     @if(!empty($recommendProducts))
                         @foreach($recommendProducts as $recommendProduct)
@@ -231,6 +231,7 @@
 					var strhref=$(item2).attr("href");
 					if(strhref==curpathname){
 						$(item).eq(index).show();
+						$(item2).css("color","red");
 					}
 				})
 
@@ -290,10 +291,17 @@
 	.excolproduct{
 		display:none;
 	}
+	.excolproduct a{
+		font-weight: 300;
+		color: #555555;
+		line-height: 30px;
+	}
 	.excolitem{
-		margin-left:15px;
 		font-size:1.35rem;
 		color:#0000006b;
+		float:right;
+		padding-right:58px;
+		margin-top:-2px;
 	}
 	</style>
 

@@ -1,7 +1,16 @@
 .cert-top-title{
     padding: 2rem 240px;
 }
-
+.cases-top-title{
+	height: 84px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    margin-top: 9px;
+}
+.cases-top-title a{
+	margin-right:2.4rem !important;
+}
 .cert-top-title a{
     color: #484848;
     margin-right: 1.5rem;
@@ -10,6 +19,7 @@
 .cert-banner{
     height: 32rem;
     overflow: hidden;
+	padding-top:94px;
 }
 
 .cert-banner img{
@@ -18,8 +28,9 @@
 .cert-title{
     text-align: center;
     font-size: 32px;
-    font-weight: 300;
-    padding-top: 5rem;
+    font-weight: 400;
+    color: #555555;
+    padding-top: 3rem;
 }
 .cert-title-2{
     text-align: center;
@@ -30,32 +41,36 @@
 }
 
 .cert-img-box{
-    width: 95%;
-    margin: 0 auto;
+    /*width: 95%;*/
+	max-width: 1460px;
+    margin: 3rem auto;
     /*margin-left: 240px;*/
 	text-align:center;
 }
 
 .cert-img-item{
-    width: 350px;
-    height: 408px;
+    width: 22rem;
+    height: 350px;
     overflow: hidden;
-    margin: 0.25rem;
+    margin: 0.8rem;
     cursor: pointer;
+
 }
 
 .cert-img-item img {
     height: 18rem;
     width: 22rem;
+    background-color: #f1f1f1;
+
 }
 
 .sm-title{
     width: 22rem;
-    height: 3.2rem;
+    height: 3rem;
     line-height: 3.2rem;
     font-size: 1.1rem;
-    color: #333333;
-    background-color: rgba(242, 242, 242, 1);
+    color: #ffffff;
+    background-color: #858d9b;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0.6rem;
 }

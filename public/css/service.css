@@ -49,9 +49,9 @@
 }
 
 .apply-box-right-title {
-    font-size: 2.1rem;
-    color: #333333;
-    font-weight: 300;
+    font-size: 1.8rem;
+    color: #555555;
+    font-weight: 400;
 }
 
 .apply-box-right-desc {
@@ -89,15 +89,17 @@
 .brand-title{
     text-align: center;
     font-size: 32px;
-    font-weight: 300;
-    padding-top: 5rem;
+    font-weight: 400;
+    color: #555555;
+    padding-top: 4rem;
 }
 .brand-desc{
-    padding: 2rem 10rem;
-    font-size: 24px;
-    font-weight: 200;
+    padding: 2rem 3rem;
+    font-size: 26px;
+    font-weight: 300;
+    color: #555555;
     font-style: normal;
-    line-height: 42px;
-	width:64%;
+    line-height: 3rem;
+	width:80%;
 	margin:0 auto;
 }

@@ -113,7 +113,7 @@
 
         <div class="more-product-box" style="width: 1350px;margin: 0 auto;margin-top: 64px">
             <div class="more-product-box-title" style="margin-top: 30px;">想知道我们更多产品消息？</div>
-            <div class="more-product-box-list-box swiper-container" style="width:1380px;height:281px;">
+            <div class="more-product-box-list-box swiper-container" style="width:1385px;height:281px;">
                 <div class="swiper-wrapper">
                     @foreach($categories as $cate)
                         <div class="more-product-box-list-box-item swiper-slide"
@@ -126,6 +126,7 @@
                         </div>
                     @endforeach
                 </div>
+				<div class="ytdivinfo"></div>
             </div>
             <div class="arrow-box" style="margin-top:20px">
                 <div class="pagination"></div>
@@ -159,6 +160,14 @@
 	}
 	.product-box-right-box-tab-box p font{
 		font-size:18px;
+	}
+	.ytdivinfo{
+		position:relative;
+		margin-top:-288px;
+		background-color:white;
+		float:right;
+		width:14px;
+		height:251px
 	}
 	</style>
 

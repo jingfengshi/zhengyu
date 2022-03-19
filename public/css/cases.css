@@ -1,5 +1,9 @@
 .cases-top-title{
     padding: 2.8rem 240px 1.45rem 240px;
+	height: 85px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
 }
 
 .cases-top-title a{
@@ -15,6 +19,7 @@
     height: 33rem;
     width: 100%;
     overflow: hidden;
+	padding-top:91px;
 }
 
 .cases-banner img{
@@ -24,9 +29,10 @@
 .cases-title{
     text-align: center;
     padding-top: 3.5rem;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     font-size: 32px;
+    color: #555555;
 
 }
 
@@ -42,7 +48,7 @@
 .cases-list-box{
     width: 1349px;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 3rem auto;
     /*margin-left: 240px;*/
 	text-align:center;
 	display:table;
