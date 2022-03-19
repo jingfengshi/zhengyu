@@ -12,7 +12,7 @@
 }
 
 .about-banner {
-    height: 50rem;
+    height: 45rem;
     width: 100%;
     overflow: hidden;
 }
@@ -31,7 +31,7 @@
 
 .about-banner-title {
     font-family: 'Arial Normal', 'Arial', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-size: 38px;
     color: rgba(255, 255, 255, 0.996078431372549);
@@ -49,15 +49,16 @@
 
 .about-box {
     width: 100%;
-    margin: 10rem auto 85px auto;
+    margin: 8rem auto 85px auto;
 }
 
 .about-box-title {
     width: 100%;
     margin: 0 auto 3rem auto;
     text-align: center;
-    font-family: 'PingFang ', 'PingFang', sans-serif;
-    font-weight: 100;
+    font-family: 'Arial ', 'PingFang', sans-serif;
+    font-weight: 400;
+    color: #555555;
     font-style: normal;
     font-size: 42px;
     text-align: center;
@@ -65,9 +66,9 @@
 
 .about-box-desc {
     width: 1104px;
-    margin: 5rem auto;
-    font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC', sans-serif;
-    font-weight: 200;
+    margin: 3rem auto;
+    font-family: 'Arial', 'PingFang', 'PingFang SC', sans-serif;
+    font-weight: 300;
     font-style: normal;
     text-align: left;
     font-size: 24px;
@@ -79,7 +80,8 @@
     width: 1104px;
     margin: 5rem auto 45px auto;
     height: 30rem;
-    background: url("../images/static/about-2.svg");
+    /*background: url("../images/static/about-2.svg");*/
+	background: url("../images/static/aboutus33.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

@@ -1,5 +1,9 @@
 .connect-top-title{
     padding: 2.8rem 240px 1.45rem 240px;
+	height:84px;
+	width:100%;
+	position:fixed;
+	background-color:white;
 }
 
 .connect-top-title a{
@@ -15,6 +19,7 @@
     height: 33rem;
     width: 100%;
     overflow: hidden;
+	padding-top:94px;
 }
 
 .connect-banner img{
@@ -25,11 +30,11 @@
     text-align: center;
     padding-top: 5rem;
     margin-bottom: 3rem;
-    font-family: 'PingFang ', 'PingFang', sans-serif;
-    font-weight: 200;
+    font-family: 'Arial ', 'PingFang', sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 32px;
-    color: #333333;
+    color: #555555;
 }
 
 .connect-desc{

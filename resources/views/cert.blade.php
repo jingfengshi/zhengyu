@@ -12,7 +12,7 @@
 
         <div>
             <div class="cert-title">企业荣誉</div>
-            <div class="cert-title-2">我们将不懈努力，与您共同发展！</div>
+{{--            <div class="cert-title-2">我们将不懈努力，与您共同发展！</div>--}}
             <div class="cert-img-box">
                 @if($certs->count()>0)
                     @foreach($certs as $cert)

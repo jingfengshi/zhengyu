@@ -10,11 +10,17 @@
     font-size: 16px;
     color: #484848;
 }
-
+.cases-top-title{
+	position: fixed;
+    height: 84px;
+    width: 100%;
+    background-color: white;
+}
 .brand-banner{
     height: 33rem;
     width: 100%;
     overflow: hidden;
+	padding-top:90px;
 }
 
 .brand-banner img{
@@ -23,8 +29,9 @@
 .brand-title{
     text-align: center;
     font-size: 32px;
-    font-weight: 300;
-    padding-top: 5rem;
+    font-weight: 400;
+    padding-top: 3rem;
+    color: #555555;
     margin-left: 120px;
 }
 .brand-desc{
@@ -39,7 +46,7 @@
 
 .brand-img-box{
     width: 99%;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 .brand-img-item{

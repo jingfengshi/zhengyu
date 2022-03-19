@@ -11,7 +11,7 @@
 
         <div>
             <div class="cases-title">客户案例</div>
-            <div class="cases-desc"></div>
+{{--            <div class="cases-desc"></div>--}}
             <div class="cases-list-box">
                 @foreach($cases as $case)
                     <div class="cases-item-box inline-block">

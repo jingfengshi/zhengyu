@@ -12,8 +12,8 @@
             <a href="/connect">联系我们</a>
         </div>
 
-        <div class="connect-banner" style="margin:0 auto">
-            <img src="{{URL::asset('images/static/about-banner.png')}}" style="margin:0 auto">
+        <div class="connect-banner" style="margin:0 auto; height:100%">
+            <img src="{{URL::asset('images/static/contactus.jpg')}}" style="margin:0 auto; width:100%">
         </div>
 
         <div style="width: 75%;margin:auto;padding-right: 192px;">

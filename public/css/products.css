@@ -253,11 +253,12 @@ footer {
 }
 
 .product-box-right-box-recommend-box {
-    /*height: 21rem;*/
+    height: 21rem;
     border: 1px dashed #cebfbf;
     border-radius: 1rem;
     padding: 1.5rem 1rem;
 	margin-top:2rem;
+	overflow:hidden;
 }
 
 .product-box-right-box-recommend-title {

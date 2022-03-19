@@ -38,7 +38,7 @@
                 {!! $content->value !!}
             </div>
             <div class="about-box-img"></div>
-            <a href="/product">
+            <a href="/cate/1">
                 <div class="about-box-btn font-color-white">了解更多产品</div>
             </a>
         </div>

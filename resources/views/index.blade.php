@@ -106,7 +106,7 @@
             </a>
         </div>
 
-        <div class="title">创新产品</div>
+        <div class="title">推荐产品</div>
 
         {{--  product  --}}
         <div class="product-box swiper-container">
@@ -279,12 +279,13 @@ top: 35px;
 
                 @endforeach
             </div>
+			<div class="ytdiv"></div>
         </div>
         <div class="project-arrow-box">
             <div class="pagination-project"></div>
         </div>
     </div>
-
+	
     <script type="text/javascript">
         $(document).on('mouseover', '.banner-box .item', function () {
             $('.banner-box .item').removeClass('active');
