@@ -62,7 +62,7 @@
                 @endif
 
                 <div class="product-box-right-box">
-                    @foreach($cate->products as $product)
+                    @foreach($cate->products->sortByDesc('sort') as $product )
                         @if(($product->is_creative ==0))
                             <div class="product-box-right-item inline-block">
                                 <a href="/product-info/{{$product->id}}">

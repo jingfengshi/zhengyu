@@ -15,7 +15,7 @@ class ProductController extends Controller
 
         $cates = Category2::get();
 
-        $products = Product::where('on_sale', 1)->where('title', 'like', '%' . $title . '%')->orderBy('id', 'desc')->get();
+        $products = Product::where('on_sale', 1)->where('title', 'like', '%' . $title . '%')->orderBy('sort','desc')->get();
 
         return view('product_search', compact('banner', 'cates', 'products'));
     }
@@ -23,7 +23,9 @@ class ProductController extends Controller
     // 产品详情页普通版
     public function show(Request $request, Product $product)
     {
-        $categories = Category2::with('products')->orderBy('sort','desc')->get();
+        $categories = Category2::with(['products'=>function($query){
+            $query->orderBy('sort','desc');
+        }])->orderBy('sort','desc')->get();
 
         return view('products', compact('product', 'categories'));
     }
@@ -33,7 +35,9 @@ class ProductController extends Controller
         $product = Product::findOne($id);
 
         if(!$product->is_creative){
-            $categories = Category2::with('products')->orderBy('sort','desc')->get();
+            $categories = Category2::with(['products'=>function($query){
+                $query->orderBy('sort','desc');
+            }])->orderBy('sort','desc')->get();
             $recommendProducts =$this->reCommand($product->category_id,$product->id);
             return view('products', compact('product', 'products','categories','recommendProducts'));
         }else{

@@ -79,7 +79,7 @@ class ProductsController extends AdminController
 
 
         $form->select('category_id', '类目')->options($options)->required();
-
+        $form->number('sort','排序');
         // 添加简短描述
         $form->editor("desc","简短描述");
 
