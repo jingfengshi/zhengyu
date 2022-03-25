@@ -13,6 +13,7 @@ class CategoriesController extends Controller
     public function index(Request $request)
     {
         $cates = Category2::with(['products'=>function($query){
+            $query->where('on_sale',1);
             $query->orderBy('sort','desc');
         }])->where('type', $request->input('type', 'protected'))->orderBy('sort','desc')->get();
 
@@ -25,6 +26,7 @@ class CategoriesController extends Controller
     {
         $type = $cate->type;
         $allCategories = Category2::with(['products'=>function($query){
+            $query->where('on_sale',1);
             $query->orderBy('sort','desc');
         }])->where('type', $type)->orderBy('sort','desc')->get();
         return view('product_list', compact('cate', 'allCategories','type'));

@@ -24,6 +24,7 @@ class ProductController extends Controller
     public function show(Request $request, Product $product)
     {
         $categories = Category2::with(['products'=>function($query){
+            $query->where('on_sale',1);
             $query->orderBy('sort','desc');
         }])->orderBy('sort','desc')->get();
 
@@ -36,6 +37,7 @@ class ProductController extends Controller
 
         if(!$product->is_creative){
             $categories = Category2::with(['products'=>function($query){
+                $query->where('on_sale',1);
                 $query->orderBy('sort','desc');
             }])->orderBy('sort','desc')->get();
             $recommendProducts =$this->reCommand($product->category_id,$product->id);
@@ -53,7 +55,7 @@ class ProductController extends Controller
 
     protected function reCommand($cate,$excludeId)
     {
-        $products=Product::where('is_recommend',1)->where('id','!=',$excludeId)->take(4)->get();
+        $products=Product::where('is_recommend',1)->where('id','!=',$excludeId)->where('on_sale',1)->take(4)->get();
         if($hasNum=count($products)<4){
             $needNum = 4- $hasNum;
             $needProducts=Product::where('category_id',$cate)

@@ -45,7 +45,7 @@ class ProductsController extends AdminController
         });
         $grid->actions(function ($actions) {
             $actions->disableView();
-            $actions->disableDelete();
+          //  $actions->disableDelete();
         });
         $grid->tools(function ($tools) {
             // 禁用批量删除按钮
