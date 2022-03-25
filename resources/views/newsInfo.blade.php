@@ -18,7 +18,7 @@
         @include('_bread_news')
 
 
-        <div class="w-full" style="background-color: rgba(242, 242, 242, 1);height: 166px;">
+        <div class="w-full" style="background-color: rgba(242, 242, 242, 1);height: 207px;padding-top:33px">
             <div style="width: 80%;margin: 0 auto;">
                 <div style="padding-left:8rem;padding-top:4rem">
                     <div style="font-weight: 700;font-size: 36px;color: #555555">
