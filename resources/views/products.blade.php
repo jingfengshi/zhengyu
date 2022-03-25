@@ -97,6 +97,7 @@
                         <div class="product-box-right-box-tab-box-item" style="display:table">
                             <h5 class="product-box-right-box-tab-box-item-title" >技术规格</h5>
                             @foreach($product->extra3 as $type=>$value)
+                                @if(!empty($value))
                              <div class="guigeitem">
 								<h5 class="product-box-right-box-tab-box-item-title" style="margin-bottom:10px">{{$type}}</h5><hr/>
 									@foreach($value as $k =>$v)
@@ -109,6 +110,7 @@
 											</div>
 										</div>
 									@endforeach
+                                 @endif
 							</div>
 							@endforeach
                         </div>
