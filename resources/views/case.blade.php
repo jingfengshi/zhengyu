@@ -45,5 +45,20 @@
             })
         })
     </script>
+	
+	<style type="text/css">
+	.case-content{
+		display:table;
+	}
+.case-content p img{
+	float:left;
+	width:550px !important;
+	padding-left:10px;
+	padding-top:10px;
+}
+.case-btn-box{
+	padding-top:70px;
+}
+</style>
 
 @endsection

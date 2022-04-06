@@ -18,9 +18,9 @@
         @include('_bread_news')
 
 
-        <div class="w-full" style="background-color: rgba(242, 242, 242, 1);height: 207px;padding-top:33px">
+        <div class="w-full" style="background-color: rgba(242, 242, 242, 1);height: 225px;padding-top:33px">
             <div style="width: 80%;margin: 0 auto;">
-                <div style="padding-left:8rem;padding-top:4rem">
+                <div style="padding-left:8rem;padding-top:5rem">
                     <div style="font-weight: 700;font-size: 36px;color: #555555">
                         {{$news->title}}
                     </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div style="width: 70%;margin: 0 auto;margin-top: 2rem;min-height: 20rem;">
+        <div style="width: 70%;margin: 0 auto;margin-top: 2rem;min-height: 20rem;display:table">
             <div class="new-info-box" style="width: 1300px;margin: auto">
                 {!!$news->content!!}
             </div>
@@ -58,6 +58,24 @@
     </div>
 
 
-
+<style type="text/css">
+.new-info-box{
+	display:table;
+}
+.new-info-box p img{
+	float:left;
+	padding-left:5px;
+	width:600px !important;
+	padding-top:10px;
+}
+.justify-end{
+	width:270px;
+	padding-top:50px;
+	float:right;
+}
+.justify-end>div{
+	float:left;
+}
+</style>
 
 @endsection

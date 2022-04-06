@@ -7,7 +7,7 @@
     <div style="width:100%;height: auto;margin: auto">
         <div class="nav"><a href="/">首页 </a> > @if($cate->type =='protected')<a style="font-size: 16px;"
                                                                href="{{route('cate',['type'=>'protected'])}}">保护人们在危险环境安全工作</a> @else
-                <a style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品
+                <a class="protypename" style="font-size: 16px;" href="{{route('cate',['type'=>'cal'])}}">智慧计量单位</a> @endif> 产品
         </div>
 
         <div class="top-banner"
@@ -77,8 +77,8 @@
                                 <a href="/product-info/{{$product->id}}">
                                     <div class="product-item-title">{{$product->title}}</div>
                                 </a>
-                                <div class="product-item-color">颜色：{{$product->extra['color']}}</div>
-                                <div class="product-item-power">功率：{{$product->extra['power']}}</div>
+                                <div class="product-item-color proxinghao">颜色：{{$product->extra['color']}}</div>
+                                <div class="product-item-power proxinghao">功率：{{$product->extra['power']}}</div>
                             </div>
                         @endif
 
@@ -101,6 +101,13 @@
 		$(function(){
 			$(".product-box-right-box-tab-box").css("line-height","30px");
 			$(".product-box-right-box-tab-box p font").css("font-size","18px");
+			
+			var curprotype=$(".protypename").text();
+			if(curprotype=="智慧计量单位"){
+				$(".proxinghao").hide();
+				$(".product-item-img").css("height","267px");
+				$(".product-item-img").css("background-repeat","no-repeat");
+			}
 		});
     </script>
 
