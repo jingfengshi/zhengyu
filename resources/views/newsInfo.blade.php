@@ -25,7 +25,7 @@
                         {{$news->title}}
                     </div>
                     <div style="font-weight: 200;font-size:20px;margin-top: 1rem">
-                        {{$news->created_at?$news->created_at->format("Y-m-d"):''}}
+                        {{$news->publish_time?$news->publish_time->format("Y-m-d"):''}}
                     </div>
                 </div>
             </div>
