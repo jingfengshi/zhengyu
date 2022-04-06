@@ -11,5 +11,6 @@ class News extends Model
     ];
     protected $casts = [
         'on_shelf' => 'boolean', // on_shelf 是一个布尔类型的字段
+        'publish_time'=>'date'
     ];
 }
