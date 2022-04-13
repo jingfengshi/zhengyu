@@ -160,6 +160,7 @@ footer{
     padding-left: 1.8rem;
     color: #333333;
     margin-top: 0.4rem;
+   /*display:none;*/
 }
 
 .product-item-power {
@@ -170,6 +171,7 @@ footer{
     text-align: left;
     font-size: 15px;
     line-height: 28px;
+/*display:none;*/
 }
 
 .product-box-left-item-child{

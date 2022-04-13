@@ -86,10 +86,10 @@
                         <div data-index="0" class="product-box-right-box-tab-item inline-block">优势与特点</div>
                         <div data-index="1" class="product-box-right-box-tab-item inline-block">应用范围</div>
                         <div data-index="2" class="product-box-right-box-tab-item inline-block">技术规格</div>
-                        <div data-index="3" class="product-box-right-box-tab-item inline-block">外形尺寸</div>
+                        <div data-index="3" class="product-box-right-box-tab-item inline-block divwaixing">外形尺寸</div>
                         <div data-index="4" class="product-box-right-box-tab-item inline-block">资料下载</div>
-                        <div data-index="5" class="product-box-right-box-tab-item inline-block">视频介绍</div>
-                        <div data-index="6" class="product-box-right-box-tab-item inline-block">现场安装</div>
+                        <div data-index="5" class="product-box-right-box-tab-item inline-block divvideojieshao">视频介绍</div>
+                        <div data-index="6" class="product-box-right-box-tab-item inline-block divnowinstall">现场安装</div>
                     </div>
                     <div class="product-box-right-box-tab-box">
                         <div class="product-box-right-box-tab-box-item"><h5 class="product-box-right-box-tab-box-item-title">优势与特点</h5>{!! $product->description !!}</div>
@@ -115,9 +115,9 @@
 							@endforeach
                         </div>
 						<br/>
-                        <div class="product-box-right-box-tab-box-item">
+                        <div class="product-box-right-box-tab-box-item divchicun">
                             <h5 class="product-box-right-box-tab-box-item-title">外形尺寸</h5>
-                            <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="" />
+                            <img src="{{URL::asset('uploads/'.$product->sharp)}}" alt="" class="prochicun"/>
                         </div>
                         <div class="product-box-right-box-tab-box-item" style="margin-bottom:33px">
                              <h5 class="product-box-right-box-tab-box-item-title">资料下载</h5>
@@ -126,16 +126,16 @@
 							  </div>
 							 <div style="margin-top:29px"><hr/></div>
                         </div>
-                        <div class="product-box-right-box-tab-box-item">
+                        <div class="product-box-right-box-tab-box-item divvideo">
                         <h5 class="product-box-right-box-tab-box-item-title">视频介绍</h5>
                             <video class="product-box-right-box-tab-box-item-video" id="videocontrol" src="{{URL::asset('uploads').'/'.$product->video}}" controls="controls">
                                 您的浏览器不支持 video 标签。
                             </video>
                         </div>
-                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install" style="max-width: 1104px;margin-top:40px">
+                        <div class="product-box-right-box-tab-box-item product-box-right-box-tab-box-item-install ytdivinstall" style="max-width: 1104px;margin-top:40px">
                         <h5 class="product-box-right-box-tab-box-item-title">现场安装</h5>
                             @if($product)
-                                <div style="width: 313px;height: 254px;display: inline-block; margin-right:20px">
+                                <div style="width: 313px;height: 254px;display: inline-block; margin-right:20px" class="divinstall">
                                     @if($product->install1)
                                         <img style="width: 313px;height: 218px" src="{{URL::asset('uploads/'.$product->install1)}}" alt="">
                                         @if($product->install1_desc)
@@ -201,15 +201,29 @@
             $('.product-box-right-box-tab-box-item').first().addClass('tab-box-item-active');
 			var strzltxt=$(".zldownload").text().split('files/')[1];
 			$(".zldownload").text(strzltxt);
-
+			//视频
 			var strvideo=$("#videocontrol").attr("src");
-			var st=strvideo.substring(strvideo.lastIndexOf('uploads/'))
+			var st=strvideo.substring(strvideo.lastIndexOf('uploads/'));
 			if(st=="uploads/"){
 				$("#videocontrol").hide();
+				$(".divvideo").hide();
+				$(".divvideojieshao").hide();
 			}
 			$(".product-box-right-box-tab-box").css("line-height","30px");
 			$(".product-box-right-box-tab-box p font").css("font-size","17px");
-
+			//现场安装
+			var videoinstallstr=$(".divinstall").html().trim();
+			if(videoinstallstr==""){
+				$(".ytdivinstall").hide();
+				$(".divnowinstall").hide();
+			}
+			//外形尺寸
+			var prochicun=$(".prochicun").attr("src");
+			var prostr=prochicun.substring(prochicun.lastIndexOf('/uploads'));
+			if(prostr=="/uploads"){
+				$(".divchicun").hide();
+				$(".divwaixing").hide();
+			}
 			$(".excolitem").click(function(){
 				var cureleattr=$(this).attr("cl");
 				if(cureleattr=="+"){
@@ -285,10 +299,14 @@
 	}
 	.teahparmtitle{
 		float:left;
+		width:119px;
+	}
+	.teahparmtitle p{
+		width:119px;
 	}
 	.techparmdesc{
 		float:left;
-		margin-left:50px;
+		margin-left:44px;
 	}
 	.excolproduct{
 		display:none;
