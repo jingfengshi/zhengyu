@@ -63,7 +63,7 @@
 
                 <div class="product-box-right-box">
                     @foreach($cate->products->sortByDesc('sort') as $product )
-                        @if(($product->is_creative ==0))
+                        @if(($product->is_creative ==0 && $product->on_sale==1))
                             <div class="product-box-right-item inline-block">
                                 <a href="/product-info/{{$product->id}}">
                                     <div class="product-item-img"
