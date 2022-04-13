@@ -122,6 +122,7 @@ class ProductsController extends AdminController
                 $form->editor('description', '优点和特点');
                 $form->radio('is_new', '新品')->options(['1' => '是', '0'=> '否'])->default(0);
                 $form->radio('is_authentication', '认证')->options(['1' => '是', '0'=> '否'])->default('0');
+                $form->image("cert_image","认证图片")->removable();
                 $form->radio('is_recommend', '推荐')->options(['1' => '是', '0'=> '否'])->default('0');
 
                 $form->textarea("apply_area","应用范围");
